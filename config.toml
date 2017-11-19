@@ -7,6 +7,7 @@ enableRobotsTXT = true
 disableAliases = true
 
 RemovePathAccents = true
+permalinks = "/:sections/:slug/"
 
 # add redirects/headers
 [outputs]
