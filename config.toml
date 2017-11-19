@@ -1,10 +1,12 @@
 baseURL = "/"
-languageCode = "en-gb"
 title = "{TITLE}"
+languageCode = "fr"
 
 disableKinds = ["RSS"]
 enableRobotsTXT = true
 disableAliases = true
+
+RemovePathAccents = true
 
 # add redirects/headers
 [outputs]
