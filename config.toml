@@ -1,6 +1,6 @@
 baseURL = "/"
-title = "{TITLE}"
 languageCode = "fr"
+title = "Promobras - Agence de Voyage - Le Brésil Autrement - Agence de voyage à Lausanne spécialisée pour le Brésil - Lausanne"
 
 disableKinds = ["RSS"]
 enableRobotsTXT = true
