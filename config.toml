@@ -8,6 +8,7 @@ disableAliases = true
 
 RemovePathAccents = true
 permalinks = "/:sections/:slug/"
+sectionPagesMenu = "main"
 
 # add redirects/headers
 [outputs]
@@ -31,4 +32,3 @@ mediatype = "text/netlify"
 baseName = "_headers"
 isPlainText = true
 notAlternative = true
-
