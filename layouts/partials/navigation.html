@@ -14,5 +14,8 @@
     </ul>
     {{ template "section-tree-nav" . }}
   {{ end }}
+  {{ range .Pages }}
+    <li><a href="{{ .RelPermalink}}">{{ if .LinkTitle }}{{ .LinkTitle }}{{ else }}{{ .Title }}{{ end }}</a></li>
+  {{ end }}
   </ul>
 {{ end }}
