@@ -1,10 +1,10 @@
 {{ define "main" }}
     
     {{ range .Paginator.Pages }}
-        <article>
-            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-            {{ .Content }}
-        </article>
+      <article>
+        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        {{ .Summary }} {{ if .Truncated }}...{{ end }}
+      </article>
     {{ end }}
 
     {{ template "_internal/pagination.html" . }}
