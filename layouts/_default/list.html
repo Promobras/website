@@ -1,5 +1,13 @@
 {{ define "main" }}
-    
+<nav>
+	{{ block "navigation" . }}{{ partial "navigation.html" . }}{{ end }}
+</nav>
+<nav>
+	Section Nav
+	{{ block "section-nav" . }}{{ partial "section-nav.html" . }}{{ end }}
+</nav>
+
+		{{ .Content }}
     {{ range .Paginator.Pages }}
       <article>
         <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>

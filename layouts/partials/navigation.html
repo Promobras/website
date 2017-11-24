@@ -1,0 +1,18 @@
+<!-- Check https://github.com/bep/hugotest -->
+{{ $root := (.Site.GetPage "section" .Section) }}
+<div class="css-treeview box">
+   {{ template "section-tree-nav" $root }}
+</div>
+{{ define "section-tree-nav" }}
+  <ul>
+  {{ range .Sections.Reverse}}
+  	<li><a href="{{ .RelPermalink}}">{{ if .LinkTitle }}{{ .LinkTitle }}{{ else }}{{ .Title }}{{ end }}</a></li>
+    <ul>
+      {{ range .Pages }}
+      	<li><a href="{{ .RelPermalink}}">{{ if .LinkTitle }}{{ .LinkTitle }}{{ else }}{{ .Title }}{{ end }}</a></li>
+      {{ end }}
+    </ul>
+    {{ template "section-tree-nav" . }}
+  {{ end }}
+  </ul>
+{{ end }}

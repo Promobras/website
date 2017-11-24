@@ -1,0 +1,20 @@
+{{ $sect := (.Site.GetPage "section" "destinations") }}
+{{ $home := .Site.Home }}
+{{ if $sect }}
+  <ol class = "nav navbar-nav">
+    <li{{ if .InSection $home }} class="active" {{ end }}><a href = "{{ $home.RelPermalink }}">Home</a></li>
+    <li{{ if .InSection $sect }} class="active" {{ end }}><a href = "{{ $sect.RelPermalink }}">{{ $sect.Title }}</a></li>
+    {{ range $sect.Sections }}
+      <li{{ if .InSection $ }} class="active" {{ end }}><a href = "{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ template "section-nav"  (dict "sections" .Sections "current" $ ) }}
+      </ol>
+    {{ end }}
+{{ end }}
+
+{{ define "section-nav" }}
+  {{ range .sections }}
+    <li{{ if .InSection $.current }} class="active" {{ end }}><a href = "{{ .RelPermalink }}">{{ .Title }}</a>
+    {{ template "section-nav"  (dict "sections" .Sections "current" $.current ) }}
+    </li>
+  {{ end }}
+{{ end }}
