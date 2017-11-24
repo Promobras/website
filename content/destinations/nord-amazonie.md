@@ -1,8 +1,7 @@
----
-title: "Nord Amazonie"
-date: 2017-11-19T17:41:04+08:00
-draft: false
----
++++
+title = "Nord Amazonie"
+date = 2017-11-19T17:41:04+08:00
++++
 La région "Nord" du Brésil comprend les États suivants: Acre, Amapá, Amazonas, Pará, Rondônia, Roraima et Tocantins, soit la quasi-totalité de la région amazonienne brésilienne.
 
 Lorsque l’on mentionne "Amazonie", les mots gigantisme et démesure viennent immédiatement à l’esprit. La région amazonienne, dont la plus grande partie se trouve sur le territoire brésilien (*elle représente une superficie d’environ 5'500'000 km2*), est principalement constituée de forêt pluviale dense, laquelle abrite une faune et une flore extrêmement diversifiées. Le fleuve Amazone traverse cette immensité sur une distance de près de 7'000 kilomètres ! La majeure partie de l’Amazonie n’est pas accessible au visiteur ; les caboclos (métis d’Indiens et d’Européens) ont construit leur habitation sur les rives des cours d’eau, alors que les Indiens ont reflué vers l’intérieur des terres, chassés par la poussée démographique et par une exploitation désordonnée.
