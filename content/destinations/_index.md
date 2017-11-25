@@ -1,6 +1,7 @@
 +++
 title = "Destinations"
 date = 2017-11-19T15:38:24+08:00
+weight = 2
 +++
 # Nos programmes par région
 Le Brésil est divisé en [cinq grandes régions]({{< relref "le-bresil-en-bref.md" >}}). En cliquant sur l’une ou l’autre de celles-ci, mentionnées sur le menu de gauche et ci-dessous, vous découvrirez les programmes que nous avons préparés à votre intention et accéderez à des informations qui vous aideront à élaborer votre projet de voyage. Faites-nous part de vos intentions et c’est avec plaisir que nous les transformerons en réalité !
