@@ -1,5 +1,7 @@
 <header class="site-header" role="banner">
 
-    <strong><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></strong>
-    
+    <strong><a href="{{ .Site.BaseURL }}">{{ .Title }}</a></strong>
+    <nav>
+      {{ partial "nav/sections-main.html" . }}
+    </nav>
 </header>

@@ -1,10 +1,6 @@
 {{ define "main" }}
 <nav>
-	{{ block "navigation" . }}{{ partial "navigation.html" . }}{{ end }}
-</nav>
-<nav>
-	Section Nav
-	{{ block "section-nav" . }}{{ partial "section-nav.html" . }}{{ end }}
+	{{ block "navigation" . }}{{ partial "nav/section.html" . }}{{ end }}
 </nav>
 
 		{{ .Content }}

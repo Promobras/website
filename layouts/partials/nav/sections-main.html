@@ -1,0 +1,5 @@
+<ul>
+  {{ range .Site.Home.Sections.Reverse}}
+    <li><a href="{{ .RelPermalink}}">{{ if .LinkTitle }}{{ .LinkTitle }}{{ else }}{{ .Title }}{{ end }}</a></li>
+  {{ end }}
+</ul>
