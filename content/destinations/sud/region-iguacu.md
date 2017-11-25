@@ -1,6 +1,6 @@
 +++
 title = "Région d'Iguaçu"
-linktile = "IGUAÇU et région"
+linktitle = "IGUAÇU et région"
 date = 2017-11-26T05:05:47+08:00
 +++
 ## Une des 7 nouvelles merveilles naturelles du monde
