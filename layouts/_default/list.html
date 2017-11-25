@@ -2,15 +2,19 @@
 <nav>
 	{{ block "navigation" . }}{{ partial "nav/section.html" . }}{{ end }}
 </nav>
-
+		{{ with .Title }}<h1>{{ . }}</h1>{{ end }}
 		{{ .Content }}
-    {{ range .Paginator.Pages }}
+    {{ range .Sections }}
       <article>
         <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
         {{ .Summary }} {{ if .Truncated }}...{{ end }}
       </article>
     {{ end }}
-
-    {{ template "_internal/pagination.html" . }}
+		{{ range .Pages }}
+      <article>
+        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        {{ .Summary }} {{ if .Truncated }}...{{ end }}
+      </article>
+    {{ end }}
 
 {{ end }}
