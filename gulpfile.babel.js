@@ -61,7 +61,7 @@ gulp.task('sass', () => {
     .pipe($.print())
     .pipe($.sassLint())
     .pipe($.sassLint.format())
-    .pipe($.sass({ precision: 5, importer: tildeImporter }))
+    .pipe($.sass({ includePaths: require('node-normalize-scss').includePaths, precision: 5, importer: tildeImporter }))
     .pipe($.autoprefixer(['ie >= 10', 'last 2 versions']))
     .pipe($.if(isProduction, $.cssnano({ discardUnused: false, minifyFontValues: false })))
     .pipe($.size({ gzip: true, showFiles: true }))
