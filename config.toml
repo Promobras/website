@@ -1,6 +1,7 @@
 baseURL = "/"
 languageCode = "fr"
 title = "Promobras"
+copyright = "Promobras"
 disableKinds = ["RSS"]
 enableRobotsTXT = true
 disableAliases = true
