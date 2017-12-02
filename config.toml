@@ -1,7 +1,6 @@
 baseURL = "/"
 languageCode = "fr"
-title = "Promobras - Agence de Voyage - Le Brésil Autrement - Agence de voyage à Lausanne spécialisée pour le Brésil - Lausanne"
-
+title = "Promobras"
 disableKinds = ["RSS"]
 enableRobotsTXT = true
 disableAliases = true
@@ -9,6 +8,9 @@ disableAliases = true
 RemovePathAccents = true
 permalinks = "/:sections/:slug/"
 sectionPagesMenu = "main"
+
+[params]
+tagline = "Agence de Voyage - Le Brésil Autrement - Agence de voyage à Lausanne spécialisée pour le Brésil - Lausanne"
 
 # add redirects/headers
 [outputs]
