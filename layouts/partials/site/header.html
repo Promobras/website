@@ -1,7 +1,11 @@
-<header class="site-header" role="banner">
-
-    <strong><a href="{{ .Site.BaseURL }}">{{ .Title }}</a></strong>
-    <nav>
-      {{ partial "nav/sections-main.html" . }}
-    </nav>
-</header>
+  <div class="hero-image">
+    <div class="hero-text">
+    <header class="site-header" role="banner">
+      <h1>{{ .Title }}</h1>
+      <p><strong>Le Brésil de vos rêves !</strong></p>
+    </header>
+    </div>
+  </div>
+  <nav>
+    {{ partial "nav/sections-main.html" . }}
+  </nav>
