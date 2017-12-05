@@ -1,11 +1,12 @@
-  <div class="hero-image">
-    <div class="hero-text">
-    <header class="site-header" role="banner">
-      <h1>{{ .Title }}</h1>
-      <p><strong>Le Brésil de vos rêves !</strong></p>
-    </header>
+<header class="fixed-head">
+  <div class="shadower"></div>
+  <div class="false-header">
+    <div class="menu-container">
+      <div class="menu">
+        <nav>
+          {{ partial "nav/sections-main.html" . }}
+        </nav>
+      </div>
     </div>
   </div>
-  <nav>
-    {{ partial "nav/sections-main.html" . }}
-  </nav>
+</header>

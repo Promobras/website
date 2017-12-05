@@ -1,20 +1,25 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,900');
+
 @mixin link ($link, $hover) {
-  a {
-    text-decoration: none;
-    color: $link;
-    &:visited {
-      color:$link;
+    a {
+        text-decoration: none;
+        color: $link;
+
+        &:visited {
+            color: $link;
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+            color: $hover;
+        }
     }
-    &:hover, &:active, &:focus {
-      color: $hover;
-    }
-  }
 }
 
-@mixin font-size($sizeValue: 1.6) {
-  font-size: ($sizeValue * 10) + px;
-  font-size: $sizeValue + rem;
+@mixin font-size($size-value: 1.6) {
+    // sass-lint:disable-block no-duplicate-properties
+    font-size: ($size-value * 10) + px;
+    font-size: $size-value + rem;
 }
 
 $background-color: #fff;
@@ -25,24 +30,29 @@ $link-hover-color: #000;
 $titles: #302f30;
 $byline: #666;
 
-$regular:400;
-$bold:700;
+$regular: 400;
+$bold: 700;
 
-body, html {
-  font-family: $font-stack;
-  color: $primary-color;
-}
+body,
 html {
-  font-size: 62.5%;
+    font-family: $font-stack;
+    color: $primary-color;
+}
+
+html {
+    font-size: 62.5%;
 }
 
 body {
-  @include font-size(1.5);
-  background-color: $background-color;
-  @include link($link-color, $link-hover-color);
+    @include font-size(1.5);
+    @include link($link-color, $link-hover-color);
+    background-color: $background-color;
 }
-.clearfix::after {
-  content:"";
-  clear:both;
-  display:table;
+
+.clearfix {
+    &::after {
+        content: '';
+        clear: both;
+        display: table;
+    }
 }
