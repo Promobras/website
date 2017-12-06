@@ -5,6 +5,11 @@ module.exports = {
     sourceType: 'module'
   },
   extends: 'standard',
+  env: {
+    browser: true,
+    es6: true,
+    jquery: true
+  },
   // add your custom rules here
   'rules': {
     // allow paren-less arrow functions
