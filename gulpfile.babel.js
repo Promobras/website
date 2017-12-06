@@ -52,7 +52,15 @@ gulp.task('hugo-preview', (cb) => {
   })
 })
 
-// --
+gulp.task('sasslint', () => {
+  return gulp.src([
+    'src/sass/**/*.scss'
+  ])
+    .pipe($.plumber({ errorHandler: onError }))
+    .pipe($.print())
+    .pipe($.sassLint())
+    .pipe($.sassLint.format())
+})
 
 gulp.task('sass', () => {
   return gulp.src([

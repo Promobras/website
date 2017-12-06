@@ -6,7 +6,8 @@
     "build:preview": "gulp build-preview",
     "server": "gulp server",
     "cms:delete": "gulp cms-delete",
-    "jslint": "eslint --ext .js src/js"
+    "jslint": "eslint --ext .js src/js",
+    "sasslint": "gulp sasslint"
   },
   "dependencies": {
     "babel-core": "^6.25.0",
