@@ -1,11 +1,10 @@
 var $falseHeader = $('.false-header')
 var $shadower = $('.shadower')
 var $fixedHead = $('.fixed-head')
-var $menuLi   = $('.menu ul li')
+var $menuLi = $('.menu ul li')
 var stickyHeight = $falseHeader.offset().top
 
-$(window).scroll(function() {
-  
+$(window).scroll(function () {
   var wScroll = $(this).scrollTop()
   var headScroll = (-wScroll / 2)
   var faderScroll = (wScroll / 400)
@@ -24,11 +23,9 @@ $(window).scroll(function() {
   } else {
     $falseHeader.removeClass('clipped')
   }
- 
 })
 
-
-$menuLi.click(function() {
+$menuLi.click(function () {
   $menuLi.removeClass('current')
   $(this).addClass('current')
 })
