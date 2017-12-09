@@ -1,4 +1,4 @@
-$redish: #d72626;
+$menu-color: #fff;
 $white: #e1e1e1;
 $black: #333;
 $cubic: cubic-bezier(.55, 0, .1, 1);
@@ -19,13 +19,13 @@ $cubic: cubic-bezier(.55, 0, .1, 1);
     position: absolute;
     width: 100%;
     height: 100%;
-    background: $redish;
+    background: $menu-color;
     opacity: 0;
     z-index: 15;
 }
 
 .false-header {
-    background: $redish;
+    background: $menu-color;
     display: block;
     position: relative;
     top: 500px;
@@ -58,7 +58,7 @@ $cubic: cubic-bezier(.55, 0, .1, 1);
 
 .menu {
     line-height: 100px;
-    transition: height .2s $cubic;
+    transition: all .2s $cubic;
 
     & ul {
         list-style: none;
@@ -80,7 +80,7 @@ $cubic: cubic-bezier(.55, 0, .1, 1);
 
             &:hover { // sass-lint:disable-line nesting-depth
                 background: #fff;
-                color: $redish;
+                color: $menu-color;
             }
         }
     }
