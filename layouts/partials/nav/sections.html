@@ -1,0 +1,22 @@
+{{ $home := .Site.Home }}
+<ul>
+  <li{{ if .IsHome }} class="current"{{ end }}><a href="{{ .Site.BaseURL | absURL }}">Accueil</a></li>
+  {{ template "sections-tree-nav"  (dict "root" $home "current" $ ) -}}
+</ul>
+
+{{ define "sections-tree-nav" }}
+  {{ range .root.Sections -}}
+    {{ $sect := (.Site.GetPage "section" .Section) }}
+    {{- if ne .Section "data" -}}
+      <li class="{{ if eq $.current.Section $sect.Section }}current {{ end }}submenu">
+        <a href="{{ .RelPermalink}}">{{ if .LinkTitle }}{{ .LinkTitle }}{{ else }}{{ .Title }}{{ end }}</a>
+        <ul>
+          {{ range .Pages -}}
+            <li><a href="{{ .RelPermalink}}">{{ if .LinkTitle }}{{ .LinkTitle }}{{ else }}{{ .Title }}{{ end }}</a></li>
+          {{ end -}}
+          {{ template "sections-tree-nav" (dict "root" . "current" $.current ) -}}
+        </ul>
+      </li>
+    {{ end -}}
+  {{ end -}}
+{{ end -}}

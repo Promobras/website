@@ -1,12 +1,27 @@
-<header class="fixed-head">
-  <div class="shadower"></div>
-  <div class="false-header">
-    <div class="menu-container">
-      <div class="menu">
-        <nav>
-          {{ partial "nav/sections-main.html" . }}
-        </nav>
-      </div>
-    </div>
-  </div>
+<header id="header" class="alt">
+  <h1 id="logo"><a href="{{ .Site.BaseURL | absURL }}">{{ .Site.Title}} <span>{{ .Site.Params.Slogan }}</span></a></h1>
+  <nav id="nav">
+    {{ partial "nav/sections" . }}
+  </nav>
 </header>
+<div id="belowMenu"></div>
+<!-- Banner -->
+<section id="banner" class="{{ if .IsHome }}home{{ else }}.Section{{ end }}">
+
+  <!--
+    ".inner" is set up as an inline-block so it automatically expands
+    in both directions to fit whatever's inside it. This means it won't
+    automatically wrap lines, so be sure to use line breaks where
+    appropriate (<br />).
+  -->
+  <div class="inner">
+
+    <div class="logo"><img src="{{ "images/promobras.svg" | absURL }}"/></div>
+    <header>
+      <h2>Promobras</h2>
+    </header>
+    <p>Le Brésil de vos rêves!</p>
+    <div class="contact"><i class="fa fa-phone"></i><span>021 312 62 37</span></div>
+  </div>
+
+</section>

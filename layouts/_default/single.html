@@ -1,11 +1,25 @@
 {{ define "main" }}
-<nav>
-  {{ block "navigation" . }}{{ partial "nav/section.html" . }}{{ end }}
-</nav>
-
-    <article>
-        <h1>{{ .Title }}</h1>
-        {{ .Content }}
-    </article>
-
+<article id="main">
+  <section class="wrapper style4 container">
+    <div class="row 150%">
+      <div class="4u 12u(narrower)">
+        <div class="sidebar">
+          <nav>
+            {{ block "navigation" . }}{{ partial "nav/section.html" . }}{{ end }}
+          </nav>
+        </div>
+      </div>
+      <div class="8u 12u(narrower) important(narrower)">
+        <div class="content">
+          <section>
+            <header>
+              <h3>{{ .Title }}</h3>
+            </header>
+            {{ .Content }}
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+</article>
 {{ end }}
