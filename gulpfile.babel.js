@@ -85,7 +85,6 @@ gulp.task('js-watch', ['js'], (cb) => {
 
 gulp.task('js', () => {
   return gulp.src([
-    'node_modules/jquery/dist/jquery.js',
     'src/js/**/*.js'
   ])
     .pipe($.plumber({ errorHandler: onError }))
