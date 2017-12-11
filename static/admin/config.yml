@@ -7,9 +7,9 @@ media_folder: "src/images"
 public_folder: "/images"
 collections:
   
-  - name: "page"
-    label: "Page"
-    folder: "content"
+  - name: "destinations"
+    label: "Destinations"
+    folder: "content/destinations"
     create: true
     slug: "{{slug}}"
     fields:
@@ -17,5 +17,17 @@ collections:
       - { label: "Link Title", name: "linktitle", widget: "string" }
       - { label: "Tag Line", name: "tagline", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Weight", name: "weight", widget: "integer" }
+      - { label: "Weight", name: "weight", widget: "number" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "circuits"
+    label: "Circuits"
+    folder: "content/circuits"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Link Title", name: "linktitle", widget: "string" }
+      - { label: "Tag Line", name: "tagline", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Weight", name: "weight", widget: "number" }
       - { label: "Body", name: "body", widget: "markdown" }
