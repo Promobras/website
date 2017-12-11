@@ -1,5 +1,5 @@
 {
-  "name": "atlas",
+  "name": "Promobras",
   "private": true,
   "scripts": {
     "build": "gulp build",
