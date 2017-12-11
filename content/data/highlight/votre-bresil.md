@@ -13,10 +13,11 @@ Quel que soit votre profil, nous sommes en mesure de répondre à votre attente.
 Soyez bienvenu(e) dans le monde fascinant du Brésil !
 
 Nous vous proposons:
-
-- programmes répondant à vos intérêts particuliers
-- séjours participatifs (tourisme solidaire)
-- stages linguistiques
-- etc...
+<ul class="fa-ul">
+<li><i class="fa-li fa fa-arrow-circle-o-right" aria-hidden="true"></i>programmes répondant à vos intérêts particuliers</li>
+<li><i class="fa-li fa fa-arrow-circle-o-right" aria-hidden="true"></i>séjours participatifs (tourisme solidaire)</li>
+<li><i class="fa-li fa fa-arrow-circle-o-right" aria-hidden="true"></i>stages linguistiques</li>
+<li><i class="fa-li fa fa-arrow-circle-o-right" aria-hidden="true"></i>etc ...</li>
+</ul>
 
 [en savoir davantage...](/votre-bresil)

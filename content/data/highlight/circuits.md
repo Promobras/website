@@ -10,7 +10,8 @@ Du nord au sud et d’est en ouest, ce pays aux dimensions d’un continent pré
 En participant à nos voyages organisés en petits groupes, vous aurez le privilège de connaître ce que le Brésil a de plus merveilleux, de plus inattendu, de plus diversifié dans ses paysages et son riche patrimoine, tout en étant en contact étroit avec son peuple, ses coutumes, son art de vivre.
 
 Nous vous proposons:
-
-* des circuits variés, adaptés à vos désirs
+<ul class="fa-ul">
+<li><i class="fa-li fa fa-arrow-circle-o-right" aria-hidden="true"></i>des circuits variés, adaptés à vos désirs</li>
+</ul>
 
 [en savoir davantage...](/circuits)

@@ -1,5 +1,7 @@
 +++
-title = "Destinations"
+title = "Nos programmes par région"
+linktitle = "Destinations"
+tagline = "Le Brésil, un vrai enchantement !"
 date = 2017-11-19T15:38:24+08:00
 weight = 2
 +++

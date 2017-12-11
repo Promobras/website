@@ -1,6 +1,7 @@
 +++
 title = "Pour une vision globale du pays"
 linktitle = "Circuits"
+tagline = "Découvrez toute l'étendue du Brésil !"
 date = 2017-11-26T05:13:43+08:00
 weight = 3
 +++
