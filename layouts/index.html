@@ -5,11 +5,13 @@
       {{ range where .Data.Pages "Type" "highlight" }}
         <div class="4u 12u(narrower)">
           <section>
-            <span class="icon featured fa-{{ .Params.Icon }}"></span>
+            <span class="icon featured fa-{{ .Params.icon }}"></span>
             <header>
               <h3>{{ .Title }}</h3>
             </header>
+            <div class="justify">
             {{ .Content }}
+            </div>
           </section>
         </div>
       {{ end }}

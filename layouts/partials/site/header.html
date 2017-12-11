@@ -1,3 +1,10 @@
+<nav class="top">
+  <ul>
+    <li><a href="{{ with .Site.GetPage "page" "contact/historique.md" }}{{ .Permalink }}{{ end }}">Qui sommes nous</a></li>
+    <li><a href="{{ with .Site.GetPage "page" "a-propos/avant-de-partir.md" }}{{ .Permalink }}{{ end }}">Infos utiles</a></li>
+    <li><a href="{{ with .Site.GetPage "page" "data/sitemap.md" }}{{ .Permalink }}{{ end }}">Plan du site</a></li>
+  </ul>
+</nav>
 <header id="header" class="alt">
   <h1 id="logo"><a href="{{ .Site.BaseURL | absURL }}">{{ .Site.Title}} <span>{{ .Site.Params.Slogan }}</span></a></h1>
   <nav id="nav">
@@ -15,13 +22,20 @@
     appropriate (<br />).
   -->
   <div class="inner">
-
-    <div class="logo"><img src="{{ "images/promobras.svg" | absURL }}"/></div>
-    <header>
-      <h2>Promobras</h2>
-    </header>
-    <p>Le Brésil de vos rêves!</p>
-    <div class="contact"><i class="fa fa-phone"></i><span>021 312 62 37</span></div>
+    {{ if .IsHome }}
+      <div class="logo"><img src="{{ "images/promobras.svg" | absURL }}"/></div>
+      <header>
+        <h2>{{ if .Params.tagline }}{{ .Params.tagline }}{{else if .Params.slogan }}{{ .Params.slogan }}{{ else }}{{ .Title }}{{ end }}</h2>
+      </header>
+      <p>
+      <div class="contact"><i class="fa fa-phone"></i><span>021 312 62 37</span></div>
+      </p>
+    {{ else -}}
+      {{ $sect := (.Site.GetPage "section" .Section) }}
+      <header>
+        <h2>{{ if $sect.Params.tagline }}{{ $sect.Params.tagline }}{{else if $sect.Params.slogan }}{{ $sect.Params.slogan }}{{ else }}{{ $sect.Title }}{{ end }}</h2>
+      </header>
+    {{ end -}}
   </div>
 
 </section>

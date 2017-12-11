@@ -1649,6 +1649,9 @@
 	section.special, article.special {
 		text-align: center;
 	}
+	section.special div.justify {
+		text-align: justify;
+	}
 
 	header.major {
 		padding-bottom: 2em;
@@ -2123,7 +2126,7 @@
 				border-color: #fff;
 				color: #83d3c9 !important;
 			}
-
+absolute
 				.wrapper.style2 .button.special:hover {
 					border-color: inherit !important;
 					color: #fff !important;
@@ -2181,6 +2184,36 @@
 			top: 0;
 		}
 	}
+
+	nav.top {
+		position: absolute;
+		top:0;
+		letter-spacing: 0.075em;
+		right: 1.5em;
+		text-transform: uppercase;
+		font-size: .6em;
+		color: #fff;
+		z-index: 10001;
+	}
+	nav.top ul {
+		padding: 0;
+		margin: 0;
+	}
+	nav.top ul li {
+		display: inline-block;
+		margin-left: 1.5em;
+	}
+	nav.top ul li a, nav.top ul li a:visited, nav.top ul li a:link {
+		text-decoration: none;
+		color: #fff;
+		border-bottom: none;
+	}
+	nav.top ul li a:hover, nav.top ul li a:focus {
+		text-decoration: none;
+		color: #fff;
+		border-bottom: dotted 1px #fff;
+	}
+	
 
 	#header {
 		background: #fff;
@@ -2413,7 +2446,22 @@
 	}
 
 	#banner.home {
-		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/parrots.jpg");
+		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner/home.jpg");
+	}
+	#banner.destinations {
+		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner/destinations.jpg");
+	}
+	#banner.circuits {
+		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner/circuits.jpg");
+	}
+	#banner.votre-bresil {
+		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner/votre-bresil.jpg");
+	}
+	#banner.a-propos {
+		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner/a-propos.jpg");
+	}
+	#banner.contact {
+		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner/contact.jpg");
 	}
 
 		#banner .inner {
