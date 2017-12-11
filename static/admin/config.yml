@@ -1,10 +1,10 @@
 backend:
   name: github
-  repo: repo
-  branch: master
+  repo: Promobras/website-hugo
+  branch: html5up-twenty
   
-media_folder: "static/uploads"
-public_folder: "/uploads"
+media_folder: "src/images"
+public_folder: "/images"
 collections:
   
   - name: "page"
@@ -14,5 +14,8 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Link Title", name: "linktitle", widget: "string" }
+      - { label: "Tag Line", name: "tagline", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Weight", name: "weight", widget: "integer" }
       - { label: "Body", name: "body", widget: "markdown" }
