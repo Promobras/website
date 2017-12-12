@@ -1,5 +1,5 @@
 backend:
-  name: github
+  name: git-gateway
   repo: Promobras/website-hugo
   branch: html5up-twenty
   
