@@ -1,22 +1,27 @@
 {{/* Check https://github.com/bep/hugotest */}}
 {{ $root := (.Site.GetPage "section" .Section) }}
-<div class="css-treeview box">
+<div>
   <ul>
-    <li><a href="{{ $root.RelPermalink}}">{{ if $root.LinkTitle }}{{ $root.LinkTitle }}{{ else }}{{ $root.Title }}{{ end }}</a></li>
-    {{ template "section-tree-nav" $root }}
-    {{ range $root.Pages }}
+  {{ with $root -}}
+    <li><a href="{{ .RelPermalink}}">{{ if .LinkTitle }}{{ .LinkTitle }}{{ else }}{{ .Title }}{{ end }}</a></li>
+    {{ template "section-tree-nav"  (dict "root" . "current" $ ) -}}
+    {{ range .Pages }}
       <li><a href="{{ .RelPermalink}}">{{ if .LinkTitle }}{{ .LinkTitle }}{{ else }}{{ .Title }}{{ end }}</a></li>
     {{ end }}
+  {{ end -}}
   </ul>
 </div>
 {{ define "section-tree-nav" }}
-  {{ range .Sections}}
+  {{ range .root.Sections}}
   	<li><a href="{{ .RelPermalink}}">{{ if .LinkTitle }}{{ .LinkTitle }}{{ else }}{{ .Title }}{{ end }}</a></li>
+    {{ $pages := where .Pages ".Params.hidden" "!=" "true" }}
+    {{ if gt (len $pages) 0}}
     <ul>
-      {{ range .Pages }}
+      {{ range $pages -}}
       	<li><a href="{{ .RelPermalink}}">{{ if .LinkTitle }}{{ .LinkTitle }}{{ else }}{{ .Title }}{{ end }}</a></li>
       {{ end }}
     </ul>
-    {{ template "section-tree-nav" . }}
+    {{ end }}
+    {{ template "section-tree-nav" (dict "root" . "current" $.current ) -}}
   {{ end }}
 {{ end }}
