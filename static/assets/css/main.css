@@ -2455,6 +2455,7 @@ absolute
 	}
 	#banner.circuits {
 		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner/circuits.jpg");
+		background-position: bottom left, bottom right, top left, center center;
 	}
 	#banner.votre-bresil {
 		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner/votre-bresil.jpg");
