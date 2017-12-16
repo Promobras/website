@@ -2873,6 +2873,9 @@ absolute
 			nav.top {
 				display: none;
 			}
+			.sidebar {
+				display: none;
+			}
 
 		/* Main */
 
