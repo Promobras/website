@@ -13,7 +13,7 @@
     {{ if .IsHome }}<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>{{ end }}
 
   </head>
-  <body>
+  <body class="{{ if .IsHome }}index{{ else }}left-sidebar{{ end }}">
     <div id="page-wrapper">
       {{ block "header" . }}{{ partial "site/header.html" . }}{{ end }}
 
