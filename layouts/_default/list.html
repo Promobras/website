@@ -1,20 +1,39 @@
 {{ define "main" }}
-<nav>
-	{{ block "navigation" . }}{{ partial "nav/navigation.html" . }}{{ end }}
-</nav>
-		{{ with .Title }}<h1>{{ . }}</h1>{{ end }}
-		{{ .Content }}
-    {{ range .Sections }}
-      <article>
-        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-        {{ .Summary }} {{ if .Truncated }}...{{ end }}
-      </article>
-    {{ end }}
-		{{ range .Pages }}
-      <article>
-        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-        {{ .Summary }} {{ if .Truncated }}...{{ end }}
-      </article>
-    {{ end }}
-
+<article id="main">
+  <section class="wrapper style1 container">
+    <div class="row 150%">
+      <div class="4u 12u(narrower)">
+        <div class="sidebar">
+          <nav>
+            {{ block "navigation" . }}{{ partial "nav/navigation.html" . }}{{ end }}
+          </nav>
+        </div>
+      </div>
+      <div class="8u 12u(narrower) important(narrower)">
+        <div class="content">
+          <section>
+            <header>
+              <h3>{{ .Title }}</h3>
+            </header>
+            {{ .Content }}
+          </section>
+				</div>
+				<div class="content">
+					{{ range .Sections }}
+			      <article>
+			        <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+			        {{ .Summary }} {{ if .Truncated }}...{{ end }}
+			      </article>
+			    {{ end }}
+					{{ range .Pages }}
+			      <article>
+			        <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+			        {{ .Summary }} {{ if .Truncated }}...{{ end }}
+			      </article>
+			    {{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+</article>
 {{ end }}
