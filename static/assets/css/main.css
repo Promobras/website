@@ -2868,6 +2868,9 @@ absolute
 			.wrapper.style4 {
 				padding-bottom: 3em;
 			}
+			nav.top {
+				display: none;
+			}
 
 		/* Main */
 
