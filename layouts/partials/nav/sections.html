@@ -8,14 +8,19 @@
   {{ range .root.Sections -}}
     {{ $sect := (.Site.GetPage "section" .Section) }}
     {{- if ne .Section "data" -}}
-      <li class="{{ if eq $.current.Section $sect.Section }}current {{ end }}submenu">
+      {{ $pages := where .Pages ".Params.hidden" "!=" "true" }}
+      {{ $sections := len .Sections }}
+      {{ $submenus := add $sections (len $pages) }}
+      <li class="{{ if eq $.current.Section $sect.Section }}current {{ end }}{{ if gt $submenus 0 }}submenu{{ end }}">
         <a href="{{ .RelPermalink}}">{{ if .LinkTitle }}{{ .LinkTitle }}{{ else }}{{ .Title }}{{ end }}</a>
+        {{ if gt $submenus 0 }}
         <ul>
-          {{ range (where .Pages ".Params.hidden" "!=" "true") -}}
+          {{ range $pages -}}
             <li><a href="{{ .RelPermalink}}">{{ if .LinkTitle }}{{ .LinkTitle }}{{ else }}{{ .Title }}{{ end }}</a></li>
           {{ end -}}
           {{ template "sections-tree-nav" (dict "root" . "current" $.current ) -}}
         </ul>
+        {{ end }}
       </li>
     {{ end -}}
   {{ end -}}

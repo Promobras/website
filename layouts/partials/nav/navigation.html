@@ -1,27 +1,29 @@
 {{/* Check https://github.com/bep/hugotest */}}
 {{ $root := (.Site.GetPage "section" .Section) }}
-<div>
-  <ul>
+<ul>
   {{ with $root -}}
+  <li><a href="{{ $root.RelPermalink}}">{{ if .LinkTitle }}{{ .LinkTitle }}{{ else }}{{ .Title }}{{ end }}</a></li>
+  {{ template "section-tree-nav"  (dict "root" $root "current" $ ) -}}
+  {{ range .Pages }}
     <li><a href="{{ .RelPermalink}}">{{ if .LinkTitle }}{{ .LinkTitle }}{{ else }}{{ .Title }}{{ end }}</a></li>
-    {{ template "section-tree-nav"  (dict "root" . "current" $ ) -}}
-    {{ range .Pages }}
-      <li><a href="{{ .RelPermalink}}">{{ if .LinkTitle }}{{ .LinkTitle }}{{ else }}{{ .Title }}{{ end }}</a></li>
-    {{ end }}
+  {{ end }}
   {{ end -}}
-  </ul>
-</div>
+</ul>
+
 {{ define "section-tree-nav" }}
   {{ range .root.Sections}}
-  	<li><a href="{{ .RelPermalink}}">{{ if .LinkTitle }}{{ .LinkTitle }}{{ else }}{{ .Title }}{{ end }}</a></li>
-    {{ $pages := where .Pages ".Params.hidden" "!=" "true" }}
-    {{ if gt (len $pages) 0}}
-    <ul>
-      {{ range $pages -}}
-      	<li><a href="{{ .RelPermalink}}">{{ if .LinkTitle }}{{ .LinkTitle }}{{ else }}{{ .Title }}{{ end }}</a></li>
+  	{{ $pages := where .Pages ".Params.hidden" "!=" "true" }}
+    {{ $sections := len .Sections }}
+    {{ $submenus := add $sections (len $pages) }}
+    <li><a href="{{ .RelPermalink}}">{{ if .LinkTitle }}{{ .LinkTitle }}{{ else }}{{ .Title }}{{ end }}</a>
+      {{ if gt $submenus 0 }}
+      <ul>
+        {{ range $pages -}}
+        	<li><a href="{{ .RelPermalink}}">{{ if .LinkTitle }}{{ .LinkTitle }}{{ else }}{{ .Title }}{{ end }}</a></li>
+        {{ end -}}
+        {{ template "section-tree-nav" (dict "root" . "current" $.current ) -}}
+      </ul>
       {{ end }}
-    </ul>
-    {{ end }}
-    {{ template "section-tree-nav" (dict "root" . "current" $.current ) -}}
-  {{ end }}
-{{ end }}
+    </li>
+  {{ end -}}
+{{ end -}}
