@@ -12,7 +12,7 @@
 
 {{ define "section-tree-nav" }}
   {{ range .root.Sections}}
-  	{{ $pages := where .Pages ".Params.hidden" "!=" "true" }}
+  	{{ $pages := where .Pages ".Params.hidden" "!=" true }}
     {{ $sections := len .Sections }}
     {{ $submenus := add $sections (len $pages) }}
     <li><a href="{{ .RelPermalink}}">{{ if .LinkTitle }}{{ .LinkTitle }}{{ else }}{{ .Title }}{{ end }}</a>

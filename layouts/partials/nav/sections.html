@@ -8,7 +8,7 @@
   {{ range .root.Sections -}}
     {{ $sect := (.Site.GetPage "section" .Section) }}
     {{- if ne .Section "data" -}}
-      {{ $pages := where .Pages ".Params.hidden" "!=" "true" }}
+      {{ $pages := where .Pages ".Params.hidden" "!=" true }}
       {{ $sections := len .Sections }}
       {{ $submenus := add $sections (len $pages) }}
       <li class="{{ if eq $.current.Section $sect.Section }}current {{ end }}{{ if gt $submenus 0 }}submenu{{ end }}">
