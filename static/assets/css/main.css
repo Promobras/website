@@ -2451,29 +2451,29 @@ absolute
 		min-height: 70vh;
 	}
 
-	#banner.home {
 		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner/home.jpg");
 		background-position: left bottom, right bottom, left top, center top;
+	#banner.sec-home {
 	}
-	#banner.destinations {
 		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner/destinations.jpg");
 		background-position: left bottom, right bottom, left top, center center;
+	#banner.sec-destinations {
 	}
-	#banner.circuits {
 		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner/circuits.jpg");
 		background-position: left bottom, right bottom, left top, center center;
+	#banner.sec-circuits {
 	}
-	#banner.votre-bresil {
 		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner/votre-bresil.jpg");
 		background-position: left bottom, right bottom, left top, center center;
+	#banner.sec-votre-bresil {
 	}
-	#banner.a-propos {
 		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner/a-propos.jpg");
 		background-position: left bottom, right bottom, left top, center bottom;
+	#banner.sec-a-propos {
 	}
-	#banner.contact {
 		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner/contact.jpg");
 		background-position: left bottom, right bottom, left top, center bottom;
+	#banner.sec-contact {
 	}
 
 		#banner .inner {
