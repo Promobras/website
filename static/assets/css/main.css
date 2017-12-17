@@ -2440,10 +2440,10 @@ absolute
 		background: none;
 	}
 	#banner {
-		background-attachment: scroll, scroll, scroll, scroll;
+		background-attachment: scroll, scroll, scroll, scroll, scroll;
 		background-color: #645862;
-		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-		background-size: 25em, 25em, auto, cover;
+		background-repeat: no-repeat, no-repeat, repeat, no-repeat, no-repeat;
+		background-size: 25em, 25em, auto, auto 150px, cover;
 		color: #fff;
 		cursor: default;
 		padding: 6em 0;
@@ -2451,29 +2451,29 @@ absolute
 		min-height: 70vh;
 	}
 
-		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner/home.jpg");
-		background-position: left bottom, right bottom, left top, center top;
 	#banner.sec-home {
+		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0) ), url("../../images/banner/home.jpg");
+		background-position: left bottom, right bottom, left top, center top, center top;
 	}
-		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner/destinations.jpg");
-		background-position: left bottom, right bottom, left top, center center;
 	#banner.sec-destinations {
+		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0) ), url("../../images/banner/destinations.jpg");
+		background-position: left bottom, right bottom, left top, center top, center center;
 	}
-		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner/circuits.jpg");
-		background-position: left bottom, right bottom, left top, center center;
 	#banner.sec-circuits {
+		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0) ), url("../../images/banner/circuits.jpg");
+		background-position: left bottom, right bottom, left top, center top, center center;
 	}
-		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner/votre-bresil.jpg");
-		background-position: left bottom, right bottom, left top, center center;
 	#banner.sec-votre-bresil {
+		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0) ), url("../../images/banner/votre-bresil.jpg");
+		background-position: left bottom, right bottom, left top, center top, center center;
 	}
-		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner/a-propos.jpg");
-		background-position: left bottom, right bottom, left top, center bottom;
 	#banner.sec-a-propos {
+		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0) ), url("../../images/banner/a-propos.jpg");
+		background-position: left bottom, right bottom, left top, center top, center bottom;
 	}
-		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner/contact.jpg");
-		background-position: left bottom, right bottom, left top, center bottom;
 	#banner.sec-contact {
+		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0) ), url("../../images/banner/contact.jpg");
+		background-position: left bottom, right bottom, left top, center top, center bottom;
 	}
 
 		#banner .inner {
