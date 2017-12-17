@@ -29,6 +29,12 @@
 	ol, ul {
 		list-style: none;
 	}
+	.content ul > li:before {
+		content: '\f18e';
+  	font-family: 'FontAwesome';
+  	float: left;
+  	margin-left: -1.5em;
+	}
 
 	blockquote, q {
 		quotes: none;

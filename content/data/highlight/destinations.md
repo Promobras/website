@@ -11,11 +11,11 @@ Consultez notre offre et si, toutefois, vous n’y trouviez pas le voyage désir
 Le voyage "à la carte" est un de nos points forts !
 
 Nous vous proposons:
-<ul class="fa-ul">
-<li><i class="fa-li fa fa-arrow-circle-o-right" aria-hidden="true"></i>service de transferts, d'excursions et de visites avec ou sans accompagnement de guide ou interprète francophone</li>
-<li><i class="fa-li fa fa-arrow-circle-o-right" aria-hidden="true"></i>réservation d'hôtels et de pousadas</li>
-<li><i class="fa-li fa fa-arrow-circle-o-right" aria-hidden="true"></i>location d'appartements et de maisons</li>
-<li><i class="fa-li fa fa-arrow-circle-o-right" aria-hidden="true"></i>billets d'avion</li>
-<li><i class="fa-li fa fa-arrow-circle-o-right" aria-hidden="true"></i>location de véhicules</li>
-</ul>
+
+- service de transferts, d'excursions et de visites avec ou sans accompagnement de guide ou interprète francophone
+- réservation d'hôtels et de pousadas
+- location d'appartements et de maisons
+- billets d'avion
+- location de véhicules
+
 [en savoir davantage...](/destinations)
