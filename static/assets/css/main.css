@@ -2434,37 +2434,40 @@ absolute
 		background: none;
 	}
 	#banner {
-		background-attachment: scroll, scroll, scroll, fixed;
+		background-attachment: scroll, scroll, scroll, scroll;
 		background-color: #645862;
-		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png");
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
 		background-size: 25em, 25em, auto, cover;
 		color: #fff;
 		cursor: default;
 		padding: 6em 0;
 		text-align: center;
+		min-height: 70vh;
 	}
 
 	#banner.home {
 		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner/home.jpg");
-		background-position: bottom left, bottom right, top left, top center;
+		background-position: left bottom, right bottom, left top, center top;
 	}
 	#banner.destinations {
 		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner/destinations.jpg");
-		background-position: bottom left, bottom right, top left, bottom center;
+		background-position: left bottom, right bottom, left top, center center;
 	}
 	#banner.circuits {
 		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner/circuits.jpg");
-		background-position: bottom left, bottom right, top left, center center;
+		background-position: left bottom, right bottom, left top, center center;
 	}
 	#banner.votre-bresil {
 		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner/votre-bresil.jpg");
+		background-position: left bottom, right bottom, left top, center center;
 	}
 	#banner.a-propos {
 		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner/a-propos.jpg");
+		background-position: left bottom, right bottom, left top, center bottom;
 	}
 	#banner.contact {
 		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner/contact.jpg");
+		background-position: left bottom, right bottom, left top, center bottom;
 	}
 
 		#banner .inner {
