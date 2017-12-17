@@ -1,11 +1,14 @@
 {{/* Check https://github.com/bep/hugotest */}}
 {{ $root := (.Site.GetPage "section" .Section) }}
+{{ $currentSection := .CurrentSection }}
+{{ $isPage := .IsPage }}
+{{ $currentPage := . }}
 <ul>
   {{ with $root -}}
-  <li><a href="{{ $root.RelPermalink}}">{{ if .LinkTitle }}{{ .LinkTitle }}{{ else }}{{ .Title }}{{ end }}</a></li>
+  <li><a href="{{ .RelPermalink}}" class="nav-section{{ if and (eq $currentSection .CurrentSection) (not $isPage) }} active{{ end }}">{{ if .LinkTitle }}{{ .LinkTitle }}{{ else }}{{ .Title }}{{ end }}</a></li>
   {{ template "section-tree-nav"  (dict "root" $root "current" $ ) -}}
   {{ range .Pages }}
-    <li><a href="{{ .RelPermalink}}">{{ if .LinkTitle }}{{ .LinkTitle }}{{ else }}{{ .Title }}{{ end }}</a></li>
+    <li><a href="{{ .RelPermalink}}" class="nav-section{{ if and (eq $currentPage .) $isPage }} active{{ end }}">{{ if .LinkTitle }}{{ .LinkTitle }}{{ else }}{{ .Title }}{{ end }}</a></li>
   {{ end }}
   {{ end -}}
 </ul>
@@ -15,11 +18,11 @@
   	{{ $pages := where .Pages ".Params.hidden" "!=" true }}
     {{ $sections := len .Sections }}
     {{ $submenus := add $sections (len $pages) }}
-    <li><a href="{{ .RelPermalink}}">{{ if .LinkTitle }}{{ .LinkTitle }}{{ else }}{{ .Title }}{{ end }}</a>
-      {{ if gt $submenus 0 }}
+    <li><a href="{{ .RelPermalink}}" class="nav-section{{ if .InSection $.current }} active{{ end }}">{{ if .LinkTitle }}{{ .LinkTitle }}{{ else }}{{ .Title }}{{ end }}</a>
+      {{ if and (gt $submenus 0) (eq $.current.CurrentSection .CurrentSection) }}
       <ul>
         {{ range $pages -}}
-        	<li><a href="{{ .RelPermalink}}">{{ if .LinkTitle }}{{ .LinkTitle }}{{ else }}{{ .Title }}{{ end }}</a></li>
+        	<li><a href="{{ .RelPermalink}}" class="nav-page{{ if and (eq $.current .) $.current.IsPage }} active{{ end }}">{{ if .LinkTitle }}{{ .LinkTitle }}{{ else }}{{ .Title }}{{ end }}</a></li>
         {{ end -}}
         {{ template "section-tree-nav" (dict "root" . "current" $.current ) -}}
       </ul>
