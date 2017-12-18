@@ -2454,29 +2454,108 @@ absolute
 		min-height: 60vh;
 	}
 
-	#banner.sec-home {
+	/*https://res.cloudinary.com/dggfnr6w1/image/fetch/w_1920/f_auto/https://beta.bresil-autrement.ch*/
+	body.dev #banner.sec-home {
 		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0) ), url("../../images/banner/home.jpg");
+	}
+	#banner.sec-home {
 		background-position: left bottom, right bottom, left top, center top, center top;
+		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0) ), url("https://res.cloudinary.com/dggfnr6w1/image/fetch/w_1920/f_auto/https://beta.bresil-autrement.ch/images/banner/home.jpg");
+	}
+	body.dev #banner.sec-destinations {
+		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0) ), url("../../images/banner/destinations.jpg");
 	}
 	#banner.sec-destinations {
-		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0) ), url("../../images/banner/destinations.jpg");
 		background-position: left bottom, right bottom, left top, center top, center center;
+		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0) ), url("https://res.cloudinary.com/dggfnr6w1/image/fetch/w_1920/f_auto/https://beta.bresil-autrement.ch/images/banner/destinations.jpg");
+	}
+	body.dev #banner.sec-circuits {
+		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0) ), url("../../images/banner/circuits.jpg");
 	}
 	#banner.sec-circuits {
-		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0) ), url("../../images/banner/circuits.jpg");
 		background-position: left bottom, right bottom, left top, center top, center center;
+		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0) ), url("https://res.cloudinary.com/dggfnr6w1/image/fetch/w_1920/f_auto/https://beta.bresil-autrement.ch/images/banner/circuits.jpg");
+	}
+	body.dev #banner.sec-votre-bresil {
+		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0) ), url("../../images/banner/votre-bresil.jpg");
 	}
 	#banner.sec-votre-bresil {
-		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0) ), url("../../images/banner/votre-bresil.jpg");
 		background-position: left bottom, right bottom, left top, center top, center center;
+		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0) ), url("https://res.cloudinary.com/dggfnr6w1/image/fetch/w_1920/f_auto/https://beta.bresil-autrement.ch/images/banner/votre-bresil.jpg");
+	}
+	body.dev #banner.sec-a-propos {
+		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0) ), url("../../images/banner/a-propos.jpg");
 	}
 	#banner.sec-a-propos {
-		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0) ), url("../../images/banner/a-propos.jpg");
+		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0) ), url("https://res.cloudinary.com/dggfnr6w1/image/fetch/w_1920/f_auto/https://beta.bresil-autrement.ch/images/banner/a-propos.jpg");
 		background-position: left bottom, right bottom, left top, center top, left bottom;
 	}
-	#banner.sec-contact {
+	body.dev #banner.sec-contact {
 		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0) ), url("../../images/banner/contact.jpg");
+	}
+	#banner.sec-contact {
+		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0) ), url("https://res.cloudinary.com/dggfnr6w1/image/fetch/w_1920/f_auto/https://beta.bresil-autrement.ch/images/banner/contact.jpg");
 		background-position: left bottom, right bottom, left top, center top, right bottom;
+	}
+	@media screen and (max-width: 1680px) {
+		#banner.sec-home {
+			background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0) ), url("https://res.cloudinary.com/dggfnr6w1/image/fetch/w_1680/f_auto/https://beta.bresil-autrement.ch/images/banner/home.jpg");
+		}
+		#banner.sec-destinations {
+			background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0) ), url("https://res.cloudinary.com/dggfnr6w1/image/fetch/w_1680/f_auto/https://beta.bresil-autrement.ch/images/banner/destinations.jpg");
+		}
+		#banner.sec-circuits {
+			background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0) ), url("https://res.cloudinary.com/dggfnr6w1/image/fetch/w_1680/f_auto/https://beta.bresil-autrement.ch/images/banner/circuits.jpg");
+		}
+		#banner.sec-votre-bresil {
+			background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0) ), url("https://res.cloudinary.com/dggfnr6w1/image/fetch/w_1680/f_auto/https://beta.bresil-autrement.ch/images/banner/votre-bresil.jpg");
+		}
+		#banner.sec-a-propos {
+			background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0) ), url("https://res.cloudinary.com/dggfnr6w1/image/fetch/w_1680/f_auto/https://beta.bresil-autrement.ch/images/banner/a-propos.jpg");
+		}
+		#banner.sec-contact {
+			background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0) ), url("https://res.cloudinary.com/dggfnr6w1/image/fetch/w_1680/f_auto/https://beta.bresil-autrement.ch/images/banner/contact.jpg");
+		}
+	}
+	@media screen and (max-width: 980px) {
+		#banner.sec-home {
+			background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0) ), url("https://res.cloudinary.com/dggfnr6w1/image/fetch/w_980/f_auto/https://beta.bresil-autrement.ch/images/banner/home.jpg");
+		}
+		#banner.sec-destinations {
+			background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0) ), url("https://res.cloudinary.com/dggfnr6w1/image/fetch/w_980/f_auto/https://beta.bresil-autrement.ch/images/banner/destinations.jpg");
+		}
+		#banner.sec-circuits {
+			background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0) ), url("https://res.cloudinary.com/dggfnr6w1/image/fetch/w_980/f_auto/https://beta.bresil-autrement.ch/images/banner/circuits.jpg");
+		}
+		#banner.sec-votre-bresil {
+			background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0) ), url("https://res.cloudinary.com/dggfnr6w1/image/fetch/w_980/f_auto/https://beta.bresil-autrement.ch/images/banner/votre-bresil.jpg");
+		}
+		#banner.sec-a-propos {
+			background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0) ), url("https://res.cloudinary.com/dggfnr6w1/image/fetch/w_980/f_auto/https://beta.bresil-autrement.ch/images/banner/a-propos.jpg");
+		}
+		#banner.sec-contact {
+			background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0) ), url("https://res.cloudinary.com/dggfnr6w1/image/fetch/w_980/f_auto/https://beta.bresil-autrement.ch/images/banner/contact.jpg");
+		}
+	}
+	@media screen and (max-width: 736px) {
+		#banner.sec-home {
+			background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0) ), url("https://res.cloudinary.com/dggfnr6w1/image/fetch/w_736/f_auto/https://beta.bresil-autrement.ch/images/banner/home.jpg");
+		}
+		#banner.sec-destinations {
+			background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0) ), url("https://res.cloudinary.com/dggfnr6w1/image/fetch/w_736/f_auto/https://beta.bresil-autrement.ch/images/banner/destinations.jpg");
+		}
+		#banner.sec-circuits {
+			background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0) ), url("https://res.cloudinary.com/dggfnr6w1/image/fetch/w_736/f_auto/https://beta.bresil-autrement.ch/images/banner/circuits.jpg");
+		}
+		#banner.sec-votre-bresil {
+			background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0) ), url("https://res.cloudinary.com/dggfnr6w1/image/fetch/w_736/f_auto/https://beta.bresil-autrement.ch/images/banner/votre-bresil.jpg");
+		}
+		#banner.sec-a-propos {
+			background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0) ), url("https://res.cloudinary.com/dggfnr6w1/image/fetch/w_736/f_auto/https://beta.bresil-autrement.ch/images/banner/a-propos.jpg");
+		}
+		#banner.sec-contact {
+			background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0) ), url("https://res.cloudinary.com/dggfnr6w1/image/fetch/w_736/f_auto/https://beta.bresil-autrement.ch/images/banner/contact.jpg");
+		}
 	}
 
 		#banner .inner {
