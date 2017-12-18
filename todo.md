@@ -6,3 +6,4 @@
 - [ ] Gallery
 - [ ] Cloudinary (https://res.cloudinary.com/dggfnr6w1/image/fetch)
 - [ ] Form
+- [ ] GMaps
