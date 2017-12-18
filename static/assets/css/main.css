@@ -2440,7 +2440,7 @@ absolute
 		background: none;
 	}
 	#banner {
-		background-attachment: scroll, scroll, scroll, scroll, scroll;
+		background-attachment: scroll;
 		background-color: #645862;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat, no-repeat;
 		background-size: 25em, 25em, auto, auto 150px, cover;
@@ -2448,7 +2448,7 @@ absolute
 		cursor: default;
 		padding: 6em 0;
 		text-align: center;
-		min-height: 70vh;
+		min-height: 60vh;
 	}
 
 	#banner.sec-home {
@@ -2469,11 +2469,11 @@ absolute
 	}
 	#banner.sec-a-propos {
 		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0) ), url("../../images/banner/a-propos.jpg");
-		background-position: left bottom, right bottom, left top, center top, center bottom;
+		background-position: left bottom, right bottom, left top, center top, left bottom;
 	}
 	#banner.sec-contact {
 		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0) ), url("../../images/banner/contact.jpg");
-		background-position: left bottom, right bottom, left top, center top, center bottom;
+		background-position: left bottom, right bottom, left top, center top, right bottom;
 	}
 
 		#banner .inner {
@@ -2719,12 +2719,6 @@ absolute
 				margin-left: 1em;
 			}
 
-		/* Banner */
-
-			#banner {
-				background-attachment: scroll;
-			}
-
 		/* CTA */
 
 			#cta {
@@ -2797,7 +2791,7 @@ absolute
 		/* Banner */
 
 			#banner {
-				background-size: 15em, 15em, auto, cover;
+				background-size: 15em, 15em, auto, auto 150px, cover;
 			}
 
 		/* Main */
@@ -3245,7 +3239,7 @@ absolute
 		/* Banner */
 
 			#banner {
-				background-size: 10em, 10em, auto, cover;
+				background-size: 10em, 10em, auto, auto 150px, cover;
 				padding: 6em 0;
 			}
 
