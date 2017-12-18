@@ -3326,9 +3326,8 @@ absolute
 			}
 
 				#banner .inner {
-					background: none;
 					display: block;
-					padding: 1.5em 1.5em 0em 1.5em;
+					padding: 1.5em;
 				}
 
 					#banner .inner header h2 {
