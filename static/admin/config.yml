@@ -7,9 +7,136 @@ media_folder: "src/images"
 public_folder: "/images"
 collections:
   
-  - label: "content"
-    name: "Content"
-    folder: "content/"
+  - label: "Highlight"
+    name: "highlight"
+    folder: "content/data/highlight"
+    create: true
+    slug: "{{slug}}"
+    format: "frontmatter"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Tag Line", name: "tagline", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime"}
+      - { label: "Type", name: "type", widget: "hidden", default: "highlight" }
+      - { label: "Weight", name: "weight", widget: "number" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - label: "Destinations"
+    name: "destinations"
+    folder: "content/destinations"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Link Title", name: "linktitle", widget: "string" }
+      - { label: "Tag Line", name: "tagline", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Weight", name: "weight", widget: "number" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - label: "Destinations/Nord-Amazonie"
+    name: "destinations-nord-amazonie"
+    folder: "content/destinations/nord-amazonie"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Link Title", name: "linktitle", widget: "string" }
+      - { label: "Tag Line", name: "tagline", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Weight", name: "weight", widget: "number" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - label: "Destinations/Nord-Est"
+    name: "destinations-nord-est"
+    folder: "content/destinations/nord-est"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Link Title", name: "linktitle", widget: "string" }
+      - { label: "Tag Line", name: "tagline", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Weight", name: "weight", widget: "number" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - label: "Destinations/Sud-Est"
+    name: "destinations-sud-est"
+    folder: "content/destinations/sud-est"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Link Title", name: "linktitle", widget: "string" }
+      - { label: "Tag Line", name: "tagline", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Weight", name: "weight", widget: "number" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - label: "Destinations/Sud"
+    name: "destinations-sud"
+    folder: "content/destinations/sud"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Link Title", name: "linktitle", widget: "string" }
+      - { label: "Tag Line", name: "tagline", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Weight", name: "weight", widget: "number" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - label: "Destinations/Centre-Ouest-Pantanal"
+    name: "destinations-centre-ouest-pantanal"
+    folder: "content/destinations/centre-ouest-pantanal"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Link Title", name: "linktitle", widget: "string" }
+      - { label: "Tag Line", name: "tagline", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Weight", name: "weight", widget: "number" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - label: "Circuits"
+    name: "circuits"
+    folder: "content/circuits"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Link Title", name: "linktitle", widget: "string" }
+      - { label: "Tag Line", name: "tagline", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Weight", name: "weight", widget: "number" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - label: "Votre Brésil"
+    name: "votre-bresil"
+    folder: "content/votre-bresil"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Link Title", name: "linktitle", widget: "string" }
+      - { label: "Tag Line", name: "tagline", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Weight", name: "weight", widget: "number" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - label: "A propos"
+    name: "a-propos"
+    folder: "content/a-propos"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Link Title", name: "linktitle", widget: "string" }
+      - { label: "Tag Line", name: "tagline", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Weight", name: "weight", widget: "number" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - label: "Contacts"
+    name: "contacts"
+    folder: "content/contacts"
     create: true
     slug: "{{slug}}"
     fields:
