@@ -1,5 +1,8 @@
-- [ ] List sub-sections
-- [ ] Index
-- [ ] Color by section
-- [ ] Index title
+- [x] List sub-sections
+- [x] Index
+- ~~[ ] Color by section~~
+- [x] Index title
 - [ ] Tours
+- [ ] Gallery
+- [ ] Cloudinary (https://res.cloudinary.com/dggfnr6w1/image/fetch)
+- [ ] Form
