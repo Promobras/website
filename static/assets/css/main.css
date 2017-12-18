@@ -2873,7 +2873,7 @@ absolute
 		/* Banner */
 
 			#banner {
-				background-size: 15em, 15em, auto 150px, cover;
+				background-size: 15em, 15em, 100% 150px, cover;
 			}
 
 		/* Main */
@@ -3321,7 +3321,7 @@ absolute
 		/* Banner */
 
 			#banner {
-				background-size: 10em, 10em, auto 150px, cover;
+				background-size: 10em, 10em, 100% 150px, cover;
 				padding: 6em 0;
 			}
 
