@@ -1,0 +1,15 @@
+{{ $tour := first 1 (where .Site.Pages "Params.code" (index .Params 0)) }}
+{{ range $tour}}
+<section class="tour">
+<h2>{{ .Title }}</h2>
+<h3>{{ .Params.summary }} (*{{.Params.code}}*)</h3>
+<article class="description">
+{{ .Content }}
+</article>
+<p>Des questions? <a href="/contact">Contactez nous</a> !</p>
+
+{{ with .Params.gmaps }}
+<iframe src="https://www.google.com/maps/d/embed?mid={{.}}" width="640" height="480"></iframe>
+{{ end }}
+</section>
+{{ end }}
