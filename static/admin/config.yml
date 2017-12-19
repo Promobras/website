@@ -156,3 +156,20 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Weight", name: "weight", widget: "number" }
       - { label: "Body", name: "body", widget: "markdown" }
+
+  - label: "Tours"
+    name: "tours"
+    folder: "content/data/tours"
+    create: true
+    slug: "{{slug}}"
+    format: "frontmatter"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Summary", name: "summary", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime"}
+      - { label: "Type", name: "type", widget: "hidden", default: "tour" }
+      - { label: "Weight", name: "weight", widget: "number" }
+      - { label: "Code", name: "code", widget: "number" }
+      - { label: "Google Maps Id", name: "gmaps", widget: "string" }
+      - { label: "PDF", name:"pdf", widget: "file"}
+      - { label: "Body", name: "body", widget: "markdown" }
