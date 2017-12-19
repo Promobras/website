@@ -25,7 +25,7 @@
 			        {{ .Summary }} {{ if .Truncated }}...{{ end }}
 			      </article>
 			    {{ end }}
-					{{ range .Pages }}
+					{{ range where .Pages ".Params.hidden" "!=" true }}
 			      <article>
 			        <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
 			        {{ .Summary }} {{ if .Truncated }}...{{ end }}

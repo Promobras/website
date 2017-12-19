@@ -7,7 +7,7 @@
   {{ with $root -}}
   <li><a href="{{ .RelPermalink}}" class="nav-section{{ if and (eq $currentSection .CurrentSection) (not $isPage) }} active{{ end }}">{{ if .LinkTitle }}{{ .LinkTitle }}{{ else }}{{ .Title }}{{ end }}</a></li>
   {{ template "section-tree-nav"  (dict "root" $root "current" $ ) -}}
-  {{ range .Pages }}
+  {{ range where .Pages ".Params.hidden" "!=" true }}
     <li><a href="{{ .RelPermalink}}" class="nav-section{{ if and (eq $currentPage .) $isPage }} active{{ end }}">{{ if .LinkTitle }}{{ .LinkTitle }}{{ else }}{{ .Title }}{{ end }}</a></li>
   {{ end }}
   {{ end -}}
