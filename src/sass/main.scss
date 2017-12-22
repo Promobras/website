@@ -951,6 +951,8 @@ nav {
 }
 
 #banner {
+    background-size: $pattern-background-size, $pattern-background-size, 100% 150px, cover;
+
     .inner {
         @include vendor('animation', 'reveal-banner 1s .25s ease-in-out');
         @include vendor('animation-fill-mode', 'forwards');
@@ -1046,24 +1048,6 @@ nav {
                 margin-top: 0;
             }
         }
-    }
-}
-
-// CTA
-
-#cta {
-    background-attachment: scroll, scroll, scroll, fixed;
-    background-color: _palette(three, bg);
-    background-image: url('images/light-tl.svg'), url('images/light-tr.svg'), url('images/overlay.png'), url('../../images/banner.jpg');
-    background-position: top left, top right, top left, bottom center;
-    background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-    background-size: $pattern-background-size, $pattern-background-size, auto, cover;
-    color: _palette(three, fg);
-    padding: 5em;
-    text-align: center;
-
-    header {
-        margin-bottom: 2em;
     }
 }
 
@@ -1182,19 +1166,6 @@ nav {
         }
     }
 
-    // Banner
-
-    #banner {
-        background-attachment: scroll;
-    }
-
-    // CTA
-
-    #cta {
-        padding: 4em;
-        background-attachment: scroll;
-    }
-
     // Footer
 
     #footer {
@@ -1271,7 +1242,7 @@ nav {
     // Banner
 
     #banner {
-        background-size: $pattern-background-size, $pattern-background-size, auto, cover;
+        background-size: $pattern-background-size, $pattern-background-size, 100% 150px, cover;
     }
 
     // Main
@@ -1280,12 +1251,6 @@ nav {
         background-size: $pattern-background-size;
     }
 
-    // CTA
-
-    #cta {
-        background-size: $pattern-background-size, $pattern-background-size, auto, cover;
-        padding: 3em;
-    }
 }
 
 // Narrower
@@ -1431,12 +1396,6 @@ nav {
                 padding-top: 4.5em;
             }
         }
-    }
-
-    // CTA
-
-    #cta {
-        margin: 0;
     }
 
     // Footer
@@ -1722,12 +1681,13 @@ nav {
     // Banner
 
     #banner {
-        background-size: $pattern-background-size, $pattern-background-size, auto, cover;
+        background-size: $pattern-background-size, $pattern-background-size, 100% 150px, cover;
         padding: 6em 0;
 
         .inner {
+            background-color: transparent;
             display: block;
-            padding: 1.5em 1.5em 0;
+            padding: 0;
 
             header {
                 h2 {
@@ -1766,13 +1726,6 @@ nav {
                 padding-bottom: 0;
             }
         }
-    }
-
-    // CTA
-
-    #cta {
-        background-size: $pattern-background-size, $pattern-background-size, auto, cover;
-        padding: 3em 1.5em;
     }
 
     // Footer
