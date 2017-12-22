@@ -1,0 +1,95 @@
+@mixin bgimage($section, $width: 0) {
+    $base: url('images/light-bl.svg'), url('images/light-br.svg'), linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, 0));
+    @if $width == 0 {
+        background-image: $base, url('../../images/banner/' + $section + '.jpg');
+    } @else {
+        // sass-lint:disable no-url-domains no-url-protocols
+        background-image: $base, url('https://res.cloudinary.com/dggfnr6w1/image/fetch/w_' + $width + '/f_auto/https://beta.bresil-autrement.ch/images/banner/' + $section + '.jpg');
+    }
+}
+@mixin bgbreak($section) {
+    @include bgimage($section, 2300);
+    @media screen and (max-width: 1680px) {
+        @include bgimage($section, 2020);
+    }
+    @media screen and (max-width: 980) {
+        @include bgimage($section, 1180);
+    }
+    @media screen and (max-width: 736) {
+        @include bgimage($section, 880);
+    }
+}
+
+body {
+    &.dev {
+        #banner {
+            &.sec-home {
+                @include bgimage(home)
+            }
+
+            &.sec-destinations {
+                @include bgimage(destinations)
+            }
+
+            &.sec-circuits {
+                @include bgimage(circuits)
+            }
+
+            &.sec-votre-bresil {
+                @include bgimage(votre-bresil)
+            }
+
+            &.sec-a-propos {
+                @include bgimage(a-propos)
+            }
+
+            &.sec-contact {
+                @include bgimage(contact)
+            }
+        }
+    }
+}
+
+#banner {
+    background-attachment: scroll;
+    background-color: _palette(three, bg);
+    background-image: url('images/light-bl.svg'), url('images/light-br.svg'), url('images/overlay.png'), url('../../images/banner.jpg');
+    background-position: bottom left, bottom right, top left, top center;
+    background-repeat: no-repeat;
+    background-size: $pattern-background-size, $pattern-background-size, 100% 150px, cover;
+    color: _palette(banner, fg);
+    cursor: default;
+    padding: 6em 0;
+    text-align: center;
+    min-height: 60vh;
+
+    &.sec-home {
+        @include bgbreak(home);
+        background-position: left bottom, right bottom, center top, center top;
+    }
+
+    &.sec-destinations {
+        @include bgbreak(destinations);
+        background-position: left bottom, right bottom, center top, center center;
+    }
+
+    &.sec-circuits {
+        @include bgbreak(circuits);
+        background-position: left bottom, right bottom, center top, center center;
+    }
+
+    &.sec-votre-bresil {
+        @include bgbreak(votre-bresil);
+        background-position: left bottom, right bottom, center top, center center;
+    }
+
+    &.sec-a-propos {
+        @include bgbreak(a-propos);
+        background-position: left bottom, right bottom, center top, left bottom;
+    }
+
+    &.sec-contact {
+        @include bgbreak(contact);
+        background-position: left bottom, right bottom, center top, right bottom;
+    }
+}

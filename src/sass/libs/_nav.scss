@@ -1,0 +1,33 @@
+nav {
+    &.top {
+        position: absolute;
+        top: 0;
+        letter-spacing: .075em;
+        right: 1.5em;
+        text-transform: uppercase;
+        font-size: .6em;
+        color: _palette(menu, top);
+        z-index: 10001;
+
+        ul {
+            padding: 0;
+            margin: 0;
+
+            li {
+                display: inline-block;
+                margin-left: 1.5em;
+
+                a {
+                    text-decoration: none;
+                    color: _palette(menu, top);
+                    border-bottom: 0;
+
+                    &:hover,
+                    &:focus {
+                        border-bottom: dotted 1px _palette(menu, top);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -3,6 +3,9 @@ options:
   merge-default-rules: true
 files:
   include: 'src/sass/**/*.scss'
+  ignore:
+    - 'src/sass/libs/_skel.scss'
+    - 'src/sass/font-awesome/*.scss'
 rules:
   bem-depth: 1
   brace-style: 0
@@ -20,4 +23,10 @@ rules:
   no-color-keywords: 0
   no-color-literals: 0
   property-sort-order: 0
+  no-ids: 0
   one-declaration-per-line: 1
+  no-important: 0
+  nesting-depth:
+    - 1
+    -
+      max-depth: 5

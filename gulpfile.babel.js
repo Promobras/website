@@ -74,7 +74,7 @@ gulp.task('sass', () => {
     .pipe($.autoprefixer(['ie >= 10', 'last 2 versions']))
     .pipe($.if(isProduction, $.cssnano({ discardUnused: false, minifyFontValues: false })))
     .pipe($.size({ gzip: true, showFiles: true }))
-    .pipe(gulp.dest('static/css'))
+    .pipe(gulp.dest('static/assets/css'))
     .pipe(browserSync.stream())
 })
 
@@ -97,8 +97,8 @@ gulp.task('js', () => {
 })
 
 gulp.task('fonts', () => {
-  return gulp.src('src/fonts/**/*.{woff,woff2}')
-    .pipe(gulp.dest('static/fonts'))
+  return gulp.src('src/fonts/**/*.{woff,woff2,eot,svg,ttf,otf}')
+    .pipe(gulp.dest('static/assets/fonts'))
 })
 
 gulp.task('images', () => {
