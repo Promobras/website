@@ -21,14 +21,14 @@
     automatically wrap lines, so be sure to use line breaks where
     appropriate (<br />).
   -->
-  <div class="inner">
+  <div class="inner{{ if .IsHome }} home{{ end }}">
     {{ if .IsHome }}
       <div class="logo"><img src="{{ "images/promobras.svg" | absURL }}"/></div>
       <header>
         <h2>{{ if .Params.tagline }}{{ .Params.tagline }}{{else if .Params.slogan }}{{ .Params.slogan }}{{ else }}{{ .Title }}{{ end }}</h2>
       </header>
       <p>
-      <div class="contact"><i class="fa fa-phone"></i><span>021 312 62 37</span></div>
+      <div class="contact"><i class="fa fa-phone"></i><span><a href="tel:+41213126237" class="phone">021 312 62 37</a><a href="/contact" class="desktop">021 312 62 37</a></span></div>
       </p>
     {{ else -}}
       {{ $sect := (.Site.GetPage "section" .Section) }}

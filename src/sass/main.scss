@@ -955,12 +955,15 @@ nav {
     .inner {
         @include vendor('animation', 'reveal-banner 1s .25s ease-in-out');
         @include vendor('animation-fill-mode', 'forwards');
-        background: transparentize(_palette(banner, inner-bg), .5);
         color: _palette(banner, inner-fg);
         display: inline-block;
         opacity: 0;
         padding: 3em;
         text-align: center;
+
+        &.home {
+            background: transparentize(_palette(banner, inner-bg), .5);
+        }
 
         header {
             display: inline-block;
@@ -979,6 +982,7 @@ nav {
                 padding-left: .05em;
                 position: relative;
                 text-transform: uppercase;
+                text-shadow: 0 0 .1em black, 0 0 .3em black;
             }
         }
 
@@ -1017,6 +1021,25 @@ nav {
             span {
                 margin-left: .5em;
                 font-weight: 900;
+
+                a {
+                    text-decoration: none;
+                    border-bottom: 0;
+                    color: _palette(banner, inner-fg);
+
+                    &.phone {
+                        display: none;
+                    }
+                    @media screen and (max-width: 736px) {
+                        &.phone {
+                            display: inline-block;
+                        }
+
+                        &.desktop {
+                            display: none;
+                        }
+                    }
+                }
             }
         }
     }
@@ -1684,9 +1707,13 @@ nav {
         padding: 6em 0;
 
         .inner {
-            background-color: transparent;
+            background-color: none;
             display: block;
             padding: 0;
+
+            &.home {
+                background-color: transparent;
+            }
 
             header {
                 h2 {
