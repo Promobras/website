@@ -31,7 +31,7 @@ gulp.task('server', ['build'], () => {
 })
 
 gulp.task('build', () => {
-  runSequence(['sass', 'js', 'fonts', 'images'], 'hugo')
+  runSequence(['sass', 'js', 'fonts', 'images'], 'hugo', 'html')
 })
 
 gulp.task('build-preview', () => {
@@ -107,6 +107,12 @@ gulp.task('images', () => {
     .pipe($.print())
     .pipe($.imagemin())
     .pipe(gulp.dest('static/images'))
+})
+
+gulp.task('html', () => {
+  return gulp.src('public/**/*.html')
+    .pipe($.htmlmin({collapseWhitespace: true, preserveLineBreaks: true}))
+    .pipe(gulp.dest('public'))
 })
 
 gulp.task('cms-delete', () => {
