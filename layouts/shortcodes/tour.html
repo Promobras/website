@@ -11,9 +11,9 @@
   {{ .Content | markdownify | safeHTML }}
   </article>
 
-  {{ with .Params.pdf -}}
-    {{ readFile .Params.pdf }}
-  <div class="pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i><a href="/images/{{ . }}">Document PDF détaillé (476.87 ko)</a></div>
+  {{ with .Params.pdf_file -}}
+    {{ readFile .Params.pdf_file }}
+  <div class="pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i><a href="{{ . }}">Document PDF détaillé (476.87 ko)</a></div>
   {{ end -}}
 
   <div class="questions">Des questions? <a href="/contact">Contactez nous</a> !</div>
