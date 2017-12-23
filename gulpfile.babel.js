@@ -85,15 +85,27 @@ gulp.task('js-watch', ['js'], (cb) => {
 
 gulp.task('js', () => {
   return gulp.src([
-    'src/js/**/*.js'
+    'src/js/jquery.min.js',
+    'src/js/jquery.dropotron.min.js',
+    'src/js/jquery.scrolly.min.js',
+    'src/js/jquery.scrollgress.min.js',
+    'src/js/skel.min.js',
+    'src/js/util.js',
+    'src/js/main.js'
   ])
+
     .pipe($.plumber({ errorHandler: onError }))
     .pipe($.print())
-    .pipe($.babel())
-    .pipe($.concat('app.js'))
-    .pipe($.if(isProduction, $.uglify()))
+    .pipe($.if(['!.min.*'], $.babel()))
+    .pipe($.if(['!.min.*'], $.if(isProduction, $.uglify())))
+    .pipe($.concat('app.min.js'))
     .pipe($.size({ gzip: true, showFiles: true }))
-    .pipe(gulp.dest('static/js'))
+    .pipe(gulp.dest('static/assets/js'))
+})
+
+gulp.task('iejs', () => {
+  return gulp.src('src/js/ie/*')
+    .pipe(gulp.dest('static/assets/js/ie/'))
 })
 
 gulp.task('fonts', () => {

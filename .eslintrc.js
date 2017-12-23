@@ -10,6 +10,9 @@ module.exports = {
     es6: true,
     jquery: true
   },
+  globals: {
+    'skel': false
+  },
   // add your custom rules here
   'rules': {
     // allow paren-less arrow functions
