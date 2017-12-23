@@ -5,6 +5,8 @@
 /static/fonts
 /static/assets/fonts/
 /static/assets/css/
+/static/assets/js/*.js
+/static/assets/js/ie/
 /static/css/app.css
 /static/js/app.js
 package-lock.json
