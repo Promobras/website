@@ -11,13 +11,14 @@
 
 @import 'libs/skel';
 
+$mobile: 736px;
 @include skel-breakpoints(
     (
         wide: '(max-width: 1680px)',
         normal: '(max-width: 1280px)',
         narrow: '(max-width: 980px)',
         narrower: '(max-width: 840px)',
-        mobile: '(max-width: 736px)'
+        mobile: '(max-width: $mobile)'
     )
 );
 
@@ -1030,7 +1031,7 @@ nav {
                     &.phone {
                         display: none;
                     }
-                    @media screen and (max-width: 736px) {
+                    @media screen and (max-width: $mobile) {
                         &.phone {
                             display: inline-block;
                         }
@@ -1068,6 +1069,102 @@ nav {
                 border-top: 0;
                 padding-top: 0;
                 margin-top: 0;
+            }
+        }
+    }
+
+    .section-nav {
+        background-color: _palette(footer, bg);
+        padding: 1.5em;
+        border-radius: 6px;
+        box-shadow: 1px 1px 2px _palette(fg);
+
+        article {
+            margin-bottom: 1em;
+
+            h4 {
+                margin-bottom: .2em;
+                font-weight: 400;
+
+                a {
+                    text-decoration: underline dotted;
+                }
+            }
+
+            p {
+                font-size: .9em;
+                text-align: justify;
+            }
+        }
+        @media screen and (max-width: $mobile) {
+            margin-left: -1em;
+            margin-right: -1em;
+        }
+    }
+
+    .tour {
+        background-color: _palette(footer, bg);
+        padding: 1.5em;
+        border-radius: 6px;
+        box-shadow: 1px 1px 2px _palette(fg);
+
+        $code-width: 5em;
+
+        .tour-header {
+
+            .tour-code {
+                font-size: .8em;
+                font-style: italic;
+                text-align: right;
+            }
+
+            .tour-title {
+                width: 100%;
+            }
+        }
+
+        .summary {
+            font-size: 1.1em;
+            margin-bottom: 1em;
+        }
+
+        .map {
+            width: 100%;
+            border: 0;
+            height: 450px;
+        }
+
+        @media screen and (min-width: ($mobile+1)) {
+            .tour-header {
+                margin-right: $code-width;
+
+                .tour-title {
+                    float: left;
+                }
+
+                .tour-code {
+                    float: right;
+                    width: $code-width;
+                    margin-right: -$code-width;
+                }
+
+                &::after {
+                    content: '';
+                    display: table;
+                    clear: both;
+                }
+            }
+        }
+        @media screen and (max-width: $mobile) {
+            margin-left: -1em;
+            margin-right: -1em;
+
+            .tour-header {
+                width: 100%;
+            }
+
+            .map {
+                height:300px;
             }
         }
     }

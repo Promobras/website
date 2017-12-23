@@ -13,25 +13,29 @@
         <div class="content">
           <section>
             <header>
-              <h3>{{ .Title }}</h3>
+              <h2>{{ .Title }}</h2>
             </header>
             {{ .Content }}
           </section>
-				</div>
-				<div class="content">
-					{{ range .Sections }}
-			      <article>
-			        <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-			        {{ .Summary }} {{ if .Truncated }}...{{ end }}
-			      </article>
-			    {{ end }}
-					{{ range where .Pages ".Params.hidden" "!=" true }}
-			      <article>
-			        <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-			        {{ .Summary }} {{ if .Truncated }}...{{ end }}
-			      </article>
-			    {{ end }}
         </div>
+        {{ if (or ((len .Sections) "gt" 0) ((len .Pages) "gt" 0)) }}
+        <div class="content section-nav">
+            {{ range .Sections }}
+              <article>
+                <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+                <p>
+                {{ .Summary }} {{ if .Truncated }}...{{ end }}
+                </p>
+              </article>
+            {{ end }}
+            {{ range where .Pages ".Params.hidden" "!=" true }}
+              <article>
+                <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+                {{ .Summary }} {{ if .Truncated }}...{{ end }}
+              </article>
+            {{ end }}
+          </div>
+        {{ end }}
       </div>
     </div>
   </section>
