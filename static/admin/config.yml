@@ -15,10 +15,10 @@ collections:
     format: "frontmatter"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Tag Line", name: "tagline", widget: "string" }
+      - { label: "Tag Line", name: "tagline", widget: "string", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime"}
       - { label: "Type", name: "type", widget: "hidden", default: "highlight" }
-      - { label: "Weight", name: "weight", widget: "number" }
+      - { label: "Weight", name: "weight", widget: "number", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
   - label: "Destinations"
@@ -28,11 +28,11 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Summary", name: "summary", widget: "string" }
-      - { label: "Link Title", name: "linktitle", widget: "string" }
-      - { label: "Tag Line", name: "tagline", widget: "string" }
+      - { label: "Summary", name: "summary", widget: "string", required: false }
+      - { label: "Link Title", name: "linktitle", widget: "string", required: false }
+      - { label: "Tag Line", name: "tagline", widget: "string", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Weight", name: "weight", widget: "number" }
+      - { label: "Weight", name: "weight", widget: "number", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
   - label: "Destinations/Nord-Amazonie"
@@ -42,11 +42,11 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Summary", name: "summary", widget: "string" }
-      - { label: "Link Title", name: "linktitle", widget: "string" }
-      - { label: "Tag Line", name: "tagline", widget: "string" }
+      - { label: "Summary", name: "summary", widget: "string", required: false }
+      - { label: "Link Title", name: "linktitle", widget: "string", required: false }
+      - { label: "Tag Line", name: "tagline", widget: "string", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Weight", name: "weight", widget: "number" }
+      - { label: "Weight", name: "weight", widget: "number", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
   - label: "Destinations/Nord-Est"
     name: "destinations-nord-est"
@@ -55,11 +55,11 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Summary", name: "summary", widget: "string" }
-      - { label: "Link Title", name: "linktitle", widget: "string" }
-      - { label: "Tag Line", name: "tagline", widget: "string" }
+      - { label: "Summary", name: "summary", widget: "string", required: false }
+      - { label: "Link Title", name: "linktitle", widget: "string", required: false }
+      - { label: "Tag Line", name: "tagline", widget: "string", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Weight", name: "weight", widget: "number" }
+      - { label: "Weight", name: "weight", widget: "number", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
   - label: "Destinations/Sud-Est"
     name: "destinations-sud-est"
@@ -68,11 +68,11 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Summary", name: "summary", widget: "string" }
-      - { label: "Link Title", name: "linktitle", widget: "string" }
-      - { label: "Tag Line", name: "tagline", widget: "string" }
+      - { label: "Summary", name: "summary", widget: "string", required: false }
+      - { label: "Link Title", name: "linktitle", widget: "string", required: false }
+      - { label: "Tag Line", name: "tagline", widget: "string", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Weight", name: "weight", widget: "number" }
+      - { label: "Weight", name: "weight", widget: "number", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
   - label: "Destinations/Sud"
     name: "destinations-sud"
@@ -81,11 +81,11 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Summary", name: "summary", widget: "string" }
-      - { label: "Link Title", name: "linktitle", widget: "string" }
-      - { label: "Tag Line", name: "tagline", widget: "string" }
+      - { label: "Summary", name: "summary", widget: "string", required: false }
+      - { label: "Link Title", name: "linktitle", widget: "string", required: false }
+      - { label: "Tag Line", name: "tagline", widget: "string", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Weight", name: "weight", widget: "number" }
+      - { label: "Weight", name: "weight", widget: "number", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
   - label: "Destinations/Centre-Ouest-Pantanal"
     name: "destinations-centre-ouest-pantanal"
@@ -94,11 +94,11 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Summary", name: "summary", widget: "string" }
-      - { label: "Link Title", name: "linktitle", widget: "string" }
-      - { label: "Tag Line", name: "tagline", widget: "string" }
+      - { label: "Summary", name: "summary", widget: "string", required: false }
+      - { label: "Link Title", name: "linktitle", widget: "string", required: false }
+      - { label: "Tag Line", name: "tagline", widget: "string", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Weight", name: "weight", widget: "number" }
+      - { label: "Weight", name: "weight", widget: "number", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
   - label: "Circuits"
@@ -108,11 +108,11 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Summary", name: "summary", widget: "string" }
-      - { label: "Link Title", name: "linktitle", widget: "string" }
-      - { label: "Tag Line", name: "tagline", widget: "string" }
+      - { label: "Summary", name: "summary", widget: "string", required: false }
+      - { label: "Link Title", name: "linktitle", widget: "string", required: false }
+      - { label: "Tag Line", name: "tagline", widget: "string", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Weight", name: "weight", widget: "number" }
+      - { label: "Weight", name: "weight", widget: "number", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
   - label: "Votre Brésil"
@@ -122,11 +122,11 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Summary", name: "summary", widget: "string" }
-      - { label: "Link Title", name: "linktitle", widget: "string" }
-      - { label: "Tag Line", name: "tagline", widget: "string" }
+      - { label: "Summary", name: "summary", widget: "string", required: false }
+      - { label: "Link Title", name: "linktitle", widget: "string", required: false }
+      - { label: "Tag Line", name: "tagline", widget: "string", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Weight", name: "weight", widget: "number" }
+      - { label: "Weight", name: "weight", widget: "number", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
   - label: "A propos"
@@ -136,11 +136,11 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Summary", name: "summary", widget: "string" }
-      - { label: "Link Title", name: "linktitle", widget: "string" }
-      - { label: "Tag Line", name: "tagline", widget: "string" }
+      - { label: "Summary", name: "summary", widget: "string", required: false }
+      - { label: "Link Title", name: "linktitle", widget: "string", required: false }
+      - { label: "Tag Line", name: "tagline", widget: "string", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Weight", name: "weight", widget: "number" }
+      - { label: "Weight", name: "weight", widget: "number", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
   - label: "Contacts"
@@ -150,11 +150,11 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Summary", name: "summary", widget: "string" }
-      - { label: "Link Title", name: "linktitle", widget: "string" }
-      - { label: "Tag Line", name: "tagline", widget: "string" }
+      - { label: "Summary", name: "summary", widget: "string", required: false }
+      - { label: "Link Title", name: "linktitle", widget: "string", required: false }
+      - { label: "Tag Line", name: "tagline", widget: "string", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Weight", name: "weight", widget: "number" }
+      - { label: "Weight", name: "weight", widget: "number", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
   - label: "Tours"
@@ -165,11 +165,11 @@ collections:
     format: "frontmatter"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Summary", name: "summary", widget: "string" }
+      - { label: "Summary", name: "summary", widget: "string", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime"}
       - { label: "Type", name: "type", widget: "hidden", default: "tour" }
-      - { label: "Weight", name: "weight", widget: "number" }
-      - { label: "Code", name: "code", widget: "string" }
-      - { label: "Google Maps Id", name: "gmaps", widget: "string" }
-      - { label: "PDF", name:"pdf", widget: "file"}
+      - { label: "Weight", name: "weight", widget: "number", required: false }
+      - { label: "Code", name: "code", widget: "string", required: false }
+      - { label: "Google Maps Id", name: "gmaps", widget: "string", required: false }
+      - { label: "PDF", name:"pdf", widget: "file", required: false}
       - { label: "Body", name: "body", widget: "markdown" }
