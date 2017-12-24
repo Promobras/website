@@ -170,5 +170,5 @@ collections:
       - { label: "Weight", name: "weight", widget: "number", required: false }
       - { label: "Code", name: "code", widget: "string", required: false }
       - { label: "Google Maps Id", name: "gmaps", widget: "string", required: false }
-      - { label: "PDF", name:"pdf_file", widget: "file", required: false}
+      - { label: "PDF", name: "pdf_file", widget: "file", required: false}
       - { label: "Body", name: "body", widget: "markdown" }
