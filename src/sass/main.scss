@@ -1615,13 +1615,38 @@ nav {
             border-top: solid 1px transparentize(_palette(navPanel, fg), .95);
             color: inherit;
             display: block;
-            height: 3em;
-            line-height: 3em;
+            line-height: 1.2em;
             opacity: .75;
             text-decoration: none;
+            padding-top: .8em;
+            padding-bottom: .8em;
 
             &.depth-0 {
                 font-weight: 900;
+            }
+
+            &.depth-0 {
+                font-weight: 900;
+            }
+
+            &.depth-1 {
+                padding-left: 1em;
+            }
+
+            &.depth-2 {
+                padding-left: 2em;
+            }
+
+            &.depth-3 {
+                padding-left: 3em;
+            }
+
+            &.depth-4 {
+                padding-left: 4em;
+            }
+
+            &.depth-5 {
+                padding-left: 5em;
             }
 
             &:first-child {
@@ -1629,29 +1654,12 @@ nav {
             }
         }
 
-        .indent-1 {
-            display: inline-block;
-            width: 1em;
-        }
-
-        .indent-2 {
-            display: inline-block;
-            width: 2em;
-        }
-
-        .indent-3 {
-            display: inline-block;
-            width: 3em;
-        }
-
-        .indent-4 {
-            display: inline-block;
-            width: 4em;
-        }
-
+        .indent-1,
+        .indent-2,
+        .indent-3,
+        .indent-4,
         .indent-5 {
-            display: inline-block;
-            width: 5em;
+            display: none;
         }
     }
 
