@@ -27,15 +27,16 @@ gulp.task('server', ['build'], () => {
   $.watch('src/sass/**/*.scss', () => gulp.start('sass'))
   $.watch('src/js/**/*.js', () => gulp.start('js-watch'))
   $.watch('src/images/**/*', () => gulp.start('images'))
+  $.watch('node_modules/photoswipe/src/css/**/*', () => gulp.start('pswp-images'))
   $.watch(['archetypes/**/*', 'data/**/*', 'content/**/*', 'layouts/**/*', 'static/**/*', 'config.toml'], () => gulp.start('hugo'))
 })
 
 gulp.task('build', () => {
-  runSequence(['sass', 'js', 'fonts', 'images'], 'hugo', 'html')
+  runSequence(['sass', 'js', 'fonts', 'images', 'pswp-images'], 'hugo', 'html')
 })
 
 gulp.task('build-preview', () => {
-  runSequence(['sass', 'js', 'fonts', 'images'], 'hugo-preview')
+  runSequence(['sass', 'js', 'fonts', 'images', 'pswp-images'], 'hugo-preview')
 })
 
 gulp.task('hugo', (cb) => {
@@ -91,8 +92,11 @@ gulp.task('js', () => {
     'src/js/jquery.scrollgress.min.js',
     'src/js/skel.min.js',
     'node_modules/cloudinary-jquery/cloudinary-jquery.js',
+    'node_modules/photoswipe/dist/photoswipe.min.js',
+    'node_modules/photoswipe/dist/photoswipe-ui-default.min.js',
     'src/js/util.js',
-    'src/js/main.js'
+    'src/js/main.js',
+    'src/js/pswp.js'
   ])
 
     .pipe($.plumber({ errorHandler: onError }))
@@ -120,6 +124,14 @@ gulp.task('images', () => {
     .pipe($.print())
     .pipe($.imagemin())
     .pipe(gulp.dest('static/images'))
+})
+
+gulp.task('pswp-images', () => {
+  return gulp.src('node_modules/photoswipe/src/css/**/*.{png,jpg,jpeg,gif,svg,webp}')
+    .pipe($.newer('static/images/photoswipe'))
+    .pipe($.print())
+    .pipe($.imagemin())
+    .pipe(gulp.dest('static/images/photoswipe'))
 })
 
 gulp.task('html', () => {
