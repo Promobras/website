@@ -171,6 +171,4 @@ collections:
       - { label: "Code", name: "code", widget: "string", required: false }
       - { label: "Google Maps Id", name: "gmaps", widget: "string", required: false }
       - { label: "PDF", name: "pdf_doc", widget: "file", required: false}
-      - { label: "PDF2", name: "another_pdf_doc", widget: "file"}
-      - { label: "Image", name: "image", widget: "image", required: false}
       - { label: "Body", name: "body", widget: "markdown" }
