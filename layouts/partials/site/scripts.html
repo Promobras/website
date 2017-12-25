@@ -1,2 +1,5 @@
 <!--[if lte IE 8]><script src="{{ "assets/js/ie/respond.min.js" | absURL }}"></script><![endif]-->
 <script src="{{ "assets/js/app.min.js" | absURL }}"></script>
+{{ if (getenv "HUGO_ENV") "production" -}}
+<script type="text/javascript">$.cloudinary.responsive()</script>
+{{ end -}}

@@ -90,6 +90,7 @@ gulp.task('js', () => {
     'src/js/jquery.scrolly.min.js',
     'src/js/jquery.scrollgress.min.js',
     'src/js/skel.min.js',
+    'node_modules/cloudinary-jquery/cloudinary-jquery.js',
     'src/js/util.js',
     'src/js/main.js'
   ])
