@@ -8,6 +8,7 @@
 - [ ] Cloudinary (https://res.cloudinary.com/dggfnr6w1/image/fetch)
 - [ ] Form
 - [ ] GMaps
+- [ ] PhotoSwipe or fancyBox3 (jquery upgrade needed)
 
 # Questions
 - Comment générer une carte Google Maps
