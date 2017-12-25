@@ -1,4 +1,4 @@
-<div{{ with .Get "class" }} class="{{ . }}"{{ end }}>
+<div class="img{{ with .Get "class" }} {{ . }}{{ end }}">
 {{ if (getenv "HUGO_ENV") "production" }}
 <img data-src="https://res.cloudinary.com/{{ $.Site.Params.cloudinary }}/image/fetch/w_auto/f_auto/https://beta.bresil-autrement.ch{{ .Get "src" }}" src="" class="cld-responsive">
 {{ else }}
