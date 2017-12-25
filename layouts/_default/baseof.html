@@ -10,6 +10,7 @@
     {{ end }}
 
     {{ block "site/styles" . }}{{ partial "site/styles.html" . }}{{ end }}
+    {{ block "site/favicon" . }}{{ partial "site/favicon.html" . }}{{ end }}
 
   </head>
   <body class="{{ if .IsHome }}index{{ else }}left-sidebar{{ end }}{{if ne (getenv "HUGO_ENV") "production" }} dev{{ end }}">
