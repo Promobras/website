@@ -1,11 +1,47 @@
 div {
     .img {
+        img {
+            width: 100%;
+        }
+
         &.w100 {
             width: 100%;
             height: auto;
 
-            img {
+        }
+
+        &.w30 {
+            width: 30%;
+            height: auto;
+        }
+
+        &.left {
+            float: left;
+            padding-right: .5em;
+            padding-bottom: .5em;
+        }
+        @media screen and (max-width: $narrower) {
+            &.w30 {
                 width: 100%;
+            }
+
+            &.left {
+                float: none;
+                padding-right: 0;
+                padding-left: 0;
+            }
+        }
+
+        @media screen and (max-width: $mobile) {
+            &.w30 {
+                width: 100vw;
+                margin: 0 calc(50% - 50vw);
+            }
+
+            &.left {
+                float: none;
+                padding-right: 0;
+                padding-left: 0;
             }
         }
     }
