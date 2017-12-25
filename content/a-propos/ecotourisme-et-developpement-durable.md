@@ -23,8 +23,8 @@ Alors que les premières définitions de l’écotourisme mettaient l’accent s
 C’est ainsi que l’écotourisme responsable contribue activement à la protection du patrimoine naturel et culturel, en proposant aux visiteurs une interprétation de ce patrimoine, tout en incluant les communautés locales et indigènes dans sa planification, son développement et son exploitation et en contribuant à leur bien-être.
 En résumé, l’écotourisme répond à trois critères :
 
-- tourisme axé sur la nature
-- tourisme présentant une composante éducative
+- tourisme axé sur la nature.
+- tourisme présentant une composante éducative.
 - tourisme répondant à un besoin de durabilité.
 
 ### Parcs Nationaux du Brésil

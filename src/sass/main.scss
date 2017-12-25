@@ -114,7 +114,7 @@ ol,
 dl,
 table,
 blockquote {
-    margin: 0 0 2em;
+    margin: 0 0 1.5em;
 }
 
 h1,
@@ -615,7 +615,20 @@ table {
                 content: '\f18e';
                 font-family: 'FontAwesome';
                 float: left;
+                padding-right: .2em;
                 margin-left: -1.5em;
+            }
+        }
+    }
+
+    .post {
+        ul {
+            margin-left: 0;
+
+            > li {
+                &::before {
+                    margin-left: 0;
+                }
             }
         }
     }
