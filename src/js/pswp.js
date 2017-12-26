@@ -25,7 +25,15 @@ var openPhotoSwipe = () => {
   var options = {
   // optionName: 'option value'
   // for example:
-    index: 0 // start at first slide
+    index: 0, // start at first slide
+    mainClass: 'pswp--minimal--dark',
+    barsSize: {top: 0, bottom: 0},
+    captionEl: false,
+    fullscreenEl: true,
+    shareEl: false,
+    bgOpacity: 0.95,
+    tapToClose: true,
+    tapToToggleControls: false
   }
 
   // Initializes and opens PhotoSwipe
