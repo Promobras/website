@@ -86,7 +86,7 @@ gulp.task('js-watch', ['js'], (cb) => {
 
 gulp.task('js', () => {
   return gulp.src([
-    'src/js/jquery.min.js',
+    'src/js/jquery-3.2.1.min.js',
     'src/js/jquery.dropotron.min.js',
     'src/js/jquery.scrolly.min.js',
     'src/js/jquery.scrollgress.min.js',
