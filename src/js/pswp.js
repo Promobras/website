@@ -15,17 +15,17 @@ var openPhotoSwipe = (e) => {
     console.log(src)
     let item = {
       large: {
-        src: src.replace('w_auto', 'w_1600'),
+        src: src.replace('w_auto', 'w_1600').replace(',dpr_auto', ''),
         w: 1600,
         h: 1200
       },
       medium: {
-        src: src.replace('w_auto', 'w_800'),
+        src: src.replace('w_auto', 'w_800').replace(',dpr_auto', ''),
         w: 800,
         h: 600
       },
       small: {
-        src: src.replace('w_auto', 'w_400'),
+        src: src.replace('w_auto', 'w_400').replace(',dpr_auto', ''),
         w: 400,
         h: 300
       },
