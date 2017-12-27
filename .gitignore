@@ -3,10 +3,8 @@
 
 /static/images
 /static/fonts
-/static/assets/fonts/
-/static/assets/css/
-/static/assets/js/*.js
-/static/assets/js/ie/
-/static/css/app.css
-/static/js/app.js
+/static/assets
+!/static/assets/css/images
+/static/css
+/static/js
 package-lock.json
