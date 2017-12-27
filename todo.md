@@ -9,6 +9,7 @@
 - [ ] Form
 - [ ] GMaps
 - [ ] PhotoSwipe or fancyBox3 (jquery upgrade needed)
+- [ ] Tours: rename existing to use title. Update existing pages
 
 # Questions
 - Comment générer une carte Google Maps
