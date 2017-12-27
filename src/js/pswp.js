@@ -12,7 +12,6 @@ var openPhotoSwipe = (e) => {
     if (typeof src === 'undefined') {
       src = value.src
     }
-    console.log(src)
     let item = {
       large: {
         src: src.replace('w_auto', 'w_1600').replace(',dpr_auto', ''),
@@ -69,7 +68,6 @@ var openPhotoSwipe = (e) => {
     // Code below is needed if you want image to switch dynamically on window.resize
 
     // Find out if current images need to be changed
-    console.log(realViewportWidth)
     if (useImages !== 'small' && realViewportWidth < 400) {
       useImages = 'small'
       imageSrcWillChange = true
