@@ -1,7 +1,7 @@
 /* global PhotoSwipe, PhotoSwipeUI_Default */
 var openPhotoSwipe = (e) => {
   let group = $(e.target).parent().attr('data-lightbox')
-  var pswpElement = document.querySelectorAll('.pswp')[0]
+  var pswpElement = $('.pswp')[0]
 
   // build items array
   var items = []
