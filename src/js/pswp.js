@@ -6,8 +6,12 @@ var openPhotoSwipe = (e) => {
   // build items array
   var items = []
   let images = $('div.img[data-lightbox=' + group + ']>img')
+  let startIndex = 0
   for (let i = 0; i < images.length; i++) {
     let value = images[i]
+    if ($(value).attr('src') === $(e.target).attr('src')) {
+      startIndex = i
+    }
     let src = $(value).attr('data-src')
     if (typeof src === 'undefined') {
       src = value.src
@@ -34,9 +38,7 @@ var openPhotoSwipe = (e) => {
   }
   // define options (if needed)
   var options = {
-  // optionName: 'option value'
-  // for example:
-    index: 0, // start at first slide
+    index: startIndex,
     barsSize: {top: 0, bottom: 0},
     closeOnScroll: false,
     showHideOpacity: true,
