@@ -101,6 +101,7 @@ gulp.task('js', () => {
 
     .pipe($.plumber({ errorHandler: onError }))
     .pipe($.print())
+    .pipe($.replace(/\/\/# sourceMappingURL=.*/, ''))
     .pipe($.if(['!.min.*'], $.babel()))
     .pipe($.if(['!.min.*'], $.if(isProduction, $.uglify())))
     .pipe($.concat('app.min.js'))
