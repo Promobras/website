@@ -91,7 +91,7 @@ gulp.task('js', () => {
     'src/js/jquery.scrolly.min.js',
     'src/js/jquery.scrollgress.min.js',
     'src/js/skel.min.js',
-    'node_modules/cloudinary-jquery/cloudinary-jquery.js',
+    'node_modules/cloudinary-core/cloudinary-core-shrinkwrap.min.js',
     'node_modules/photoswipe/dist/photoswipe.min.js',
     'node_modules/photoswipe/dist/photoswipe-ui-default.min.js',
     'src/js/util.js',
