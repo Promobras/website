@@ -1,0 +1,29 @@
+
+.tour-gallery-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.tour-gallery-item {
+    max-width: 100%;
+    display: flex;
+    padding: .3em;
+
+    img {
+        display: block;
+    }
+}
+
+@media screen and (min-width: $narrower) {
+    .tour-gallery-item {
+        width: calc(50% - .6em);
+    }
+}
+@media screen and (min-width: $narrow) {
+    .tour-gallery-item {
+        width: calc(25% - .6em);
+    }
+}
