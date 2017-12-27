@@ -1,0 +1,33 @@
+<section class="tour">
+  <div class="tour-header">
+    <div class="tour-code">{{ .code }}</div>
+    <div class="tour-title"><h3>{{ .title }}</h3></div>
+  </div>
+  <div class="summary">{{ .summary }}</div>
+  <article class="description">
+  {{ with .description }}{{ . | markdownify | safeHTML }}{{ end }}
+
+  {{ $code := .code }}
+  {{ with .images }}
+    <div class="tour-gallery-container">
+    {{ range . }}
+      <div class="img tour-gallery-item" data-lightbox="{{ $code }}">
+        {{ if (getenv "HUGO_ENV") "production" }}
+          <img data-src="https://res.cloudinary.com/{{ $.Site.Params.cloudinary }}/image/fetch/w_auto,dpr_auto,c_scale,c_limit/f_auto/https://beta.bresil-autrement.ch{{ .image }}" src="" class="cld-responsive">
+        {{ else }}
+          <img src="{{ .image }}">
+        {{ end }}
+      </div>
+    {{ end }}
+    </div>
+  {{ end }}
+  </article>
+  <div class="questions">Des questions? <a href="/contact">Contactez nous</a> !</div>
+  {{ with .pdf_doc -}}
+    <div class="pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i><a href="{{ . }}">Document PDF détaillé</a></div>
+  {{ end -}}
+
+  {{ with .gmaps }}
+  <iframe class="map" src="https://www.google.com/maps/d/embed?mid={{.}}" width="100%" height="240"></iframe>
+  {{ end }}
+</section>
