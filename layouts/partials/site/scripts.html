@@ -1,5 +1,17 @@
 <!--[if lte IE 8]><script src="{{ "assets/js/ie/respond.min.js" | absURL }}"></script><![endif]-->
 <script src="{{ "assets/js/app.min.js" | absURL }}"></script>
 {{ if (getenv "HUGO_ENV") "production" -}}
-<script type="text/javascript">$.cloudinary.responsive()</script>
+<script type="text/javascript">
+  var my_breakpoints = [
+    150,
+    300,
+    600,
+    800,
+    1080,
+    1920
+  ]
+  var cl = cloudinary.Cloudinary.new({cloud_name: "{{ $.Site.Params.cloudinary }}"})
+  cl.config({breakpoints:my_breakpoints})
+  cl.responsive()
+</script>
 {{ end -}}
