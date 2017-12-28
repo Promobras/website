@@ -26,12 +26,14 @@ collections:
     folder: "content/destinations"
     create: true
     slug: "{{slug}}"
+    format: "frontmatter"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Summary", name: "summary", widget: "string", required: false }
       - { label: "Link Title", name: "linktitle", widget: "string", required: false }
       - { label: "Tag Line", name: "tagline", widget: "string", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Hide Link Summaries", name: "hidesummaries", widget: "boolean", default: false }
       - { label: "Weight", name: "weight", widget: "number", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
@@ -40,12 +42,14 @@ collections:
     folder: "content/destinations/nord-amazonie"
     create: true
     slug: "{{slug}}"
+    format: "frontmatter"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Summary", name: "summary", widget: "string", required: false }
       - { label: "Link Title", name: "linktitle", widget: "string", required: false }
       - { label: "Tag Line", name: "tagline", widget: "string", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Hide Link Summaries", name: "hidesummaries", widget: "boolean", default: false }
       - { label: "Weight", name: "weight", widget: "number", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
   - label: "Destinations/Nord-Est"
@@ -53,12 +57,14 @@ collections:
     folder: "content/destinations/nord-est"
     create: true
     slug: "{{slug}}"
+    format: "frontmatter"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Summary", name: "summary", widget: "string", required: false }
       - { label: "Link Title", name: "linktitle", widget: "string", required: false }
       - { label: "Tag Line", name: "tagline", widget: "string", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Hide Link Summaries", name: "hidesummaries", widget: "boolean", default: false }
       - { label: "Weight", name: "weight", widget: "number", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
   - label: "Destinations/Sud-Est"
@@ -66,12 +72,14 @@ collections:
     folder: "content/destinations/sud-est"
     create: true
     slug: "{{slug}}"
+    format: "frontmatter"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Summary", name: "summary", widget: "string", required: false }
       - { label: "Link Title", name: "linktitle", widget: "string", required: false }
       - { label: "Tag Line", name: "tagline", widget: "string", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Hide Link Summaries", name: "hidesummaries", widget: "boolean", default: false }
       - { label: "Weight", name: "weight", widget: "number", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
   - label: "Destinations/Sud"
@@ -79,12 +87,14 @@ collections:
     folder: "content/destinations/sud"
     create: true
     slug: "{{slug}}"
+    format: "frontmatter"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Summary", name: "summary", widget: "string", required: false }
       - { label: "Link Title", name: "linktitle", widget: "string", required: false }
       - { label: "Tag Line", name: "tagline", widget: "string", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Hide Link Summaries", name: "hidesummaries", widget: "boolean", default: false }
       - { label: "Weight", name: "weight", widget: "number", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
   - label: "Destinations/Centre-Ouest-Pantanal"
@@ -92,12 +102,14 @@ collections:
     folder: "content/destinations/centre-ouest-pantanal"
     create: true
     slug: "{{slug}}"
+    format: "frontmatter"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Summary", name: "summary", widget: "string", required: false }
       - { label: "Link Title", name: "linktitle", widget: "string", required: false }
       - { label: "Tag Line", name: "tagline", widget: "string", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Hide Link Summaries", name: "hidesummaries", widget: "boolean", default: false }
       - { label: "Weight", name: "weight", widget: "number", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
@@ -106,12 +118,14 @@ collections:
     folder: "content/circuits"
     create: true
     slug: "{{slug}}"
+    format: "frontmatter"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Summary", name: "summary", widget: "string", required: false }
       - { label: "Link Title", name: "linktitle", widget: "string", required: false }
       - { label: "Tag Line", name: "tagline", widget: "string", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Hide Link Summaries", name: "hidesummaries", widget: "boolean", default: false }
       - { label: "Weight", name: "weight", widget: "number", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
@@ -120,12 +134,14 @@ collections:
     folder: "content/votre-bresil"
     create: true
     slug: "{{slug}}"
+    format: "frontmatter"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Summary", name: "summary", widget: "string", required: false }
       - { label: "Link Title", name: "linktitle", widget: "string", required: false }
       - { label: "Tag Line", name: "tagline", widget: "string", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Hide Link Summaries", name: "hidesummaries", widget: "boolean", default: false }
       - { label: "Weight", name: "weight", widget: "number", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
@@ -134,12 +150,14 @@ collections:
     folder: "content/a-propos"
     create: true
     slug: "{{slug}}"
+    format: "frontmatter"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Summary", name: "summary", widget: "string", required: false }
       - { label: "Link Title", name: "linktitle", widget: "string", required: false }
       - { label: "Tag Line", name: "tagline", widget: "string", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Hide Link Summaries", name: "hidesummaries", widget: "boolean", default: false }
       - { label: "Weight", name: "weight", widget: "number", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
@@ -148,12 +166,14 @@ collections:
     folder: "content/contacts"
     create: true
     slug: "{{slug}}"
+    format: "frontmatter"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Summary", name: "summary", widget: "string", required: false }
       - { label: "Link Title", name: "linktitle", widget: "string", required: false }
       - { label: "Tag Line", name: "tagline", widget: "string", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Hide Link Summaries", name: "hidesummaries", widget: "boolean", default: false }
       - { label: "Weight", name: "weight", widget: "number", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
