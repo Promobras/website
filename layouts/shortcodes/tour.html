@@ -1,2 +1,6 @@
-{{ $tour := index .Site.Data.tours (.Get 0 | lower) }}
-{{ partial "site/tour.html" $tour }}
+{{ $code := (.Get 0 | lower) }}
+{{ range .Site.Data.tours }}
+ {{ if eq $code (.code | lower) }}
+   {{ partial "site/tour.html" . }}
+ {{ end }}
+{{ end }}
