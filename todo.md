@@ -3,13 +3,13 @@
 - [x] Index
 - ~~[ ] Color by section~~
 - [x] Index title
-- [ ] Tours
+- [x] Tours
 - [ ] Gallery
-- [ ] Cloudinary (https://res.cloudinary.com/dggfnr6w1/image/fetch)
+- [x] ~~Cloudinary (https://res.cloudinary.com/dggfnr6w1/image/fetch)~~
 - [ ] Form
 - [ ] GMaps
-- [ ] PhotoSwipe or fancyBox3 (jquery upgrade needed)
-- [ ] Tours: rename existing to use title. Update existing pages
+- [x] PhotoSwipe ~~or fancyBox3 (jquery upgrade needed)~~
+- [x] Tours: rename existing to use title. Update existing pages
 
 # Questions
 - Comment générer une carte Google Maps
