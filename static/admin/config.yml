@@ -163,7 +163,7 @@ collections:
     create: true
     format: yaml
     extension: yaml
-    slug: {{ slug }}
+    slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Summary", name: "summary", widget: "string", required: false }
