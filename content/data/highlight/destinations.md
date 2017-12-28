@@ -7,7 +7,7 @@ icon = "car"
 +++
 Vous souhaitez voyager seul(e), en couple, en famille ou en comité restreint ?
 Nos programmes variés sont conçus pour répondre à votre attente.
-Consultez notre offre et si, toutefois, vous n’y trouviez pas le voyage désiré, nous sommes à votre disposition pour vous soumettre des propositions correspondant à vos envies, à votre budget.
+Consultez notre offre et si, toutefois, vous n'y trouviez pas le voyage désiré, nous sommes à votre disposition pour vous soumettre des propositions correspondant à vos envies, à votre budget.
 Le voyage "à la carte" est un de nos points forts !
 
 Nous vous proposons:
