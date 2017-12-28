@@ -10,6 +10,9 @@
 - [ ] GMaps
 - [x] PhotoSwipe ~~or fancyBox3 (jquery upgrade needed)~~
 - [x] Tours: rename existing to use title. Update existing pages
+- [ ] Editor: Add widget for Tours
+- [ ] Editor: Add widget for cl_img tag
+
 
 # Questions
 - Comment générer une carte Google Maps
