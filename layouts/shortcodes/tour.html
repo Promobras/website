@@ -1,6 +1,6 @@
 {{ $code := (.Get 0 | lower) }}
 {{ range .Site.Data.tours }}
  {{ if eq $code (.code | lower) }}
-   {{ partial "site/tour.html" . }}
+   {{ partial "site/tour.html" (dict "tour" . "root" $) }}
  {{ end }}
 {{ end }}

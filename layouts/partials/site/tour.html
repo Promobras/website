@@ -1,3 +1,5 @@
+{{ $root := .root }}
+{{ with .tour }}
 <section class="tour">
   <div class="tour-header">
     <div class="tour-code">{{ .code | upper }}</div>
@@ -13,7 +15,7 @@
     {{ range . }}
       <div class="img tour-gallery-item" data-lightbox="{{ $code }}">
         {{ if (getenv "HUGO_ENV") "production" }}
-          <img data-src="https://res.cloudinary.com/{{ $.Site.Params.cloudinary }}/image/fetch/w_auto,dpr_auto,c_scale,c_limit/f_auto/https://beta.bresil-autrement.ch{{ .image }}" src="" class="cld-responsive">
+          <img data-src="https://res.cloudinary.com/{{ $root.Site.Params.cloudinary }}/image/fetch/w_auto,dpr_auto,c_scale,c_limit/f_auto/https://beta.bresil-autrement.ch{{ .image }}" src="" class="cld-responsive">
         {{ else }}
           <img src="{{ .image }}">
         {{ end }}
@@ -35,3 +37,4 @@
   </div>
   {{ end }}
 </section>
+{{ end }}
