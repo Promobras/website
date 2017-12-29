@@ -1,6 +1,10 @@
 <div class="img{{ with .Get "class" }} {{ . }}{{ end }}"{{ with .Get "lightbox" }} data-lightbox="{{ . }}"{{ end }}>
 {{ if (getenv "HUGO_ENV") "production" }}
-  <img data-src="https://res.cloudinary.com/{{ $.Site.Params.cloudinary }}/image/fetch/w_auto,dpr_auto,c_scale,c_limit/f_auto/https://beta.bresil-autrement.ch{{ .Get "src" }}" src="" class="cld-responsive">
+  {{ if .Get "ar" }}
+    <img data-src="https://res.cloudinary.com/{{ $.Site.Params.cloudinary }}/image/fetch/w_1200,dpr_auto,ar_{{ .Get "ar" }},c_fill,g_auto/w_auto/f_auto/https://beta.bresil-autrement.ch{{ .Get "src" }}" src="" class="cld-responsive">
+  {{ else }}
+    <img data-src="https://res.cloudinary.com/{{ $.Site.Params.cloudinary }}/image/fetch/w_auto,dpr_auto,c_scale,c_limit/f_auto/https://beta.bresil-autrement.ch{{ .Get "src" }}" src="" class="cld-responsive">
+  {{ end }}
 {{ else }}
   <img src="{{ .Get "src" }}">
 {{ end }}
