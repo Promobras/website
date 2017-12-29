@@ -1,15 +1,10 @@
 
 .tour-gallery-container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
+    max-width: 100%;
     margin-bottom: 1em;
 }
 
 .tour-gallery-item {
-    max-width: 100%;
-    display: flex;
     padding: .3em;
 
     img {
@@ -23,6 +18,13 @@
     }
 }
 @media screen and (min-width: $narrow) {
+    .tour-gallery-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     .tour-gallery-item {
         width: calc(25% - .6em);
     }

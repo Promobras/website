@@ -7,8 +7,8 @@
   </div>
   <div class="summary">{{ .summary }}</div>
   <article class="description">
-  {{ with .description }}{{ . | markdownify | safeHTML }}{{ end }}
-
+  {{ with .description }}{{ . | markdownify }}{{ end }}
+  </article>
   {{ $code := .code }}
   {{ with .images }}
     <div class="tour-gallery-container">
@@ -23,7 +23,6 @@
     {{ end }}
     </div>
   {{ end }}
-  </article>
   <div class="questions">Des questions? <a href="/contact">Contactez nous</a> !</div>
   {{ with .pdf_doc -}}
     <div class="pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i><a href="{{ . }}">Document PDF détaillé</a></div>
