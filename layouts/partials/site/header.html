@@ -1,10 +1,3 @@
-<nav class="top">
-  <ul>
-    <li><a href="{{ with .Site.GetPage "page" "contact/historique.md" }}{{ .Permalink }}{{ end }}">Qui sommes nous</a></li>
-    <li><a href="{{ with .Site.GetPage "page" "a-propos/avant-de-partir.md" }}{{ .Permalink }}{{ end }}">Infos utiles</a></li>
-    <li><a href="{{ with .Site.GetPage "page" "data/sitemap.md" }}{{ .Permalink }}{{ end }}">Plan du site</a></li>
-  </ul>
-</nav>
 <header id="header" class="alt">
   <h1 id="logo"><a href="{{ .Site.BaseURL | absURL }}">{{ .Site.Title}} <span>{{ .Site.Params.Slogan }}</span></a></h1>
   <nav id="nav">

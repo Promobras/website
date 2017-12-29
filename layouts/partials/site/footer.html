@@ -1,6 +1,50 @@
 <footer id="footer">
-  <ul class="copyright">
-    <li>&copy; 2010-{{ now.Format "2006" }} &middot; <a href="{{ .Site.BaseURL }}">{{ .Site.Copyright }}</li>
-    <li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li><li>Images: Jacques Bornand, Eva Dias, Daniel Muller, <a href="https://unsplash.com" target="_blank">Unsplash</a>, <a href="https://pixabay.com" target="_blank">Pixabay</a></li>
-  </ul>
+  <div class="grid grid-five">
+
+    <div class="grid-cell">
+    <h5>Informations</h5>
+      <nav>
+        <ul>
+          <li><a href="{{ with .Site.GetPage "page" "contact/historique.md" }}{{ .Permalink }}{{ end }}">Qui sommes nous</a></li>
+          <li><a href="{{ with .Site.GetPage "page" "a-propos/avant-de-partir.md" }}{{ .Permalink }}{{ end }}">Infos utiles</a></li>
+          <li><a href="{{ with .Site.GetPage "page" "data/sitemap.md" }}{{ .Permalink }}{{ end }}">Plan du site</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="grid-cell"></div>
+
+    <div class="grid-cell">
+    <h5>Notre offre</h5>
+    <ul>
+    <li>L'offre sur ce site n'est pas exhaustive</li>
+    <li>Vous souhaitez une offre personalisée? <a href="{{ with .Site.GetPage "page" "contact/_index.md" }}{{ .Permalink }}{{ end }}">contactez-nous</a></li>
+    </ul>
+    <h5>Contact</h5>
+    <ul>
+      <li><a href="tel:021 312 62 37">021 312 62 37</a></li>
+      <li><a href="{{ with .Site.GetPage "page" "contact/_index.md" }}{{ .Permalink }}{{ end }}">contact@promobras.ch</a></li>
+    </ul>
+    </div>
+
+    <div class="grid-cell"></div>
+
+    <div class="grid-cell">
+      <h5>Design</h5>
+      <ul>
+        <li><a href="http://html5up.net/twenty" target="_blank">HTML5 UP</a></li>
+        <li><a href="https://daniel.ctrlaltdel.ch" target="_blank">Daniel Muller</a></li>
+      </ul>
+      <h5>Images</h5>
+      <ul>
+        <li>Jacques Bornand</li>
+        <li>Eva Dias</li>
+        <li>Daniel Muller</li>
+        <li><a href="https://unsplash.com" target="_blank">Unsplash</a></li>
+        <li><a href="https://pixabay.com" target="_blank">Pixabay</a></li>
+      </ul>
+      &copy; 2010-{{ now.Format "2006" }} &middot; <a href="{{ .Site.BaseURL }}">{{ .Site.Copyright }}
+    </div>
+
+  </div>
 </footer>

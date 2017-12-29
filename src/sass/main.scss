@@ -905,7 +905,7 @@ nav {
 
         nav {
             right: 2.5em;
-            top: 1.75em;
+            top: .75em;
 
             ul {
                 li {
@@ -1232,28 +1232,16 @@ nav {
     background: _palette(footer, bg);
     color: _palette(footer, fg);
     padding: 5em 5em 10em;
-    text-align: center;
+    font-size: .8em;
+    line-height: 1.5em;
 
-    .copyright {
-        font-size: .8em;
-        line-height: 1em;
+    a {
+        color: inherit;
+    }
 
-        a {
-            color: inherit;
-        }
-
-        li {
-            display: inline-block;
-            margin-left: 1em;
-            padding-left: 1em;
-            border-left: dotted 1px;
-
-            &:first-child {
-                margin: 0;
-                padding: 0;
-                border: 0;
-            }
-        }
+    h5 {
+        margin-bottom: .2em;
+        font-weight: 400;
     }
 }
 
@@ -1952,3 +1940,4 @@ nav {
     }
 }
 @import 'libs/background';
+@import 'libs/flex';
