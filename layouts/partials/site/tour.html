@@ -13,13 +13,7 @@
   {{ with .images }}
     <div class="tour-gallery-container">
     {{ range . }}
-      <div class="img tour-gallery-item" data-lightbox="{{ $code }}">
-        {{ if (getenv "HUGO_ENV") "production" }}
-          <img data-src="https://res.cloudinary.com/{{ $root.Site.Params.cloudinary }}/image/fetch/w_auto,dpr_auto,c_scale,c_limit/f_auto/https://beta.bresil-autrement.ch{{ .image }}" src="" class="cld-responsive">
-        {{ else }}
-          <img src="{{ .image }}">
-        {{ end }}
-      </div>
+      {{ partial "site/cl_img.html" (dict "root" $root "class" "tour-gallery-item" "lightbox" $code "src" .image)}}
     {{ end }}
     </div>
   {{ end }}
