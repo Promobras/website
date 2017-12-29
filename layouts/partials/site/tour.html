@@ -1,14 +1,14 @@
 {{ $root := .root }}
 {{ with .tour }}
-<section class="tour">
+<article class="tour">
   <div class="tour-header">
     <div class="tour-code">{{ .code | upper }}</div>
     <div class="tour-title"><h3>{{ .title }}</h3></div>
   </div>
   <div class="summary">{{ .summary }}</div>
-  <article class="description">
+  <div class="description">
   {{ with .description }}{{ . | markdownify }}{{ end }}
-  </article>
+  </div>
   {{ $code := .code }}
   {{ with .images }}
     <div class="tour-gallery-container">
@@ -35,5 +35,5 @@
   </div>
   </div>
   {{ end }}
-</section>
+</article>
 {{ end }}
