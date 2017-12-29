@@ -1,3 +1,4 @@
 src/js/*.min.js
 src/js/util.js
 src/js/ie/*
+layouts/**/*.html
