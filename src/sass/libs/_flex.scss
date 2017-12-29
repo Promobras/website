@@ -20,4 +20,10 @@
     .grid {
         display: block;
     }
+
+    .grid-five {
+        .grid-cell {
+            width: 100%;
+        }
+    }
 }
