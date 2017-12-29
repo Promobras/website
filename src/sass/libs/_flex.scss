@@ -14,11 +14,25 @@
 
 .grid-cell {
     flex: 1;
+
+    .phone {
+        display: none;
+    }
 }
 
 @media (max-width: $mobile) {
     .grid {
         display: block;
+    }
+
+    .grid-cell {
+        .phone {
+            display: inline-block;
+        }
+
+        .desktop {
+            display: none;
+        }
     }
 
     .grid-five {
