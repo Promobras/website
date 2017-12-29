@@ -107,6 +107,12 @@ a {
     &:hover {
         border-bottom-color: transparent;
     }
+
+    &.simplelink {
+        color: inherit;
+        cursor: pointer;
+        border-bottom: 0;
+    }
 }
 
 strong,
@@ -471,7 +477,6 @@ input {
     }
 
     &.featured {
-        cursor: default;
         display: block;
         margin: 0 0 1.5em;
         opacity: .35;
