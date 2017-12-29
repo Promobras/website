@@ -4,8 +4,9 @@ date = 2017-12-10T23:38:29+08:00
 type = "highlight"
 weight = 1
 icon = "car"
+link = "/destinations/"
+image = "/images/banner/destinations.jpg"
 +++
-{{% cl_img class="w100" ar="2.0" src="/images/banner/destinations.jpg" %}}
 Vous souhaitez voyager seul(e), en couple, en famille ou en comité restreint ?
 Nos programmes variés sont conçus pour répondre à votre attente.
 Consultez notre offre et si, toutefois, vous n'y trouviez pas le voyage désiré, nous sommes à votre disposition pour vous soumettre des propositions correspondant à vos envies, à votre budget.
@@ -18,5 +19,3 @@ Nous vous proposons:
 - location d'appartements et de maisons
 - billets d'avion
 - location de véhicules
-
-[en savoir davantage...](/destinations)

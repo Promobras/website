@@ -4,8 +4,9 @@ date = 2017-12-10T23:52:22+08:00
 type = "highlight"
 weight = 3
 icon = "user"
+link = "/votre-bresil/"
+image = "/images/banner/votre-bresil.jpg"
 +++
-{{% cl_img class="w100" ar="2.0" src="/images/banner/votre-bresil.jpg" %}}
 Vous avez un intérêt pour un domaine particulier: observation de la nature, passion des trains, architecture moderne, paysagisme, époque coloniale, pierres précieuses, grands travaux d'ingénierie, peuples indigènes, peinture contemporaine, diversité musicale et du folklore ?
 Vous souhaitez effectuer un séjour linguistique, apprendre à concocter des plats typiques ou participer à un projet solidaire ...?
 
@@ -19,5 +20,3 @@ Nous vous proposons:
 - séjours participatifs (tourisme solidaire)
 - stages linguistiques
 - etc ...
-
-[en savoir davantage...](/votre-bresil)

@@ -5,12 +5,16 @@
       {{ range where .Data.Pages "Type" "highlight" }}
         <div class="4u 12u(narrower)">
           <section>
-            <span class="icon featured fa-{{ .Params.icon }}"></span>
+            <a class="simplelink" href="{{ .Params.link }}"><span class="icon featured fa-{{ .Params.icon }}"></span></a>
             <header>
-              <h3>{{ .Title }}</h3>
+              <h3><a class="simplelink" href="{{ .Params.link }}">{{ .Title }}</a></h3>
             </header>
+            {{ partial "site/cl_img.html" (dict "root" $ "class" "w100" "ar" "2.0" "src" .Params.image "link" .Params.link)}}
             <div class="content justify">
             {{ .Content }}
+            <p>
+              <a href="{{ .Params.link }}">En savoir d'avantage</a>
+            </p>
             </div>
           </section>
         </div>
