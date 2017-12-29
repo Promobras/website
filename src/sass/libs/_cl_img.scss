@@ -1,5 +1,9 @@
 div {
     .img {
+        &[data-lightbox] {
+            cursor: pointer;
+        }
+
         img {
             width: 100%;
         }
