@@ -3,17 +3,15 @@
 {{ if (getenv "HUGO_ENV") "production" -}}
 <script type="text/javascript">
   var my_breakpoints = [
-    100,
     200,
     400,
-    600,
     800,
     1080,
     1600,
     1920
   ]
   var cl = cloudinary.Cloudinary.new({cloud_name: "{{ $.Site.Params.cloudinary }}"})
-  cl.config({breakpoints:my_breakpoints})
+  cl.config({breakpoints:my_breakpoints, responsive_use_breakpoints: 'resize'})
   cl.responsive()
 </script>
 {{ end -}}

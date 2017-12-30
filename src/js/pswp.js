@@ -34,6 +34,13 @@ var openPhotoSwipe = (e) => {
       },
       msrc: value.src
     }
+    let srcwidth = parseInt($(value).attr('data-srcwidth'))
+    if (srcwidth < 800) {
+      item.medium = item.small
+    }
+    if (srcwidth < 1600) {
+      item.large = item.medium
+    }
     items.push(item)
   }
   // define options (if needed)
