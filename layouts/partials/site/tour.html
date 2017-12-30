@@ -10,7 +10,7 @@
   <div class="description">
   {{ with .description }}{{ . | markdownify }}{{ end }}
   </div>
-  {{ $lightbox := (.title | base64Encode) }}
+  {{ $lightbox := (.title | md5) }}
   {{ with .images }}
     <div class="tour-gallery-container">
     {{ range . }}
