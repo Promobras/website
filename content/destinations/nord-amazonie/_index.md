@@ -12,3 +12,7 @@ Avec nos guides expérimentés, découvrez une Amazonie pleine de contrastes : M
 Peut-être êtes-vous tenté(e) par l'expérience d'un campement dans la forêt ou par une croisière sur l'un des fleuves amazoniens? Souhaitez-vous assister à l'une des fêtes traditionnelles dont la région a le secret?
 
 Nous sommes à même de vous faire découvrir et apprécier la richesse et les mystères du Nord du Brésil et de l'Amazonie !
+
+**Quelques propositions:**
+
+{{% tour ALPB %}}
