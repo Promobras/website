@@ -47,8 +47,11 @@ var openPhotoSwipe = (e) => {
     fullscreenEl: true,
     shareEl: false,
     bgOpacity: 0.95,
-    tapToClose: true,
-    tapToToggleControls: false
+    tapToClose: false,
+    pinchToClose: false,
+    closeOnVerticalDrag: false,
+    tapToToggleControls: false,
+    history: false
   }
 
   // Initializes and opens PhotoSwipe
@@ -56,7 +59,7 @@ var openPhotoSwipe = (e) => {
   var realViewportWidth
   var useImages = ''
   var firstResize = true
-  var imageSrcWillChange
+  var imageSrcWillChange = false
 
   gallery.listen('beforeResize', function () {
     // gallery.viewportSize.x - width of PhotoSwipe viewport
