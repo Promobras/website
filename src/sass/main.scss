@@ -1138,18 +1138,54 @@ nav {
         border-radius: 6px;
         box-shadow: 1px 1px 2px _palette(fg);
 
-        $code-width: 5em;
+        $code-width: 4em;
 
         .tour-header {
+            display: flex;
+            flex-flow: row nowrap;
 
             .tour-code {
                 font-size: .8em;
                 font-style: italic;
                 text-align: right;
+                order: 3;
+                white-space: nowrap;
+                padding-left: .5em;
+            }
+
+            .tour-duration {
+                font-size: .8em;
+                font-style: italic;
+                text-align: right;
+                order: 2;
+                white-space: nowrap;
+                padding-left: .5em;
             }
 
             .tour-title {
-                width: 100%;
+                flex-basis: 100%;
+                order: 1;
+            }
+        }
+
+        @media screen and (max-width: $mobile) {
+            .tour-header {
+                flex-flow: row wrap;
+
+                .tour-code {
+                    text-align: left;
+                    order: 2;
+                }
+
+                .tour-duration {
+                    text-align: left;
+                    order: 1;
+                    padding-left: 0;
+                }
+
+                .tour-title {
+                    order: 3;
+                }
             }
         }
 
@@ -1190,34 +1226,9 @@ nav {
             }
         }
 
-        @media screen and (min-width: ($mobile+1)) {
-            .tour-header {
-                margin-right: $code-width;
-
-                .tour-title {
-                    float: left;
-                }
-
-                .tour-code {
-                    float: right;
-                    width: $code-width;
-                    margin-right: -$code-width;
-                }
-
-                &::after {
-                    content: '';
-                    display: table;
-                    clear: both;
-                }
-            }
-        }
         @media screen and (max-width: $mobile) {
             margin-left: -1em;
             margin-right: -1em;
-
-            .tour-header {
-                width: 100%;
-            }
 
             .map {
                 height: 300px;

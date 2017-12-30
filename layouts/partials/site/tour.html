@@ -2,7 +2,8 @@
 {{ with .tour }}
 <article class="tour">
   <div class="tour-header">
-    <div class="tour-code">{{ .code | upper }}</div>
+    {{ with .duration -}}<div class="tour-duration">{{ . }}</div>{{ end -}}
+    {{ with .code -}}<div class="tour-code">({{ . | upper }})</div>{{ end -}}
     <div class="tour-title"><h3>{{ .title }}</h3></div>
   </div>
   <div class="summary">{{ .summary }}</div>
