@@ -1,7 +1,13 @@
 {{ $code := (.Get 0 | lower) }}
-{{ partial "site/tour.html" (dict "tour" (index .Site.Data.tours $code) "root" $) }}
-{{ range .Site.Data.tours }}
- {{ if eq $code (.code | lower) }}
-   {{ partial "site/tour.html" (dict "tour" . "root" $) }}
- {{ end }}
+{{ $tour := index .Site.Data.tours $code }}
+{{ if $tour }}
+  {{ partial "site/tour.html" (dict "tour" $tour "root" $) }}
+{{ else }}
+  {{ range .Site.Data.tours }}
+    {{ if .code }}
+      {{ if eq $code (.code | lower) }}
+        {{ partial "site/tour.html" (dict "tour" . "root" $) }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
 {{ end }}
