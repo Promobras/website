@@ -189,7 +189,7 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Summary", name: "summary", widget: "string", required: false }
-      - { label: "Code", name: "code", widget: "string", required: true }
+      - { label: "Code", name: "code", widget: "string", required: false }
       - { label: "Google Maps Id", name: "gmaps", widget: "string", required: false }
       - { label: "PDF", name: "pdf_doc", widget: "file", required: false}
       - label: "Images"
