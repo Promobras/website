@@ -20,3 +20,5 @@ Nous sommes à même de vous faire découvrir et apprécier la richesse et les m
 {{% tour BRPB %}}
 
 {{% tour mamiraua %}}
+
+{{% tour croisiere-manaus %}}
