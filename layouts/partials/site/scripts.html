@@ -8,7 +8,9 @@
     800,
     1080,
     1600,
-    1920
+    1920,
+    3840,
+    5760
   ]
   var cl = cloudinary.Cloudinary.new({cloud_name: "{{ $.Site.Params.cloudinary }}"})
   cl.config({breakpoints:my_breakpoints, responsive_use_breakpoints: 'resize'})
