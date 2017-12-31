@@ -16,30 +16,33 @@ var openPhotoSwipe = (e) => {
     if (typeof src === 'undefined') {
       src = value.src
     }
+    var abr = [
+      150,
+      400,
+      800,
+      1280,
+      1920
+    ]
+    var dpr = window.devicePixelRatio
     let item = {
-      large: {
-        src: src.replace('w_auto', 'w_1600').replace(',dpr_auto', ''),
-        w: 1600,
-        h: 1200
-      },
-      medium: {
-        src: src.replace('w_auto', 'w_800').replace(',dpr_auto', ''),
-        w: 800,
-        h: 600
-      },
-      small: {
-        src: src.replace('w_auto', 'w_400').replace(',dpr_auto', ''),
-        w: 400,
-        h: 300
-      },
       msrc: value.src
     }
     let srcwidth = parseInt($(value).attr('data-srcwidth'))
-    if (srcwidth < 800) {
-      item.medium = item.small
+    let srcheight = parseInt($(value).attr('data-srcheight'))
+    let ratio = srcheight / srcwidth
+    for (let i = 0; i < abr.length; i++) {
+      let versionWidth = Math.min(srcwidth, abr[i] * dpr)
+      let itemInfo = {
+        src: src.replace('w_auto', 'w_' + versionWidth).replace(',dpr_auto', ''),
+        w: versionWidth,
+        h: versionWidth * ratio
+      }
+      item['w_' + (abr[i] * dpr)] = itemInfo
     }
-    if (srcwidth < 1600) {
-      item.large = item.medium
+    item['w_' + srcwidth] = {
+      src: src.replace('w_auto', 'w_' + srcwidth).replace(',dpr_auto', ''),
+      w: srcwidth,
+      h: srcwidth * ratio
     }
     items.push(item)
   }
@@ -75,20 +78,26 @@ var openPhotoSwipe = (e) => {
     //                          1 (regular display), 2 (@2x, retina) ...
 
     // calculate real pixels when size changes
-    realViewportWidth = gallery.viewportSize.x * window.devicePixelRatio
+    realViewportWidth = gallery.viewportSize.x * dpr
 
     // Code below is needed if you want image to switch dynamically on window.resize
 
     // Find out if current images need to be changed
-    if (useImages !== 'small' && realViewportWidth < 400) {
-      useImages = 'small'
-      imageSrcWillChange = true
-    } else if (useImages !== 'medium' && realViewportWidth >= 400 && realViewportWidth < 800) {
-      useImages = 'medium'
-      imageSrcWillChange = true
-    } else if (useImages !== 'large' && realViewportWidth >= 800) {
-      useImages = 'large'
-      imageSrcWillChange = true
+    for (let i = 0; i < abr.length; i++) {
+      let j = i - 1
+      let widthLabel = abr[i] * dpr
+      let upperWidth = 99999999
+      if (i < (abr.length - 1)) {
+        upperWidth = abr[i] * dpr
+      }
+      let lowerWidth = 0
+      if (i > 0) {
+        lowerWidth = abr[j] * dpr
+      }
+      if (useImages !== 'w_' + widthLabel && realViewportWidth >= lowerWidth && realViewportWidth < upperWidth) {
+        useImages = 'w_' + widthLabel
+        imageSrcWillChange = true
+      }
     }
 
     // Invalidate items only when source is changed and when it's not the first update
