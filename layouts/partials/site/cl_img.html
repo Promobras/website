@@ -4,7 +4,7 @@
 {{ $img := imageConfig (printf "static%s" .src) }}
 {{ if (getenv "HUGO_ENV") "production" }}
   {{ if .ar }}
-    <img data-src="https://res.cloudinary.com/{{ $root.Site.Params.cloudinary }}/image/fetch/w_1200,dpr_auto,ar_{{ .ar }},c_fill,g_auto/w_auto/f_auto/https://beta.bresil-autrement.ch{{ .src }}" data-srcwidth="{{ $img.Width }}" data-srcheight="{{ $img.Height }}" src="" class="cld-responsive">
+    <img data-src="https://res.cloudinary.com/{{ $root.Site.Params.cloudinary }}/image/fetch/w_1200,dpr_auto,ar_{{ .ar }},c_fill,g_auto/w_auto/f_auto/https://beta.bresil-autrement.ch{{ .src }}" data-srcwidth="{{ $img.Width }}" data-ar="{{.ar}}" data-srcheight="{{ $img.Height }}" src="" class="cld-responsive">
   {{ else }}
     <img data-src="https://res.cloudinary.com/{{ $root.Site.Params.cloudinary }}/image/fetch/w_auto,dpr_auto,c_scale,c_limit/f_auto/https://beta.bresil-autrement.ch{{ .src }}" data-srcwidth="{{ $img.Width }}" data-srcheight="{{ $img.Height }}" src="" class="cld-responsive">
   {{ end }}

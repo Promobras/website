@@ -14,7 +14,7 @@
   {{ with .images }}
     <div class="tour-gallery-container">
     {{ range . }}
-      {{ partial "site/cl_img.html" (dict "root" $root "class" "tour-gallery-item" "lightbox" $lightbox "src" .image)}}
+      {{ partial "site/cl_img.html" (dict "root" $root "class" "tour-gallery-item" "lightbox" $lightbox "src" .image "ar" 1.33333)}}
     {{ end }}
     </div>
   {{ end }}

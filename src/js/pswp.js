@@ -29,7 +29,11 @@ var openPhotoSwipe = (e) => {
     }
     let srcwidth = parseInt($(value).attr('data-srcwidth'))
     let srcheight = parseInt($(value).attr('data-srcheight'))
+    let aratio = parseFloat($(value).attr('data-ar'))
     let ratio = srcheight / srcwidth
+    if (aratio) {
+      ratio = 1 / aratio
+    }
     for (let i = 0; i < abr.length; i++) {
       let versionWidth = Math.min(srcwidth, abr[i] * dpr)
       let itemInfo = {
