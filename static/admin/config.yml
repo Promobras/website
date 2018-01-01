@@ -36,6 +36,7 @@ collections:
       - { label: "Tag Line", name: "tagline", widget: "string", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Hide Link Summaries", name: "hidesummaries", widget: "boolean", default: false }
+      - { label: "Hide Inline Menu", name: "hideinlinemenu", widget: "boolean", default: false }
       - { label: "Weight", name: "weight", widget: "number", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
@@ -52,6 +53,7 @@ collections:
       - { label: "Tag Line", name: "tagline", widget: "string", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Hide Link Summaries", name: "hidesummaries", widget: "boolean", default: false }
+      - { label: "Hide Inline Menu", name: "hideinlinemenu", widget: "boolean", default: false }
       - { label: "Weight", name: "weight", widget: "number", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
   - label: "Destinations/Nord-Est"
@@ -67,6 +69,7 @@ collections:
       - { label: "Tag Line", name: "tagline", widget: "string", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Hide Link Summaries", name: "hidesummaries", widget: "boolean", default: false }
+      - { label: "Hide Inline Menu", name: "hideinlinemenu", widget: "boolean", default: false }
       - { label: "Weight", name: "weight", widget: "number", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
   - label: "Destinations/Sud-Est"
@@ -82,6 +85,7 @@ collections:
       - { label: "Tag Line", name: "tagline", widget: "string", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Hide Link Summaries", name: "hidesummaries", widget: "boolean", default: false }
+      - { label: "Hide Inline Menu", name: "hideinlinemenu", widget: "boolean", default: false }
       - { label: "Weight", name: "weight", widget: "number", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
   - label: "Destinations/Sud"
@@ -97,6 +101,7 @@ collections:
       - { label: "Tag Line", name: "tagline", widget: "string", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Hide Link Summaries", name: "hidesummaries", widget: "boolean", default: false }
+      - { label: "Hide Inline Menu", name: "hideinlinemenu", widget: "boolean", default: false }
       - { label: "Weight", name: "weight", widget: "number", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
   - label: "Destinations/Centre-Ouest-Pantanal"
@@ -112,6 +117,7 @@ collections:
       - { label: "Tag Line", name: "tagline", widget: "string", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Hide Link Summaries", name: "hidesummaries", widget: "boolean", default: false }
+      - { label: "Hide Inline Menu", name: "hideinlinemenu", widget: "boolean", default: false }
       - { label: "Weight", name: "weight", widget: "number", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
@@ -128,6 +134,7 @@ collections:
       - { label: "Tag Line", name: "tagline", widget: "string", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Hide Link Summaries", name: "hidesummaries", widget: "boolean", default: false }
+      - { label: "Hide Inline Menu", name: "hideinlinemenu", widget: "boolean", default: false }
       - { label: "Weight", name: "weight", widget: "number", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
@@ -144,6 +151,7 @@ collections:
       - { label: "Tag Line", name: "tagline", widget: "string", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Hide Link Summaries", name: "hidesummaries", widget: "boolean", default: false }
+      - { label: "Hide Inline Menu", name: "hideinlinemenu", widget: "boolean", default: false }
       - { label: "Weight", name: "weight", widget: "number", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
@@ -160,6 +168,7 @@ collections:
       - { label: "Tag Line", name: "tagline", widget: "string", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Hide Link Summaries", name: "hidesummaries", widget: "boolean", default: false }
+      - { label: "Hide Inline Menu", name: "hideinlinemenu", widget: "boolean", default: false }
       - { label: "Weight", name: "weight", widget: "number", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
@@ -176,6 +185,7 @@ collections:
       - { label: "Tag Line", name: "tagline", widget: "string", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Hide Link Summaries", name: "hidesummaries", widget: "boolean", default: false }
+      - { label: "Hide Inline Menu", name: "hideinlinemenu", widget: "boolean", default: false }
       - { label: "Weight", name: "weight", widget: "number", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 

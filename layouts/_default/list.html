@@ -19,7 +19,7 @@
             {{ .Content }}
           </section>
         </div>
-        {{ if (or ((len .Sections) "gt" 0) ((len .Pages) "gt" 0)) }}
+        {{ if and (not .Params.hideinlinemenu) ((or ((len .Sections) "gt" 0) ((len .Pages) "gt" 0))) }}
         <div class="content section-nav">
             {{ range .Sections }}
               <article>
