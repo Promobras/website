@@ -10,3 +10,5 @@ La localisation exceptionnelle de la ville n’a pas échappé aux experts de l�
 En dehors des clichés touristiques, Rio de Janeiro offre de nombreuses attractions que nous aurons le plaisir de vous faire découvrir.
 
 **Quelques propositions:**
+
+{{% tour rio-de-janeiro-ville %}}
