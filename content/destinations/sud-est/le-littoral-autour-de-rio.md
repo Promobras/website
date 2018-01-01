@@ -10,3 +10,7 @@ Profitez de votre séjour dans la région pour découvrir la petite ville de Par
 Un tout autre décor et un autre environnement vous attend à Búzios, station de villégiature branchée, située à l’est de Rio. Sur le trajet, Arraial do Cabo est un des lieux de plongée préférés des Brésiliens.
 
 **Quelques propositions:**
+
+{{% tour costa-verde-1 %}}
+
+{{% tour costa-verde-2 %}}
