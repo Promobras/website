@@ -1,6 +1,7 @@
 +++
 title = "SALVADOR et BAHIA"
 date = 2017-11-19T19:24:52+08:00
+weight = 3
 +++
 # A Salvador, chef-lieu de l'Etat de Bahia,
 
