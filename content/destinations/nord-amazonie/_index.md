@@ -22,3 +22,5 @@ Nous sommes à même de vous faire découvrir et apprécier la richesse et les m
 {{% tour mamiraua %}}
 
 {{% tour croisiere-manaus %}}
+
+{{% tour amazon-clipper %}}
