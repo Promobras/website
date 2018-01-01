@@ -26,3 +26,5 @@ Nous sommes à même de vous faire découvrir et apprécier la richesse et les m
 {{% tour amazon-clipper %}}
 
 {{% tour croisiere-en-amazonie-avec-amazon-dream %}}
+
+{{% tour croisiere-en-amazonie-santarem-alter-do-chao %}}
