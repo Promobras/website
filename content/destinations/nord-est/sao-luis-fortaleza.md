@@ -10,3 +10,7 @@ dans le Nordeste brésilien, mérite que l'on s'y attarde, que l'on flâne le lo
 Depuis Jeri, le circuit proposé vous permet de joindre Fortaleza par la route de l'intérieur des terres ou, si vous avez suffisamment de temps, par la voie du bord de mer.
 Fortaleza, capitale de l'Etat du Ceará, est réputée pour ses plages et pour sa vie nocturne, très animée.
 Ce circuit peut être réalisé dans le sens contraire, en débutant par Fortaleza. *Site inscrit sur la liste du Patrimoine Mondial de l'Humanité de l'UNESCO.*
+
+{{% tour sao-luis-lencois-maranhenses-jericoacoara-et-fortaleza %}}
+
+{{% tour jericoacoara %}}
