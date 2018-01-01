@@ -1,6 +1,7 @@
 /public
 /node_modules
 
+/helper
 /static/images
 /static/fonts
 /static/assets
