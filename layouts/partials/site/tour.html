@@ -13,8 +13,17 @@
   {{ $lightbox := (.title | md5) }}
   {{ with .images }}
     <div class="tour-gallery-container">
+    {{ $root.Scratch.Set "colclass" "w25" }}
+    {{ $imglen := len . }}
+    {{ if or (eq $imglen 3) (eq $imglen 6) }}
+      {{ $root.Scratch.Set "colclass" "w33" }}
+    {{ end }}
+    {{ if eq $imglen 5 }}
+      {{ $root.Scratch.Set "colclass" "w20" }}
+    {{ end }}
     {{ range . }}
-      {{ partial "site/cl_img.html" (dict "root" $root "class" "tour-gallery-item" "lightbox" $lightbox "src" .image "ar" 1.33333)}}
+      {{ $class := printf "tour-gallery-item %s" ($root.Scratch.Get "colclass") }}
+      {{ partial "site/cl_img.html" (dict "root" $root "class" $class "lightbox" $lightbox "src" .image "ar" 1.33333)}}
     {{ end }}
     </div>
   {{ end }}
