@@ -10,3 +10,9 @@ Les villes historiques et le Parc National de la Serra do Cipó, pour en nommer 
 Trois des villes historiques de Minas Gerais sont inscrits sur la liste du Patrimoine Mondial de l’Humanité par l’UNESCO : Ouro Preto, Diamantina et le sanctuaire du Senhor Bom Jesus de Matosinhos à Congonhas.
 
 **Quelques propositions:**
+
+{{% tour belo-horizonte-ville %}}
+
+{{% tour villes-historiques-de-minas-gerais %}}
+
+{{% tour de-l-argile-a-l-oeuvre-d-art %}}
