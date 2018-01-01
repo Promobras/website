@@ -17,16 +17,29 @@ weight = 6
 
 ### Formualaire de contact
 <form name="contact" netlify>
-  <p>
-    <label>Your Name: <input type="text" name="name"></label>   
-  </p>
-  <p>
-    <label>Your Email: <input type="email" name="email"></label>
-  </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
+  <div class="row 50%">
+    <div class="6u 12u(mobile)">
+      <input type="text" name="name" placeholder="Name" />
+    </div>
+    <div class="6u 12u(mobile)">
+      <input type="text" name="email" placeholder="Email" />
+    </div>
+  </div>
+  <div class="row 50%">
+    <div class="12u">
+      <input type="text" name="subject" placeholder="Subject" />
+    </div>
+  </div>
+  <div class="row 50%">
+    <div class="12u">
+      <textarea name="message" placeholder="Message" rows="7"></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <div class="12u">
+      <ul class="buttons">
+        <li><input type="submit" class="special" value="Send Message" /></li>
+      </ul>
+    </div>
+  </div>
 </form>
