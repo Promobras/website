@@ -5,7 +5,7 @@ publishDate: 2018-01-01T21:30:58+08:00
 linktitle: PANTANAL
 weight: 2
 ---
-{{% gallery lightbox="g1" class="w25" %}}
+{{% gallery lightbox="g1" class="w25" ar="1.3333" %}}
   {{% cl_img src="/uploads/3481.jpg" %}}
   {{% cl_img src="/uploads/3485.jpg" %}}
   {{% cl_img src="/uploads/4182.jpg" %}}
