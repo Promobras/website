@@ -1,0 +1,20 @@
+.content {
+    .post {
+        .sitemap {
+            ul {
+                margin-left: 1.5em;
+                margin-bottom: 0;
+            }
+
+            li {
+
+                &::before {
+                    content: '';
+                    margin-left: inherit;
+                    padding-right: inherit;
+                    float: inherit;
+                }
+            }
+        }
+    }
+}

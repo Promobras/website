@@ -1,0 +1,29 @@
+{{ $home := .Site.Home }}
+<div class="sitemap">
+<ul>
+  <li><a href="{{ .Site.BaseURL | absURL }}">Accueil</a></li>
+  {{ template "sections-tree-nav"  (dict "root" $home "current" $ ) -}}
+</ul>
+
+{{ define "sections-tree-nav" }}
+  {{ range .root.Sections -}}
+    {{ $sect := (.Site.GetPage "section" .Section) }}
+    {{- if ne .Section "data" -}}
+      {{ $pages := where .Pages ".Params.hidden" "!=" true }}
+      {{ $sections := len .Sections }}
+      {{ $submenus := add $sections (len $pages) }}
+      <li>
+        <a href="{{ .RelPermalink}}">{{ if .LinkTitle }}{{ .LinkTitle }}{{ else }}{{ .Title }}{{ end }}</a>
+        {{ if gt $submenus 0 }}
+        <ul>
+          {{ range $pages -}}
+            <li><a href="{{ .RelPermalink}}">{{ if .LinkTitle }}{{ .LinkTitle }}{{ else }}{{ .Title }}{{ end }}</a></li>
+          {{ end -}}
+          {{ template "sections-tree-nav" (dict "root" . "current" $.current ) -}}
+        </ul>
+        {{ end }}
+      </li>
+    {{ end -}}
+  {{ end -}}
+{{ end -}}
+</div>

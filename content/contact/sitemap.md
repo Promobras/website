@@ -5,5 +5,4 @@ hidden = true
 type = "sitemap"
 url = "/sitemap/"
 +++
-
-This is the sitemap
+{{< sitemap >}}
