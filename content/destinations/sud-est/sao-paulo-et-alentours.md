@@ -8,3 +8,5 @@ La mégapole de São Paulo, la plus grande ville du pays, est considérée comme
 Si la ville n’offre pas le même intérêt touristique que sa rivale Rio de Janeiro, elle n’en propose pas moins un riche et vaste choix d’attractions susceptibles de contenter des visiteurs exigeants: des musées aux riches collections, des édifices à l’architecture remarquable, d’excellents restaurants proposant des plats du monde entier, des spectacles et des concerts de premier ordre et une vie nocturne qui anime de très nombreux quartiers.
 
 **Quelques propositions:**
+
+{{% tour sao-paulo-ville %}}
