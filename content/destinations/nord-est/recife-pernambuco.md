@@ -12,3 +12,7 @@ Dans la région Nord, des plantations de canne à sucre rappellent que l'économ
 Si, pour vous, les vacances sont synonyme de dilettante et d'activités balnéaires, vous trouverez votre bonheur à Porto de Galinhas, au sud de Recife, petite ville de pêcheurs qui a été adoptée par une clientèle internationale.
 Et que dire de Fernando de Noronha, un archipel unique, situé en pleine mer, à 1 heure de vol de Recife.
 De toute façon, nous sommes à votre disposition pour que votre séjour dans l'Etat de Pernambuco soit des plus réussis !
+
+{{% tour recife-er-olinda %}}
+
+{{% tour recife-et-excursions-dans-l-interieur-du-pernambuco %}}
