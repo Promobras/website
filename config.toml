@@ -10,6 +10,7 @@ RemovePathAccents = true
 permalinks = "/:sections/:slug/"
 sectionPagesMenu = "main"
 summaryLength = 30
+taxonomies = []
 
 [params]
 tagline = "Agence de Voyage - Le Brésil Autrement - Agence de voyage à Lausanne spécialisée pour le Brésil - Lausanne"
