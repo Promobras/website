@@ -633,6 +633,12 @@ table {
                 padding-right: .2em;
                 margin-left: -1.5em;
             }
+
+            > ul {
+                > li {
+                    margin-left: 1.5em;
+                }
+            }
         }
     }
 
