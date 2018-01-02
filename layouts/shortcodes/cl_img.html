@@ -2,8 +2,9 @@
 {{- $lightbox := .Get "lightbox" -}}
 {{- $ar := .Get "ar" -}}
 {{- $class := .Get "class" -}}
+{{- $title := .Get "title" -}}
 {{- with .Parent -}}
-  {{ partial "site/cl_img.html" (dict "root" $ "class" (.Get "class") "lightbox" (.Get "lightbox") "ar" (.Get "ar") "src" $src) }}
+  {{ partial "site/cl_img.html" (dict "root" $ "class" (.Get "class") "lightbox" (.Get "lightbox") "ar" (.Get "ar") "src" $src "title" $title) }}
 {{- else -}}
-  {{ partial "site/cl_img.html" (dict "root" $ "class" $class "lightbox" $lightbox "ar" $ar "src" $src) }}
+  {{ partial "site/cl_img.html" (dict "root" $ "class" $class "lightbox" $lightbox "ar" $ar "src" $src "title" $title) }}
 {{- end -}}

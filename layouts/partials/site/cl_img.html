@@ -2,6 +2,9 @@
 <div class="img{{ with .class }} {{ . }}{{ end }}"{{ with .lightbox }} data-lightbox="{{ . }}"{{ end }}>
 {{ with .link -}}<a class="simplelink" href="{{.}}">{{ end -}}
 {{ $img := imageConfig (printf "static%s" .src) }}
+{{ with .title }}
+<figure>
+{{ end }}
 {{ if (getenv "HUGO_ENV") "production" }}
   {{ if .ar }}
     <img data-src="https://res.cloudinary.com/{{ $root.Site.Params.cloudinary }}/image/fetch/w_1200,dpr_auto,ar_{{ .ar }},c_fill,g_auto/w_auto/f_auto/https://beta.bresil-autrement.ch{{ .src }}" data-srcwidth="{{ $img.Width }}" data-ar="{{.ar}}" data-srcheight="{{ $img.Height }}" src="" class="cld-responsive">
@@ -12,4 +15,8 @@
   <img data-srcwidth="{{ $img.Width }}" data-srcheight="{{ $img.Height }}" src="{{ .src }}">
 {{ end }}
 {{ with .link -}}</a>{{ end -}}
+{{ with .title }}
+<figcaption>{{ . }}</figcaption>
+</figure>
+{{ end }}
 </div>

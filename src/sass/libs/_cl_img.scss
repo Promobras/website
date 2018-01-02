@@ -24,12 +24,30 @@ div {
             padding-right: .5em;
             padding-bottom: .5em;
         }
+
+        &.right {
+            float: right;
+            padding-left: .5em;
+            padding-bottom: .5em;
+        }
+
+        figcaption {
+            text-align: center;
+            font-style: italic;
+            font-size: .8em;
+            border-top: 1px solid _palette(fg);
+            border-bottom: 1px solid _palette(fg);
+            margin: .3em 0 1.5em;
+            padding: .5em 0;
+        }
+
         @media screen and (max-width: $narrower) {
             &.w30 {
                 width: 100%;
             }
 
-            &.left {
+            &.left,
+            &.right {
                 float: none;
                 padding-right: 0;
                 padding-left: 0;
@@ -42,7 +60,8 @@ div {
                 margin: 0 calc(50% - 50vw);
             }
 
-            &.left {
+            &.left,
+            &right {
                 float: none;
                 padding-right: 0;
                 padding-left: 0;
