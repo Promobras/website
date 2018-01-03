@@ -13,7 +13,7 @@
     5760
   ]
   var cl = cloudinary.Cloudinary.new({cloud_name: "{{ $.Site.Params.cloudinary }}"})
-  cl.config({breakpoints:my_breakpoints, responsive_use_breakpoints: 'resize'})
+  cl.config({breakpoints:my_breakpoints, responsive_use_breakpoints: true})
   cl.responsive()
 </script>
 {{ end -}}
