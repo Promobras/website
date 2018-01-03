@@ -7,7 +7,12 @@
 {{ end }}
 {{ if (getenv "HUGO_ENV") "production" }}
   {{ if .ar }}
-    <img data-src="https://res.cloudinary.com/{{ $root.Site.Params.cloudinary }}/image/fetch/w_1200,dpr_auto,ar_{{ .ar }},c_fill,g_auto/w_auto/f_auto/https://beta.bresil-autrement.ch{{ .src }}" data-srcwidth="{{ $img.Width }}" data-ar="{{.ar}}" data-srcheight="{{ $img.Height }}" src="" class="cld-responsive">
+    {{ $root.Scratch.Set "ar" .ar }}
+    {{ if gt $img.Height $img.Width }}
+      
+      {{ $root.Scratch.Set "ar" (div (math.Round (mul (div 1.0 .ar) 100.0)) 100.0) }}
+    {{ end }}
+    <img data-src="https://res.cloudinary.com/{{ $root.Site.Params.cloudinary }}/image/fetch/w_1200,dpr_auto,ar_{{ ($root.Scratch.Get "ar") }},c_fill,g_auto/w_auto/f_auto/https://beta.bresil-autrement.ch{{ .src }}" data-srcwidth="{{ $img.Width }}" data-ar="{{$root.Scratch.Get "ar"}}" data-srcheight="{{ $img.Height }}" src="" class="cld-responsive">
   {{ else }}
     <img data-src="https://res.cloudinary.com/{{ $root.Site.Params.cloudinary }}/image/fetch/w_auto,dpr_auto,c_scale,c_limit/f_auto/https://beta.bresil-autrement.ch{{ .src }}" data-srcwidth="{{ $img.Width }}" data-srcheight="{{ $img.Height }}" src="" class="cld-responsive">
   {{ end }}
