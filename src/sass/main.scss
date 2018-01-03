@@ -184,7 +184,11 @@ hr {
 blockquote {
     border-left: solid .5em _palette(border);
     font-style: italic;
-    padding: 1em 0 1em 2em;
+    padding: .5em .5em 1em 2em;
+    background-color: _palette(two, bg);
+    font-size: .9em;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 1px 1px 2px _palette(fg);
 }
 
 // Section/Article
