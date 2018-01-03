@@ -1,1 +1,1 @@
-<div{{ with .Get "class"}} class="{{ . }}"{{ end }}>{{ with .Get "icon"}}<i class="fa fa-{{ . }}" aria-hidden="true"></i>{{ end }}<a href="{{ with .Get "src" }}{{ . }}{{ end }}">{{ .Inner }}</a></div>
+<span{{ with .Get "class"}} class="{{ . }}"{{ end }}>{{ with .Get "icon"}}<i class="fa fa-{{ . }}" aria-hidden="true"></i>{{ end }}<a class="icon-link" href="{{ with .Get "src" }}{{ . }}{{ end }}">{{ .Inner }}</a></span>
