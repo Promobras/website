@@ -1,0 +1,65 @@
+<form name="contact" action="https://formspree.io/daniel@farfromhome.asia" method="POST">
+  <input type="hidden" name="_subject" value="Contact depuis page web" />
+  <input type="hidden" name="_language" value="fr" />
+  <input type="text" name="_gotcha" class="gotcha"/>
+  <input type="hidden" name="_next" value="//{{ $.Site.Params.domain }}/contact/merci/" />
+  <div class="row 50%">
+    <div class="6u 12u(mobile)">
+      <input type="text" name="prenom" placeholder="Prénom" />
+    </div>
+    <div class="6u 12u(mobile)">
+      <input type="text" name="nom" placeholder="Nom" />
+    </div>
+  </div>
+
+  <div class="row 50%">
+    <div class="6u 12u(mobile)">
+      <input type="text" name="email" placeholder="E-Mail" />
+    </div>
+    <div class="6u 12u(mobile)">
+      <input type="text" name="telephone" placeholder="Téléphone" />
+    </div>
+  </div>
+
+  <div class="row 50%">
+    <div class="12u">
+      <input type="text" name="societe" placeholder="Société" />
+    </div>
+  </div>
+
+  <div class="row 50%">
+    <div class="12u">
+      <input type="text" name="adresse" placeholder="Adresse" />
+    </div>
+  </div>
+
+  <div class="row 50%">
+    <div class="2u 12u(mobile)">
+      <input type="text" name="npa" placeholder="NPA" />
+    </div>
+    <div class="10u 12u(mobile)">
+      <input type="text" name="ville" placeholder="Ville" />
+    </div>
+  </div>
+
+  <div class="row 50%">
+    <div class="12u">
+      <input type="text" name="pays" placeholder="Pays" />
+    </div>
+  </div>
+
+  <div class="row 50%">
+    <div class="12u">
+      <textarea name="message" placeholder="Message" rows="7"></textarea>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="12u">
+      <ul class="buttons">
+        <input type="submit" class="special" value="Envoyer" />
+      </ul>
+    </div>
+  </div>
+
+</form>

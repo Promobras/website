@@ -16,6 +16,7 @@ taxonomies = []
 tagline = "Agence de Voyage - Le Brésil Autrement - Agence de voyage à Lausanne spécialisée pour le Brésil - Lausanne"
 slogan = "Le Brésil Autrement"
 cloudinary = "dggfnr6w1"
+domain = "beta.bresil-autrement.ch"
 
 # add redirects/headers
 [outputs]

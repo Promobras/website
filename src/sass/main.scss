@@ -271,25 +271,39 @@ footer {
 
 // Form
 
+%formelements {
+    @include vendor('transition', ('background-color .2s ease-in-out', 'border-color .2s ease-in-out'));
+    @include vendor('appearance', 'none');
+    background: #fff;
+    border: solid 1px _palette(border);
+    color: inherit;
+    display: block;
+    padding: .75em;
+    text-decoration: none;
+    width: 100%;
+    outline: 0;
+
+    &:focus {
+        border-color: _palette(one, bg);
+        border-width: 2px;
+        background: _palette(one, fg);
+    }
+
+    &.gotcha {
+        display: none;
+    }
+}
+
+textarea {
+    @extend %formelements;
+}
+
 input {
     &[type='text'],
     &[type='password'],
     &[type='email'],
     textarea {
-        @include vendor('transition', ('background-color .2s ease-in-out', 'border-color .2s ease-in-out'));
-        @include vendor('appearance', 'none');
-        background: none;
-        border: solid 1px _palette(border);
-        color: inherit;
-        display: block;
-        padding: .75em;
-        text-decoration: none;
-        width: 100%;
-        outline: 0;
-
-        &:focus {
-            border-color: _palette(one, bg);
-        }
+        @extend %formelements;
     }
 
     &[type='text'],
@@ -656,6 +670,12 @@ table {
                     margin-left: 0;
                 }
             }
+        }
+    }
+
+    .contact {
+        .fa {
+            margin-right: .5em;
         }
     }
 }
