@@ -1,12 +1,13 @@
 ---
-title: "Écotourisme et Développement Durable"
 date: 2017-12-25T21:27:59+08:00
+linktitle: null
 publishDate: 2017-12-25T21:27:59+08:00
 summary: null
-linktitle: null
 tagline: null
+title: Écotourisme et Développement Durable
 weight: 1
 ---
+
 ### L'écotourisme ou le tourisme vert
 {{% cl_img class="left w30" lightbox="g1" src="/uploads/2828.jpg" %}}
 

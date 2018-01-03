@@ -1,8 +1,9 @@
-+++
-title = "Le Bresil en Bref"
-date = 2017-11-19T21:59:58+08:00
-weight = 2
-+++
+---
+date: 2017-11-19T21:59:58+08:00
+title: Le Bresil en Bref
+weight: 2
+---
+
 ### Superficie – population
 
 Le Brésil est le pays le plus vaste et le plus peuplé d’Amérique latine. Avec une superficie de 8'515’768 km² et une population de plus de 207 millions d’habitants en 2014, c’est aussi le cinquième pays du monde par la superficie et par le nombre d’habitants. En 2012, le Brésil est la sixième puissance économique mondiale avec un PIB de 2'586 milliards de US$. Il couvre la moitié du territoire de l’Amérique du Sud, partageant des frontières avec tous les pays du sous-continent à l’exception du Chili et de l’Equateur.

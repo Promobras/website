@@ -1,9 +1,10 @@
-+++
-title = "Région: Curitiba et littoral du Paraná"
-linktitle = "CURITABA et littoral du Paraná"
-date = 2017-11-26T05:05:47+08:00
-weight = 2
-+++
+---
+date: 2017-11-26T05:05:47+08:00
+linktitle: CURITABA et littoral du Paraná
+title: 'Région: Curitiba et littoral du Paraná'
+weight: 2
+---
+
 ### Curitiba, la capitale de l’Etat du Paraná,
 est connue pour les efforts fournis par ses autorités en faveur de son développement durable. En intégrant la dimension environnementale à d’autres facteurs tels qu’intellectuel, culturel, économique et social, elle a remporté, en 2010, face à ses concurrentes européennes, asiatiques et océaniennes, le Globe Award de la Ville Durable, décerné par le Forum Mondial. Son engagement se traduit notamment par le développement des transports publics et la lutte contre les problèmes urbains tels que la pauvreté et la pollution.
 

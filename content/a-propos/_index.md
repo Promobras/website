@@ -1,10 +1,11 @@
 ---
-title: Le Brésil autrement...
+date: 2017-11-19T14:10:42.000Z
 linktitle: A Propos
 tagline: Voyager - Prévoir - Conseils et Astuces
-date: 2017-11-19T14:10:42.000Z
+title: Le Brésil autrement...
 weight: 5
 ---
+
 {{% cl_img class="w100" src="/uploads/a-propos.jpg" %}}
 
 Pour vous qui appréciez le contact avec la Nature, avec la population, qui recherchez l'authenticité et souhaitez approfondir vos connaissances dans un domaine particulier, qu'il soit artistique, historique, scientifique ou autre, et principalement pour vous qui avez conscience que l'avenir du tourisme ne peut se concevoir sans une participation active de la population locale dans un souci de développement durable, notre site internet vous présente un aperçu du vaste programme que nous avons préparé à votre intention.

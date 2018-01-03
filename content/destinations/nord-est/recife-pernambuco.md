@@ -1,9 +1,10 @@
-+++
-title = "Recife et Pernambuco"
-linktitle = "RECIFE et PERNAMBUCO"
-date = 2017-11-19T19:24:40+08:00
-weight = 2
-+++
+---
+date: 2017-11-19T19:24:40+08:00
+linktitle: RECIFE et PERNAMBUCO
+title: Recife et Pernambuco
+weight: 2
+---
+
 ### Le Nord-Est
 
 représente, sans conteste, une des régions du Brésil où traditions et folklore sont les plus riches et les plus vivants. Parmi les Etats qui forment le Nordeste brésilien, le Pernambuco, dont la capitale est Recife, démontre une force et une vitalité toute particulière. De plus, le Pernambuco, offre une grande variété de paysages : des plages infinies bordées de cocotiers à la forêt pluviale en passant par des savanes semi-arides et des régions désertiques, le visiteur ne peut qu'être conquis par cette nature si diverse.

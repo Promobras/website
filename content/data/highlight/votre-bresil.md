@@ -1,12 +1,13 @@
-+++
-title = "Votre Bresil"
-date = 2017-12-10T23:52:22+08:00
-type = "highlight"
-weight = 3
-icon = "user"
-link = "/votre-bresil/"
-image = "/images/banner/votre-bresil.jpg"
-+++
+---
+date: 2017-12-10T23:52:22+08:00
+icon: user
+image: /images/banner/votre-bresil.jpg
+link: /votre-bresil/
+title: Votre Bresil
+type: highlight
+weight: 3
+---
+
 Vous avez un intérêt pour un domaine particulier: observation de la nature, passion des trains, architecture moderne, paysagisme, époque coloniale, pierres précieuses, grands travaux d'ingénierie, peuples indigènes, peinture contemporaine, diversité musicale et du folklore ?
 Vous souhaitez effectuer un séjour linguistique, apprendre à concocter des plats typiques ou participer à un projet solidaire ...?
 

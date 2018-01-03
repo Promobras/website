@@ -1,10 +1,11 @@
 ---
-title: "Brasília et l'Etat de Goiás"
-linktitle: "BRASÍLIA et l'Etat de Goiás"
 date: 2018-01-01T21:30:50+08:00
+linktitle: BRASÍLIA et l'Etat de Goiás
 publishDate: 2018-01-01T21:30:50+08:00
+title: Brasília et l'Etat de Goiás
 weight: 1
 ---
+
 C’est en 1960 que Brasília, la capitale du Brésil, a été inaugurée. Sa création, décidée par le président Juscelino Kubitschek, est le résultat d’une planification urbanistique de Lúcio Costa et de l’architecte Oscar Niemeyer pour l’édification des bâtiments officiels.
 
 Vu d’avion, le plan pilote de Brasília (qui figure sur la liste du Patrimoine Mondial de l’Humanité établie par l’UNESCO) rappelle la forme d’un avion ou d’un oiseau aux ailes déployées, alors que son urbaniste avait imaginé la forme d’une croix.

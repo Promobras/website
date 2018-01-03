@@ -1,9 +1,10 @@
 ---
-title: "Logement, Transferts, Guides"
 date: 2018-01-03T20:01:23+08:00
 publishDate: 2018-01-03T20:01:23+08:00
+title: Logement, Transferts, Guides
 weight: 3
 ---
+
 ### Hébergement et transferts
 
 Nous réservons selon vos critères votre hôtel au Brésil et organisons les transferts de et vers l'aéroport ou autres visites.

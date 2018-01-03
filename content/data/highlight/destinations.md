@@ -1,12 +1,13 @@
-+++
-title = "Destinations"
-date = 2017-12-10T23:38:29+08:00
-type = "highlight"
-weight = 1
-icon = "car"
-link = "/destinations/"
-image = "/images/banner/destinations.jpg"
-+++
+---
+date: 2017-12-10T23:38:29+08:00
+icon: car
+image: /images/banner/destinations.jpg
+link: /destinations/
+title: Destinations
+type: highlight
+weight: 1
+---
+
 Vous souhaitez voyager seul(e), en couple, en famille ou en comité restreint ?
 Nos programmes variés sont conçus pour répondre à votre attente.
 Consultez notre offre et si, toutefois, vous n'y trouviez pas le voyage désiré, nous sommes à votre disposition pour vous soumettre des propositions correspondant à vos envies, à votre budget.

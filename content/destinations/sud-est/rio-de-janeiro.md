@@ -1,8 +1,9 @@
-+++
-title = "Rio De Janeiro"
-date = 2017-11-19T22:13:18+08:00
-weight = 1
-+++
+---
+date: 2017-11-19T22:13:18+08:00
+title: Rio De Janeiro
+weight: 1
+---
+
 ### La « cidade maravilhosa »
 -c’est son surnom- continue à être la destination favorite des visiteurs du Brésil.
 Son emplacement idyllique, entre mer et montagne, la beauté du site, une végétation luxuriante, ses fameuses plages aux noms évocateurs tels que Copacabana et Ipanema, la joie de vivre de ses habitants, les « cariocas », sont des atouts indéniables qui attirent, année après année, des centaines de milliers de touristes venus du monde entier lesquels repartent émerveillés.

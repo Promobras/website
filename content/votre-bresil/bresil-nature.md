@@ -1,9 +1,10 @@
 ---
-title: "Brésil Nature"
 date: 2018-01-02T22:18:01+08:00
 publishDate: 2018-01-02T22:18:01+08:00
+title: Brésil Nature
 weight: 1
 ---
+
 Du Nord au Sud et de l’Est à l’Ouest, ce pays aux dimensions d’un continent présente des écosystèmes des plus variés, une faune et une flore méconnues et renferme des richesses insoupçonnées.
 
 En participant à nos voyages organisés en petits groupes ou individuel accompagnés d’un guide, vous aurez le privilège de connaître ce que le Brésil a de plus merveilleux, de plus inattendu, de plus diversifié dans ses paysages, tout en étant en contact étroit avec son peuple, ses coutumes, son art de vivre.
