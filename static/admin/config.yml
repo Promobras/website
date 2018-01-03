@@ -35,9 +35,9 @@ collections:
       - { label: "Link Title", name: "linktitle", widget: "string", required: false }
       - { label: "Tag Line", name: "tagline", widget: "string", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Hidden", name: "hidden", widget: "boolean", default: false, require: false}
-      - { label: "Hide Link Summaries", name: "hidesummaries", widget: "boolean", default: false, require: false }
-      - { label: "Hide Inline Menu", name: "hideinlinemenu", widget: "boolean", default: false, require: false }
+      - { label: "Hidden", name: "hidden", widget: "boolean", default: false, required: false}
+      - { label: "Hide Link Summaries", name: "hidesummaries", widget: "boolean", default: false, required: false }
+      - { label: "Hide Inline Menu", name: "hideinlinemenu", widget: "boolean", default: false, required: false }
       - { label: "Weight", name: "weight", widget: "number", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
   - label: "Destinations/Nord-Amazonie"
@@ -52,9 +52,9 @@ collections:
       - { label: "Link Title", name: "linktitle", widget: "string", required: false }
       - { label: "Tag Line", name: "tagline", widget: "string", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Hidden", name: "hidden", widget: "boolean", default: false, require: false}
-      - { label: "Hide Link Summaries", name: "hidesummaries", widget: "boolean", default: false, require: false }
-      - { label: "Hide Inline Menu", name: "hideinlinemenu", widget: "boolean", default: false, require: false }
+      - { label: "Hidden", name: "hidden", widget: "boolean", default: false, required: false}
+      - { label: "Hide Link Summaries", name: "hidesummaries", widget: "boolean", default: false, required: false }
+      - { label: "Hide Inline Menu", name: "hideinlinemenu", widget: "boolean", default: false, required: false }
       - { label: "Weight", name: "weight", widget: "number", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
   - label: "Destinations/Nord-Est"
@@ -69,9 +69,9 @@ collections:
       - { label: "Link Title", name: "linktitle", widget: "string", required: false }
       - { label: "Tag Line", name: "tagline", widget: "string", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Hidden", name: "hidden", widget: "boolean", default: false, require: false}
-      - { label: "Hide Link Summaries", name: "hidesummaries", widget: "boolean", default: false, require: false }
-      - { label: "Hide Inline Menu", name: "hideinlinemenu", widget: "boolean", default: false, require: false }
+      - { label: "Hidden", name: "hidden", widget: "boolean", default: false, required: false}
+      - { label: "Hide Link Summaries", name: "hidesummaries", widget: "boolean", default: false, required: false }
+      - { label: "Hide Inline Menu", name: "hideinlinemenu", widget: "boolean", default: false, required: false }
       - { label: "Weight", name: "weight", widget: "number", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
   - label: "Destinations/Sud-Est"
@@ -86,9 +86,9 @@ collections:
       - { label: "Link Title", name: "linktitle", widget: "string", required: false }
       - { label: "Tag Line", name: "tagline", widget: "string", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Hidden", name: "hidden", widget: "boolean", default: false, require: false}
-      - { label: "Hide Link Summaries", name: "hidesummaries", widget: "boolean", default: false, require: false }
-      - { label: "Hide Inline Menu", name: "hideinlinemenu", widget: "boolean", default: false, require: false }
+      - { label: "Hidden", name: "hidden", widget: "boolean", default: false, required: false}
+      - { label: "Hide Link Summaries", name: "hidesummaries", widget: "boolean", default: false, required: false }
+      - { label: "Hide Inline Menu", name: "hideinlinemenu", widget: "boolean", default: false, required: false }
       - { label: "Weight", name: "weight", widget: "number", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
   - label: "Destinations/Sud"
@@ -103,9 +103,9 @@ collections:
       - { label: "Link Title", name: "linktitle", widget: "string", required: false }
       - { label: "Tag Line", name: "tagline", widget: "string", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Hidden", name: "hidden", widget: "boolean", default: false, require: false}
-      - { label: "Hide Link Summaries", name: "hidesummaries", widget: "boolean", default: false, require: false }
-      - { label: "Hide Inline Menu", name: "hideinlinemenu", widget: "boolean", default: false, require: false }
+      - { label: "Hidden", name: "hidden", widget: "boolean", default: false, required: false}
+      - { label: "Hide Link Summaries", name: "hidesummaries", widget: "boolean", default: false, required: false }
+      - { label: "Hide Inline Menu", name: "hideinlinemenu", widget: "boolean", default: false, required: false }
       - { label: "Weight", name: "weight", widget: "number", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
   - label: "Destinations/Centre-Ouest-Pantanal"
@@ -120,9 +120,9 @@ collections:
       - { label: "Link Title", name: "linktitle", widget: "string", required: false }
       - { label: "Tag Line", name: "tagline", widget: "string", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Hidden", name: "hidden", widget: "boolean", default: false, require: false}
-      - { label: "Hide Link Summaries", name: "hidesummaries", widget: "boolean", default: false, require: false }
-      - { label: "Hide Inline Menu", name: "hideinlinemenu", widget: "boolean", default: false, require: false }
+      - { label: "Hidden", name: "hidden", widget: "boolean", default: false, required: false}
+      - { label: "Hide Link Summaries", name: "hidesummaries", widget: "boolean", default: false, required: false }
+      - { label: "Hide Inline Menu", name: "hideinlinemenu", widget: "boolean", default: false, required: false }
       - { label: "Weight", name: "weight", widget: "number", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
@@ -138,9 +138,9 @@ collections:
       - { label: "Link Title", name: "linktitle", widget: "string", required: false }
       - { label: "Tag Line", name: "tagline", widget: "string", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Hidden", name: "hidden", widget: "boolean", default: false, require: false}
-      - { label: "Hide Link Summaries", name: "hidesummaries", widget: "boolean", default: false, require: false }
-      - { label: "Hide Inline Menu", name: "hideinlinemenu", widget: "boolean", default: false, require: false }
+      - { label: "Hidden", name: "hidden", widget: "boolean", default: false, required: false}
+      - { label: "Hide Link Summaries", name: "hidesummaries", widget: "boolean", default: false, required: false }
+      - { label: "Hide Inline Menu", name: "hideinlinemenu", widget: "boolean", default: false, required: false }
       - { label: "Weight", name: "weight", widget: "number", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
@@ -156,9 +156,9 @@ collections:
       - { label: "Link Title", name: "linktitle", widget: "string", required: false }
       - { label: "Tag Line", name: "tagline", widget: "string", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Hidden", name: "hidden", widget: "boolean", default: false, require: false}
-      - { label: "Hide Link Summaries", name: "hidesummaries", widget: "boolean", default: false, require: false }
-      - { label: "Hide Inline Menu", name: "hideinlinemenu", widget: "boolean", default: false, require: false }
+      - { label: "Hidden", name: "hidden", widget: "boolean", default: false, required: false}
+      - { label: "Hide Link Summaries", name: "hidesummaries", widget: "boolean", default: false, required: false }
+      - { label: "Hide Inline Menu", name: "hideinlinemenu", widget: "boolean", default: false, required: false }
       - { label: "Weight", name: "weight", widget: "number", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
@@ -174,9 +174,9 @@ collections:
       - { label: "Link Title", name: "linktitle", widget: "string", required: false }
       - { label: "Tag Line", name: "tagline", widget: "string", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Hidden", name: "hidden", widget: "boolean", default: false, require: false}
-      - { label: "Hide Link Summaries", name: "hidesummaries", widget: "boolean", default: false, require: false }
-      - { label: "Hide Inline Menu", name: "hideinlinemenu", widget: "boolean", default: false, require: false }
+      - { label: "Hidden", name: "hidden", widget: "boolean", default: false, required: false}
+      - { label: "Hide Link Summaries", name: "hidesummaries", widget: "boolean", default: false, required: false }
+      - { label: "Hide Inline Menu", name: "hideinlinemenu", widget: "boolean", default: false, required: false }
       - { label: "Weight", name: "weight", widget: "number", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
@@ -192,9 +192,9 @@ collections:
       - { label: "Link Title", name: "linktitle", widget: "string", required: false }
       - { label: "Tag Line", name: "tagline", widget: "string", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Hidden", name: "hidden", widget: "boolean", default: false, require: false}
-      - { label: "Hide Link Summaries", name: "hidesummaries", widget: "boolean", default: false, require: false }
-      - { label: "Hide Inline Menu", name: "hideinlinemenu", widget: "boolean", default: false, require: false }
+      - { label: "Hidden", name: "hidden", widget: "boolean", default: false, required: false}
+      - { label: "Hide Link Summaries", name: "hidesummaries", widget: "boolean", default: false, required: false }
+      - { label: "Hide Inline Menu", name: "hideinlinemenu", widget: "boolean", default: false, required: false }
       - { label: "Weight", name: "weight", widget: "number", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
