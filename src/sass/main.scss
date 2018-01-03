@@ -278,7 +278,7 @@ footer {
 %formelements {
     @include vendor('transition', ('background-color .2s ease-in-out', 'border-color .2s ease-in-out'));
     @include vendor('appearance', 'none');
-    background: #fff;
+    background: _palette(one, fg);
     border: solid 1px _palette(border);
     color: inherit;
     display: block;
@@ -286,6 +286,18 @@ footer {
     text-decoration: none;
     width: 100%;
     outline: 0;
+
+    &:placeholder-shown {
+        background: none;
+    }
+
+    &::placeholder {
+        color: transparentize(_palette(fg), .2);
+    }
+
+    &:invalid {
+        background-color: _palette(error);
+    }
 
     &:focus {
         border-color: _palette(one, bg);
@@ -306,13 +318,15 @@ input {
     &[type='text'],
     &[type='password'],
     &[type='email'],
+    &[type='tel'],
     textarea {
         @extend %formelements;
     }
 
     &[type='text'],
     &[type='password'],
-    &[type='email'] {
+    &[type='email'],
+    &[type='tel'] {
         line-height: 1em;
     }
 
