@@ -180,9 +180,9 @@ collections:
       - { label: "Weight", name: "weight", widget: "number", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
-  - label: "Contacts"
-    name: "contacts"
-    folder: "content/contacts"
+  - label: "Contact"
+    name: "contact"
+    folder: "content/contact"
     create: true
     slug: "{{slug}}"
     format: "frontmatter"
