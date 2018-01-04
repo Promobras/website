@@ -34,7 +34,7 @@ Dès ses débuts, l'objectif de PROMOBRAS Voyages et Tourisme a été de propose
 > Jacques Bornand  
 > Fondateur de PROMOBRAS
 
-{{% gallery lightbox="g1" class="w33" ar="1.3333" %}}
+{{% gallery lightbox="g1" class="top w33" ar="1.3333" %}}
   {{% cl_img src="/uploads/488.jpg" title="Rio, l'unique agence Peugeot du Brésil en 1973" %}}
   {{% cl_img src="/uploads/490.jpg" title="En direction de Belém" %}}
   {{% cl_img src="/uploads/492.jpg" title="Perito Moreno, Argentine, l'abandon de notre voiture" %}}
