@@ -9,7 +9,10 @@ images:
   - image: /uploads/6832.jpg
   - image: /uploads/6836.jpg
   - image: /uploads/amazon-turtle-lodge.jpg
-
+map:
+  lat: -3.701717
+  lng: -59.921215
+  zoom: 6
 description: >
   Afin de pénétrer plus profondément la forêt amazonienne et de vivre une expérience inoubliable au contact de cette nature sauvage, nous vous proposons, à partir de Manaus, un séjour à l'Amazon Turtle Lodge.
 
