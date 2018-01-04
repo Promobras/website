@@ -1,11 +1,14 @@
 /* global PhotoSwipe, PhotoSwipeUI_Default */
 var openPhotoSwipe = (e) => {
   let group = $(e.target).parent().attr('data-lightbox')
+  if (!group) {
+    group = $(e.target).parent().parent().attr('data-lightbox')
+  }
   var pswpElement = $('.pswp')[0]
 
   // build items array
   var items = []
-  let images = $('div.img[data-lightbox=' + group + ']>img')
+  let images = $('div.img[data-lightbox=' + group + '] img')
   let startIndex = 0
   for (let i = 0; i < images.length; i++) {
     let value = images[i]
@@ -134,4 +137,4 @@ var openPhotoSwipe = (e) => {
   $('#header').css('display', 'none')
   $('#navButton').css('display', 'none')
 }
-$('div.img[data-lightbox]>img').click((e) => openPhotoSwipe(e))
+$('div.img[data-lightbox] img').click((e) => openPhotoSwipe(e))

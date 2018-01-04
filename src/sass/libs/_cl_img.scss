@@ -1,7 +1,9 @@
 div {
     .img {
         &[data-lightbox] {
-            cursor: pointer;
+            img {
+                cursor: pointer;
+            }
         }
 
         img {
