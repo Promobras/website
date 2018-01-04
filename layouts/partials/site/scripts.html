@@ -17,3 +17,24 @@
   cl.responsive()
 </script>
 {{ end -}}
+<script>
+var map = []
+var marker = []
+function initMaps() {
+  $('.map').each(function(index) {
+    var uluru = {lat: parseFloat($(this).attr('data-lat')), lng: parseFloat($(this).attr('data-lng'))}
+    var zoom = parseInt($(this).attr('data-zoom'))
+    var id = 'map' + index
+    $(this).attr('id', id)
+    map[index] = new google.maps.Map(document.getElementById(id), {
+      zoom: zoom,
+      center: uluru
+    })
+    marker[index] = new google.maps.Marker({
+      position: uluru,
+      map: map[index]
+    })
+  })
+}
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key={{ $.Site.Params.googleapis.map }}&language=fr&callback=initMaps"></script>
