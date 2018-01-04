@@ -39,5 +39,8 @@
   </div>
   </div>
   {{ end }}
+  {{ with .map }}
+    {{ partial "site/map.html" (dict "root" $root "map" .) }}
+  {{ end }}
 </article>
 {{ end }}

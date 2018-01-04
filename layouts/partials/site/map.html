@@ -1,0 +1,19 @@
+{{ $root := .root }}
+{{ with .map }}
+<div id="map"></div>
+<script>
+var uluru = {lat: {{ .lat }}, lng: {{ .lng }} }
+var zoom = {{ .zoom }}
+function initMap() {
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: zoom,
+    center: uluru
+  })
+  var marker = new google.maps.Marker({
+    position: uluru,
+    map: map
+  })
+}
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key={{ $root.Site.Params.googleapis.map }}&language=fr&callback=initMap"></script>
+{{ end }}

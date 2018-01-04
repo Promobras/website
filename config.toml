@@ -18,6 +18,9 @@ slogan = "Le Brésil Autrement"
 cloudinary = "dggfnr6w1"
 domain = "beta.bresil-autrement.ch"
 
+[params.googleapis]
+map = "AIzaSyAaLbYVnLwWYyUVah-o-uwKymv7yMmSBiw"
+
 # add redirects/headers
 [outputs]
 home = ["HTML", "REDIRECTS", "HEADERS"]
