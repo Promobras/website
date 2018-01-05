@@ -11,6 +11,8 @@ permalinks = "/:sections/:slug/"
 sectionPagesMenu = "main"
 summaryLength = 30
 taxonomies = []
+# for beta.bresil-autrement.ch
+googleAnalytics = "UA-112043993-1"
 
 [params]
 tagline = "Agence de Voyage - Le Brésil Autrement - Agence de voyage à Lausanne spécialisée pour le Brésil - Lausanne"

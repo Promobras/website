@@ -25,5 +25,6 @@
     </div>
       {{ block "photoswipe/pswp" . }}{{ partial "photoswipe/pswp.html" . }}{{ end }}
       {{ block "site/scripts" . }}{{ partial "site/scripts.html" . }}{{ end }}
+      {{ template "_internal/google_analytics_async.html" . }}
   </body>
 </html>
