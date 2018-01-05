@@ -16,9 +16,9 @@ Nous sommes à même de vous faire découvrir et apprécier la richesse et les m
 
 **Quelques propositions:**
 
-{{% tour ALPB %}}
+{{% tour anavilhanas-lodge %}}
 
-{{% tour BRPB %}}
+{{% tour amazon-turtle-lodge %}}
 
 {{% tour mamiraua %}}
 

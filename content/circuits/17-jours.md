@@ -4,4 +4,4 @@ title: 17 Jours
 weight: 5
 ---
 
-{{% tour HP2412 %}}
+{{% tour exploration-brésilienne %}}

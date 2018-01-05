@@ -1,13 +1,5 @@
-{{ $code := (.Get 0 | lower) }}
-{{ $tour := index .Site.Data.tours $code }}
+{{ $name := (.Get 0 | lower) }}
+{{ $tour := index .Site.Data.tours $name }}
 {{ if $tour }}
   {{ partial "site/tour.html" (dict "tour" $tour "root" $) }}
-{{ else }}
-  {{ range .Site.Data.tours }}
-    {{ if .code }}
-      {{ if eq $code (.code | lower) }}
-        {{ partial "site/tour.html" (dict "tour" . "root" $) }}
-      {{ end }}
-    {{ end }}
-  {{ end }}
 {{ end }}

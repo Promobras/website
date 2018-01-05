@@ -4,4 +4,4 @@ title: 13 Jours
 weight: 3
 ---
 
-{{% tour HP2213 %}}
+{{% tour decouverte-du-bresil %}}

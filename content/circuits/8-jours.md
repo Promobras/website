@@ -4,6 +4,6 @@ title: 8 Jours
 weight: 1
 ---
 
-{{% tour HP2813 %}}
+{{% tour de-rio-de-janeiro-a-belo-horizonte %}}
 
-{{% tour HP2012 %}}
+{{% tour bom-dia-brazil %}}

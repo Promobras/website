@@ -4,4 +4,4 @@ title: 10 Jours
 weight: 2
 ---
 
-{{% tour HP2312 %}}
+{{% tour le-charme-du-bresil %}}
