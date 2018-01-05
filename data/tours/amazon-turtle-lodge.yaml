@@ -12,7 +12,7 @@ images:
 map:
   lat: -3.701717
   lng: -59.921215
-  zoom: 6
+  zoom: 8
   placeId: ChIJQ2qsJNjWa5IRuAywEfF0Aps
   type: satellite
 description: >
