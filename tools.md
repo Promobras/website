@@ -37,3 +37,6 @@
 
 # Gallery
 - https://www.liwen.id.au/heg/
+
+# Maps
+- https://developers.google.com/maps/documentation/javascript/examples/places-placeid-finder
