@@ -8,7 +8,10 @@ images:
   - image: /uploads/6087.jpg
   - image: /uploads/6089.jpg
   - image: /uploads/manaus-bateau.jpg
-
+map:
+  lat: -3.070774
+  lng: -60.207491
+  zoom: 9
 description: >
   Une excellente manière de vivre une expérience inoubliable de la forêt amazonienne, à partir de Manaus, consiste à prendre une croisière sur le Rio Negro.
 

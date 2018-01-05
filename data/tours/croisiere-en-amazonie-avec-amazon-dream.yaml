@@ -6,7 +6,10 @@ images:
   - image: /uploads/amazondream2.jpg
   - image: /uploads/amazondream3.jpg
   - image: /uploads/amazondream4.jpg
-
+map:
+  lat: -2.4533053
+  lng: -54.8700902
+  zoom: 9
 description: >
   Nous vous proposons une croisière à bord de l´Amazon Dream, un bateau d'exeption.
 
