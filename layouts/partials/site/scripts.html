@@ -22,18 +22,51 @@ var map = []
 var marker = []
 function initMaps() {
   $('.map').each(function(index) {
-    var uluru = {lat: parseFloat($(this).attr('data-lat')), lng: parseFloat($(this).attr('data-lng'))}
-    var zoom = parseInt($(this).attr('data-zoom'))
+    let coords = {lat: -12.6346871, lng: -58.2792325}
+    let showMarker = false
+    let zoom = 4
+    let lat = parseFloat($(this).attr('data-lat'))
+    let lng = parseFloat($(this).attr('data-lng'))
+    let zoomAttr = parseInt($(this).attr('data-zoom'))
+    if (lat && lng) {
+      coords = {lat: lat, lng: lng}
+      showMarker = true
+      if (zoomAttr) {
+        zoom = zoomAttr
+      }
+    }
+
     var id = 'map' + index
     $(this).attr('id', id)
+    
     map[index] = new google.maps.Map(document.getElementById(id), {
       zoom: zoom,
-      center: uluru
+      center: coords
     })
-    marker[index] = new google.maps.Marker({
-      position: uluru,
-      map: map[index]
-    })
+    if (showMarker) {
+      marker[index] = new google.maps.Marker({
+        position: coords,
+        map: map[index]
+      })
+    }
+
+    var placeId = $(this).attr('data-placeid')
+    if (placeId) {
+      var geocoder = new google.maps.Geocoder();
+      geocoder.geocode({'placeId': placeId}, function(results, status) {
+        if (status === 'OK' && status[0]) {
+          if (zoomAttr) {
+            map[index].setZoom(zoomAttr)
+          }
+          map[index].setCenter(results[0].geometry.location)
+          marker[index].setPlace({
+            placeId: placeId,
+            location: results[0].geometry.location
+          })
+        }
+      })
+    }
+
   })
 }
 </script>

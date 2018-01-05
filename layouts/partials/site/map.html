@@ -1,4 +1,4 @@
 {{ $root := .root }}
 {{ with .map }}
-<div class="map" data-lat="{{ .lat }}" data-lng="{{ .lng }}" data-zoom="{{ .zoom }}"></div>
+<div class="map"{{ with .lat }} data-lat="{{ . }}"{{ end }}{{ with .lng }} data-lng="{{ . }}"{{ end }}{{ with .zoom }} data-zoom="{{ . }}"{{ end }}{{ with .placeId }} data-placeid="{{ . }}"{{ end }}></div>
 {{ end }}
