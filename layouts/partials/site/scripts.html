@@ -67,10 +67,18 @@ function initMaps() {
             map[index].setZoom(zoomAttr)
           }
           map[index].setCenter(results[0].geometry.location)
-          marker[index].setPlace({
-            placeId: placeId,
-            location: results[0].geometry.location
-          })
+          if (marker[index]) {
+            marker[index].setPlace({
+              placeId: placeId,
+              location: results[0].geometry.location
+            })
+          } else {
+            marker[index] = new google.maps.Marker({
+              map: map[index],
+              placeId: placeId,
+              position: results[0].geometry.location
+            })
+          }
         }
       })
     }
