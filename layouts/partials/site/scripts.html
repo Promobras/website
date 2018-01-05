@@ -36,12 +36,19 @@ function initMaps() {
       }
     }
 
+    let mapTypeId = $(this).attr('data-maptype')
+    console.log(mapTypeId)
+    if (!mapTypeId) {
+      mapTypeId = 'roadmap'
+    }
+
     var id = 'map' + index
     $(this).attr('id', id)
     
     map[index] = new google.maps.Map(document.getElementById(id), {
       zoom: zoom,
-      center: coords
+      center: coords,
+      mapTypeId: mapTypeId
     })
     if (showMarker) {
       marker[index] = new google.maps.Marker({
@@ -54,6 +61,7 @@ function initMaps() {
     if (placeId) {
       var geocoder = new google.maps.Geocoder();
       geocoder.geocode({'placeId': placeId}, function(results, status) {
+        console.log(results)
         if (status === 'OK' && status[0]) {
           if (zoomAttr) {
             map[index].setZoom(zoomAttr)
