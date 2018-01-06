@@ -7,6 +7,7 @@
           <nav class="sidebar-nav">
             {{ block "navigation" . }}{{ partial "nav/navigation.html" . }}{{ end }}
           </nav>
+          {{ partial "site/cl_img.html" (dict "root" $ "class" "logo" "src" "/images/brazil-tourism.png")}}
         </div>
       </div>
       <div class="9u 12u(narrower) important(narrower)">
