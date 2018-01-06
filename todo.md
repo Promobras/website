@@ -4,11 +4,12 @@
 - ~~[ ] Color by section~~
 - [x] Index title
 - [x] Tours
-- [ ] Gallery
+- [x] Gallery
 - [x] ~~Cloudinary (https://res.cloudinary.com/dggfnr6w1/image/fetch)~~
 - [x] Form
-- [ ] GMaps
+- [x] GMaps
 - [x] PhotoSwipe ~~or fancyBox3 (jquery upgrade needed)~~
 - [x] Tours: rename existing to use title. Update existing pages
 - [ ] Editor: Add widget for Tours
 - [ ] Editor: Add widget for cl_img tag
+- [ ] 404
