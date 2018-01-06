@@ -1,7 +1,7 @@
 ---
 date: 2018-01-02T22:50:38+08:00
 publishDate: 2018-01-02T22:50:38+08:00
-title: Gemmes Et Mineraux
+title: Gemmes et Mineraux
 weight: 3
 ---
 

@@ -1,7 +1,7 @@
 ---
 date: 2018-01-02T22:56:40+08:00
 publishDate: 2018-01-02T22:56:40+08:00
-title: Solidaires Et Participatifs
+title: Solidaires et Participatifs
 weight: 4
 ---
 
