@@ -33,13 +33,6 @@
     <div class="pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i><a href="{{ . }}">Document PDF détaillé</a></div>
   {{ end -}}
 
-  {{ with .gmaps }}
-  <div class="map-container">
-  <div class="map-box">
-  <iframe class="map" src="https://www.google.com/maps/d/embed?mid={{.}}" width="100%" height="100%"></iframe>
-  </div>
-  </div>
-  {{ end }}
   {{ with .map }}
     {{ partial "site/map.html" (dict "root" $root "map" .) }}
   {{ end }}

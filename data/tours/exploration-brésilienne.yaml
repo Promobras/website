@@ -2,7 +2,8 @@ title: Exploration brésilienne
 summary: Villes et nature splendide
 code: HP2412
 duration: 17 jours
-gmaps: 1swW8ru6CM2sMXnWxzOARxE7GKp8
+map:
+  mapId: 1swW8ru6CM2sMXnWxzOARxE7GKp8
 pdf_doc: /uploads/pb-si-04-circuit-exploration-bresilienne-17-jours-6910.pdf
 images:
   - image: /uploads/5093.jpg

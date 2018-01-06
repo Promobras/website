@@ -8,6 +8,7 @@ map:
   lat: -2.4533053
   lng: -54.8700902
   zoom: 9
+  showMarker: true
 description: >
   Nous vous proposons une croisière à bord du Vento em popa, un bateau amazonien avec deux cabines privées.
 

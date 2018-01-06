@@ -210,7 +210,42 @@ collections:
       - { label: "Summary", name: "summary", widget: "string", required: false }
       - { label: "Duration", name: "duration", widget: "string", required: false }
       - { label: "Code", name: "code", widget: "string", required: false }
-      - { label: "Google Maps Id", name: "gmaps", widget: "string", required: false }
+      - label: "Map"
+        name: "map"
+        widget: "object"
+        fields:
+          - {label: "Latitude", name: "lat", widget: "number", valueType: "float", min: -90, max: 90, required: false}
+          - {label: "Longitude", name: "lng", widget: "number", valueType: "float", min: -180, max: 180, required: false}
+          - label: "Zoom"
+            name: "zoom"
+            widget: "select"
+            required: false
+            options:
+              - { label: "World", value: 1 }
+              - { label: "Continent (4)", value: 4 }
+              - { label: "Continent (5)", value: 5 }
+              - { label: "Region (6)", value: 6 }
+              - { label: "Region (7)", value: 7 }
+              - { label: "Region (8)", value: 8 }
+              - { label: "City (9)", value: 9 }
+              - { label: "Region (10)", value: 10 }
+              - { label: "City (11)", value: 11 }
+              - { label: "City (12)", value: 12 }
+              - { label: "Streets (13)", value: 13 }
+              - { label: "Streets (14)", value: 14 }
+              - { label: "Streets (15)", value: 15 }
+          - label: "Type"
+            name: "type"
+            widget: "select"
+            required: false
+            options:
+              - { label: "Road", value: "roadmap" }
+              - { label: "Satellite", value: "satellite" }
+              - { label: "Hybrid", value: "hybrid" }
+              - { label: "Terrain", value: "terrain" }
+          - {label: "Place Id", name: "placeId", widget: "string", required: false}
+          - {label: "MyMaps Id", name: "mapId", widget: "string", required: false}
+          - {label: "Show Marker", name: "showMarker", widget: "boolean", default: true, required: false}
       - { label: "PDF", name: "pdf_doc", widget: "file", required: false}
       - label: "Images"
         name: "images"

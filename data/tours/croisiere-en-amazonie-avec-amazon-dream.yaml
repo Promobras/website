@@ -10,6 +10,7 @@ map:
   lat: -2.4533053
   lng: -54.8700902
   zoom: 9
+  showMarker: true
 description: >
   Nous vous proposons une croisière à bord de l´Amazon Dream, un bateau d'exeption.
 

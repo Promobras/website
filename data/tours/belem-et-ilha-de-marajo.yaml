@@ -11,6 +11,7 @@ images:
 map:
   placeId: ChIJ4Wx1hK9hpJIRNUyGFQJUDVc
   zoom: 8
+  showMarker: true
 description: >
   Belém, capitale de l’état du Pará, est un important centre économique de la région nord. Entourée de rivières, de cours d’eau et de canaux, la ville est fameuse pour ses énormes manguiers qui bordent certaines avenues et qui forme un véritable tunnel végétal et pour son haut indice pluviométrique.
 

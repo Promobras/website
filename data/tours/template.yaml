@@ -2,7 +2,12 @@ title:
 summary:
 duration:
 code:
-gmaps:
+map:
+  lat:
+  lng:
+  placeId:
+  mapId:
+  showMarker:
 pdf_doc: /uploads/
 images:
   - image:

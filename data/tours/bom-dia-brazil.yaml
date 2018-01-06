@@ -2,7 +2,8 @@ title: "Bom Dia Brazil"
 summary: Rio de Janeiro - Iguaçu - Salvador
 code: HP2012
 duration: 8 jours
-gmaps: 1vbzBZEkHFnGNCkER0IZcbQxVZi0
+map:
+  mapId: 1vbzBZEkHFnGNCkER0IZcbQxVZi0
 pdf_doc: /uploads/pb-si-04-circuit-bom-dia-brasil-8-jours-oct17-nov18-7017.pdf
 images:
   - image: /uploads/6727.jpg

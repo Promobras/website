@@ -2,7 +2,8 @@ title: De Rio de Janeiro à Belo Horizonte
 summary: De Rio de Janeiro à Belo Horizonte via Parati (par l'ancienne estrada Real)
 code: HP2813
 duration: 8 jours
-gmaps: 1aud-1M9f3UURW3IakSwaY5HU1Tg
+map:
+  mapId: 1aud-1M9f3UURW3IakSwaY5HU1Tg
 pdf_doc: /uploads/pb-si-04-circuit-le-minas-gerais-7016.pdf
 images:
   - image: /uploads/6895.jpg

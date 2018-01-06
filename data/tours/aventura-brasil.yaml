@@ -2,7 +2,8 @@ title: Aventura Brasil
 summary: Des plus beaux aspects du Brésil
 code: HP2112
 duration: 14 jours
-gmaps: 13TkxuNw0mxvrsQzsQ4kD9o29Vm0
+map:
+  mapId: 13TkxuNw0mxvrsQzsQ4kD9o29Vm0
 pdf_doc: /uploads/pb-si-04-circuit-aventura-brasil-14-jours-6908.pdf
 images:
   - image: /uploads/6552.jpg

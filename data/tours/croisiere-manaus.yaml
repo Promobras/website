@@ -12,6 +12,7 @@ map:
   lat: -3.070774
   lng: -60.207491
   zoom: 9
+  showMarker: true
 description: >
   Une excellente manière de vivre une expérience inoubliable de la forêt amazonienne, à partir de Manaus, consiste à prendre une croisière sur le Rio Negro.
 

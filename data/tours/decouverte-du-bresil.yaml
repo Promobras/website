@@ -2,7 +2,8 @@ title: Découverte du Brésil
 code: HP2213
 duration: 13 jours
 summary: La diversité du Brésil
-gmaps: 1hAvAvZUq23AwN2Yx_bg1YXCu7a0
+map:
+  mapId: 1hAvAvZUq23AwN2Yx_bg1YXCu7a0
 pdf_doc: /uploads/pb-si-04-circuit-decouverte-du-bresil-13-jours-1-6906.pdf
 images:
   - image: /uploads/6511.jpg
