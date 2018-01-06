@@ -137,7 +137,7 @@ gulp.task('pswp-images', () => {
 
 gulp.task('html', () => {
   return gulp.src('public/**/*.html')
-    .pipe($.htmlmin({collapseWhitespace: true, preserveLineBreaks: true}))
+    .pipe($.htmlmin({collapseWhitespace: true, conservativeCollapse: true, preserveLineBreaks: true, minifyJS: true}))
     .pipe(gulp.dest('public'))
 })
 
