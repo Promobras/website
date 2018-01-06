@@ -45,7 +45,6 @@ function initMaps () {
       var geocoder = new google.maps.Geocoder()
       geocoder.geocode({'placeId': placeId}, function (results, status) {
         if (status === 'OK' && results[0]) {
-          console.log(results[0])
           if (zoomAttr) {
             map[index].setZoom(zoomAttr)
           }
@@ -76,7 +75,6 @@ function initMaps () {
         map: map[index],
         preserveViewport: preserveViewport
       })
-      console.log('kmlLayer', kmlLayer)
     }
   })
 }
