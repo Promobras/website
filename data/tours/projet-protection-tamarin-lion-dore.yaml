@@ -8,5 +8,11 @@ images:
 - image: /uploads/4864.jpg
 - image: /uploads/4866.jpg
 - image: /uploads/4853.jpg
+map:
+  lat: -22.553
+  lng: -42.282
+  zoom: 9
+  type: hybrid
+  showMarker: true
 description: >
   Afin de protéger l'habitat du petit singe Tamarin-lion doré et éviter son extinction a été créée dans les années 70 la Réserve Biologique de Poço das Antas, dans l'État de Rio de Janeiro. Notre programme, destiné à tous ceux qui, de près ou de loin, s’intéressent à la préservation de la nature vous propose une visite documentée et l’observation de ce magnifique primate à l’existence menacée.

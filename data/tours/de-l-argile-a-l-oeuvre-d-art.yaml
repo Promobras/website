@@ -9,6 +9,11 @@ images:
   - image: /uploads/6886.jpg
   - image: /uploads/6888.jpg
   - image: /uploads/6860.jpg
+map:
+  placeId: ChIJz5qvbCLvSwcRVg9cRyRjBA8
+  type: hybrid
+  zoom: 10
+  showMarker: true
 description: >
   Une expérience unique avec les potiers et céramistes.
 

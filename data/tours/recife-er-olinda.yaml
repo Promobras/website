@@ -8,7 +8,10 @@ images:
   - image: /uploads/4958.jpg
   - image: /uploads/4960.jpg
   - image: /uploads/4921.jpg
-
+map:
+  placeId: ChIJi0DllG8ZqwcRpuO9gvcOgOU
+  zoom: 9
+  showMarker: true
 description: >
   Recife est une des plus grandes villes du pays, avec un centre-ville riche en culture et histoire. Une croisière fluviale vous permet de vous faire une idée de la configuration de la ville que se trouve à la confluence de deux rivières.
 

@@ -3,6 +3,10 @@ summary: EPFL - ENAC/GC
 pdf_doc: /uploads/epfl-2002-4329.pdf
 images:
   - image: /uploads/6095.jpg
+map:
+  lat: -13.48643
+  lng: -51.5628557
+  zoom: 3
 description: >
   Promobras a organisé des voyages d'études pour les étudiants de Génie Civil de l'EPFL.
 

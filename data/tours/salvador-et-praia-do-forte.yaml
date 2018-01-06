@@ -8,7 +8,10 @@ images:
   - image: /uploads/4407.jpg
   - image: /uploads/4408.jpg
   - image: /uploads/3884.jpg
-
+map:
+  placeId: ChIJvS5CUCARFgcRndtzlTaEHPc
+  zoom: 9
+  showMarker: true
 description: >
   Ce séjour vous permet de voir les points le plus remarquables de Salvador avant de faire un séjour balnéaire à Praia do Forte.
 

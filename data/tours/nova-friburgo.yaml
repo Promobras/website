@@ -8,6 +8,11 @@ images:
   - image: /uploads/4125.jpg
   - image: /uploads/4127.jpg
   - image: /uploads/4778.jpg
+map:
+  lat: -22.364145
+  lng: -42.8957647
+  type: hybrid
+  zoom: 10
 description: >
   La chaîne de montagnes qui s’étend au nord-ouest de l’Etat de Rio de Janeiro offre de splendides paysages. Parcourue par des rivières aux eaux claires qui dégringolent des sommets en formant de belles cascades, la forêt tropicale règne sur cette région qui a vu les Confédérés poussés par la misère s’y installer pour fonder, au début du XIXème siècle, emplis d’espoir, la ville de Nova Friburgo.
 

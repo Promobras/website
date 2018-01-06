@@ -9,6 +9,10 @@ images:
 - image: /uploads/4795.jpg
 - image: /uploads/4798.jpg
 - image: /uploads/4804.jpg
+map:
+  placeId: ChIJV5QpMA_XeQcRj6j-UetD02M
+  zoom: 8
+  type: hybrid
 description: >
   Ce programme est destiné à tous ceux qui, de près ou de loin, s’intéressent à la préhistoire et, notamment, au peuplement de l’Amérique du Sud, ainsi qu’à tout amoureux de la nature.
 

@@ -4,6 +4,10 @@ code: DB
 pdf_doc: /uploads/pb-vt-si-04-mg-gemmologie-11j-6799.pdf
 images:
   - image: /uploads/5248.jpg
+map:
+  placeId: ChIJMyzPysqQpgARlznSOl55NVs
+  zoom: 8
+  type: hybrid
 description: >
   Géologiquement, le Brésil est constitué d’un socle très ancien de roches en grande partie métamorphiques et éruptives dont les structures sont très compliquées. Les roches qui le composent ont entre un et trois milliards d’années. La province de Minas Gerais est la plus riche en gisements des fameuses pegmatites.
 

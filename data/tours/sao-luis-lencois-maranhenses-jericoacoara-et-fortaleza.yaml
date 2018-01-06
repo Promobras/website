@@ -8,7 +8,12 @@ images:
   - image: /uploads/3807.jpg
   - image: /uploads/3809.jpg
   - image: /uploads/5097.jpg
-
+map:
+  lat: -2.53844
+  lng: -43.0341917
+  zoom: 9
+  type: hybrid
+  showMarker: true
 description: >
   Le magnifique parcours est un des trajets les plus appréciés par les visiteurs du Brésil souhaitant sortir des sentiers battus.
 

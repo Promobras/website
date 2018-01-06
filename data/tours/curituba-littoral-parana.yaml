@@ -9,6 +9,10 @@ images:
   - image: /uploads/3546.jpg
   - image: /uploads/3548.jpg
   - image: /uploads/4765.jpg
+map:
+  placeId: ChIJ3bPNUVPj3JQRCejLuqVrL20
+  zoom: 9
+  showMarker: true
 description: >
   Notre programme de 4 jours/3 nuits vous permettra de connaître Curitiba et, en empruntant la pittoresque et impressionnante ligne de train de la Serra Verde au travers d'une chaîne de montagnes recouvertes de forêt tropicale, vous parviendrez sur le magnifique littofal de l'Etat du Paraná et découvrirez la sympathique et réputée Ilha do Mel (Île du Miel).
 

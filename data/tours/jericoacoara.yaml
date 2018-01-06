@@ -7,7 +7,11 @@ images:
   - image: /uploads/3812.jpg
   - image: /uploads/3822.jpg
   - image: /uploads/3825.jpg
-
+map:
+  placeId: ChIJhaZBB4iG6QcRB38ggdjaV54
+  zoom: 9
+  type: hybrid
+  showMarker: true
 description: >
   Jericoacoara, plus simplement appelée Jeri, petit village de pêcheurs, est situé dans l’Etat du Ceará, dans le Nord est du Brésil, à environ 6 heures de route de la capitale Fortaleza.
 

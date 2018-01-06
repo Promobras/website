@@ -8,6 +8,11 @@ images:
   - image: /uploads/4217.jpg
   - image: /uploads/4219.jpg
   - image: /uploads/4206.jpg
+map:
+  placeId: ChIJxweEDNVYfJQRMKzhx_up6U0
+  zoom: 9
+  showMarker: false
+  type: hybrid
 description: >
   Le Pantanal constitue la plus grande étendue de terre inondable des Amériques. Unique au monde, cette vaste plaine alluviale, est le meilleur endroit au Brésil pour découvrir la faune, d'une rare richesse et diversité ; il présente la plus remarquable concentration d'animaux du continent américain: caïmans, cabiais (capivaras) loutres, loup à crinière (lobo guará), cerf du Pantanal, fourmiliers, jaguars, entre autres, ainsi qu’une grande variété d'oiseaux de tout plumage: jabirus (l'emblématique échassier du Pantanal dénommé localement tuiuiú), aigrettes, spatules, éperviers, faucons, anhinga, cormorans vigua, sans oublier une énorme variété de poissons dont les fameux piranhas. Champs, terres inondables et forêts subissant les influences de la forêt amazonienne, du cerrado (savane) et de la caatinga (région semi-aride) composent un mélange d’écosystèmes différents.
 

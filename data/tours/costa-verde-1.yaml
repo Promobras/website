@@ -8,6 +8,11 @@ images:
   - image: /uploads/4731.jpg
   - image: /uploads/4734.jpg
   - image: /uploads/4740.jpg
+map:
+  lat: -23.050417
+  lng: -44.6557227
+  zoom: 10
+  type: hybrid
 description: >
   Angra dos Reis est situé à environ 160 km à sud-ouest de Rio de Janeiro sur la côte appelé "Costa Verde". C’est l'une des plus belle côte de tout le Brésil! Impressionnant sont les 300 îles, qui sont entourés par des eaux cristallines, turquoises. La plus grande d'entre elles, Ilha Grande. Parati, l'ancienne ville coloniale a été fondée en 1502 et était un port d’exportation important de café et d'or pour les Portugais.
 

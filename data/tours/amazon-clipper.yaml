@@ -8,9 +8,12 @@ images:
   - image: /uploads/6695.jpg
   - image: /uploads/6698.jpg
   - image: /uploads/6704.jpg
+map:
   lat: -3.070774
   lng: -60.207491
   zoom: 9
+  showMarker: true
+  type: hybrid
 description: >
   L'Amazon Clipper Premium est un bateau confortable qui reprend l'aspect général des bateaux à pont double navigant sur les fleuves et rivières d'Amazonie.
 

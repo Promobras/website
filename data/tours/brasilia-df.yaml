@@ -8,6 +8,10 @@ images:
   - image: /uploads/6649.jpg
   - image: /uploads/6652.jpg
   - image: /uploads/6658.jpg
+map:
+  placeId: ChIJdeKa3xg9WpMRJEp1aeRwhHM
+  zoom: 9
+  showMarker: true
 description: >
   Brasília offre au visiteur une infrastructure de qualité.
 

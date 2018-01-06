@@ -8,6 +8,10 @@ images:
   - image: /uploads/3416.jpg
   - image: /uploads/3418.jpg
   - image: /uploads/4890.jpg
+map:
+  placeId: ChIJMyzPysqQpgARlznSOl55NVs
+  zoom: 7
+  showMarker: true
 description: >
   Belo Horizonte compte 2,5 millions d’habitants ; située à une altitude moyenne de 858 m, elle tire son nom de sa vue magnifique sur les montagnes avoisinantes. Souvent délaissée par les touristes, elle offre cependant de nombreux attraits que notre guide se fera un plaisir de vous faire découvrir. Dans le quartier excentré de Pampulha, vous admirerez les œuvres d'Oscar Niemeyer (remontant aux années 40), faisant partie de l'ensemble architectural qui devint une référence mondiale et qui a influencé toute l'architecture moderne brésilienne.
 

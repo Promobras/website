@@ -8,6 +8,11 @@ images:
   - image: /uploads/6672.jpg
   - image: /uploads/6674.jpg
   - image: /uploads/6680.jpg
+map:
+  placeId: ChIJZwjYWL32XpMRjmfSIK0rae8
+  zoom: 9
+  showMarker: true
+  type: hybrid
 description: >
   Goiânia, la capitale de l'Etat brésilien de Goiás, est une grande ville moderne. Vous y trouverez des bâtiments de style Art déco reconnus par l'Institut National du Patrimoine Historique et artistique.
 

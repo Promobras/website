@@ -8,6 +8,11 @@ images:
   - image: /uploads/6860.jpg
   - image: /uploads/6863.jpg
   - image: /uploads/6869.jpg
+map:
+  lat: -20.265483
+  lng: -44.1212907
+  zoom: 7
+  type: hybrid
 description: >
   Les villes historiques d’Ouro Preto *, de Mariana, de Tiradentes, de São João Del Rey, de Diamantina *, le sanctuaire du Senhor Bom Jesus de Matosinhos à Congonhas * sont de petits bijoux de l’époque coloniale que vous découvrirez entre autres, et en toute quiétude, accompagnés par nos guides spécialisés. * tous trois inscrits sur la liste du Patrimoine Mondial de l’Humanité par l’UNESCO.
 

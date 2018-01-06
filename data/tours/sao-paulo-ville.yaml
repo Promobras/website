@@ -8,6 +8,10 @@ images:
   - image: /uploads/4880.jpg
   - image: /uploads/4882.jpg
   - image: /uploads/4888.jpg
+map:
+  placeId: ChIJ0WGkg4FEzpQRrlsz_whLqZs
+  zoom: 7
+  showMarker: true
 description: >
   São Paulo est la destination de choix du tourisme d'affaires.
 

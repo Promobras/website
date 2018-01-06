@@ -4,6 +4,10 @@ code: "Réf: 123456"
 pdf_doc: /uploads/pb-vt-si-04-ce-prainha-do-canto-verde-6357.pdf
 images:
   - image: /uploads/6098.jpg
+map:
+  placeId: ChIJL1zB9iFPxwcRqid5ywZnbf0
+  zoom: 8
+  type: hybrid
 description: >
   Le Réseau Tucum est le résultat d'un travail collectif de 15 villages qui se proposent à offrir une alternative au tourisme. Il vise à intégrer et développer les ressources locales. Une expérience en contact avec les modes de vie des villageaois des communautés du Réseau Tucum qui se trouvent le long de la zone côtière de l'Etat du Ceará.
 

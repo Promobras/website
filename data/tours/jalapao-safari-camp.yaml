@@ -9,6 +9,10 @@ images:
 - image: /uploads/4655.jpg
 - image: /uploads/4657.jpg
 - image: /uploads/5105.jpg
+map:
+  placeId: ChIJoxMXeGKlMZMRJLnFhLkgx0k
+  zoom: 8
+  type: hybrid
 description: >
   Le Parc régioanl du Jalapão est situé au Nord du Brésil, dans l’Etat du Tocantins, à env. 300 km de sa capitale, Palmas, à la limite des Etats de Bahia, Maranhão et Piauí.
 

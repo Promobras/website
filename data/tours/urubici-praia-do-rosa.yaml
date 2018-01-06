@@ -9,6 +9,10 @@ images:
   - image: /uploads/3559.jpg
   - image: /uploads/3561.jpg
   - image: /uploads/4771.jpg
+map:
+  placeId: ChIJDfcW6_NDIJURATl6O7nc3aE
+  zoom: 10
+  showMarker: true
 description: >
   La ville d'Urubici offre une vue spectaculaire de la Pedra Furada (Pierre avec Trou) et des cascades. Sur les 30 km qui relient la ville à la légendaire Serra do Corvo Branco la beauté de la nature est impressionante.
 

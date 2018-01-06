@@ -9,6 +9,11 @@ images:
   - image: /uploads/4755.jpg
   - image: /uploads/4757.jpg
   - image: /uploads/4760.jpg
+map:
+  lat: -23.050417
+  lng: -44.6557227
+  zoom: 10
+  type: hybrid
 description: >
   La région connue par le nom "Costa Verde" est l'une des plus belle de la côte brésilienne! La baie d'Angra dos Reis recèle 300 îles, entourées par des eaux cristallines au reflets bleu-vert. Ilha Grande est la plus grande et mérite le détour. Parati, l'ancienne ville coloniale est l'une des plus belles du pays. Située à 260 km de Rio elle regorge d'ateliers d'artistes et de bons restaurants.
 
