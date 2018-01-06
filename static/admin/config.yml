@@ -241,7 +241,7 @@ collections:
             options:
               - { label: "Road", value: "roadmap" }
               - { label: "Satellite", value: "satellite" }
-              - { label: "Hybrid", value: "hybrid" }
+              - { label: "Satellite+Legends", value: "hybrid" }
               - { label: "Terrain", value: "terrain" }
           - {label: "Place Id", name: "placeId", widget: "string", required: false}
           - {label: "MyMaps Id", name: "mapId", widget: "string", required: false}
