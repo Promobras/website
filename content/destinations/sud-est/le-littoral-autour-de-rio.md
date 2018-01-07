@@ -2,6 +2,8 @@
 date: 2017-11-19T22:14:00+08:00
 title: Le Littoral Autour de Rio
 weight: 2
+aliases:
+  - /le-littoral-autour-de-rio-fr6164.html
 ---
 
 ### Costa Verte et Costa do Sol

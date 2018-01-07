@@ -2,6 +2,8 @@
 date: 2017-11-19T17:41:04+08:00
 title: Nord Amazonie
 weight: 1
+aliases:
+  - /nord-amazonie-fr16.html
 ---
 
 La région "Nord" du Brésil comprend les États suivants: Acre, Amapá, Amazonas, Pará, Rondônia, Roraima et Tocantins, soit la quasi-totalité de la région amazonienne brésilienne.

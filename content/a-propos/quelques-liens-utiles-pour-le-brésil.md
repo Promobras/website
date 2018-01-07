@@ -6,6 +6,8 @@ hidden: false
 hidesummaries: false
 hideinlinemenu: false
 weight: '7'
+aliases:
+  - /quelques-liens-utiles-pour-le-bresil-fr36.html
 ---
 ### Administration
 

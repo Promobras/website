@@ -4,6 +4,8 @@ linktitle: PANTANAL
 publishDate: 2018-01-01T21:30:58+08:00
 title: Pantanal
 weight: 2
+aliases:
+  - /pantanal-fr6182.html
 ---
 
 {{% gallery lightbox="g1" class="w25" ar="1.3333" %}}

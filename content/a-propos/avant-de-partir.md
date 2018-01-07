@@ -5,6 +5,8 @@ hidden: false
 hidesummaries: false
 hideinlinemenu: false
 weight: 4
+aliases:
+  - /avant-de-partir-fr2586.html
 ---
 
 ### Visa - Passeport

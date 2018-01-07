@@ -6,6 +6,8 @@ hidden: false
 hidesummaries: false
 hideinlinemenu: false
 weight: '5'
+aliases:
+  - /billets-d-avion-pour-le-bresil-fr2588.html
 ---
 Nous vous proposons des billets d'avion long courrier et vols internes (toutes compagnies) et aussi des Brazil Airpass.
 

@@ -5,6 +5,8 @@ linktitle: Contact
 tagline: Nous sommes à votre écoute !
 title: Contact
 weight: 6
+aliases:
+  - /coordonnees-fr33.html
 ---
 
 ### Coordonnées

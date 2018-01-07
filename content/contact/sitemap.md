@@ -4,6 +4,8 @@ hidden: true
 title: Plan du site
 type: sitemap
 url: /sitemap/
+aliases:
+  - /plan-du-site-fr35.html
 ---
 
 {{< sitemap >}}

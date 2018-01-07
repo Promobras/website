@@ -3,6 +3,8 @@ date: 2017-11-19T19:24:25+08:00
 linktitle: De SÃO LUIS à FORTALEZA
 title: De São Luis à Fortaleza (en passant par Lençóis Maranhenses et Jericoacoara)
 weight: 1
+aliases:
+  - /de-sao-luis-a-fortaleza-en-passant-par-lencois-maranhenses-et-jericoacoara-fr6155.html
 ---
 
 ### São Luís, la capitale de l'Etat du Maranhão,

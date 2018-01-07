@@ -3,6 +3,8 @@ date: 2017-11-26T05:05:47+08:00
 linktitle: IGUAÇU et région
 title: Région d'Iguaçu
 weight: 1
+aliases:
+  - /region-d-iguacu-fr6173.html
 ---
 
 ### Une des 7 nouvelles merveilles naturelles du monde

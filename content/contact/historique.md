@@ -3,6 +3,8 @@ date: 2017-12-12T00:02:46+08:00
 linktitle: Historique
 title: L'Aventure Promobras
 weight: 1
+aliases:
+  - /l-aventure-promobras-fr13.html
 ---
 Promobras a été fondé en 1995 par Jacques Bornand, un passionné de voyages et un grand amoureux du Brésil.
 Voyagiste indépendant, Promobras est rapidement devenu le spécialiste de la découverte du Brésil.

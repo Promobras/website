@@ -2,6 +2,8 @@
 date: 2017-12-12T00:02:56+08:00
 title: Galeries Photos
 weight: 2
+aliases:
+  - /galeries-photos-fr30.html
 ---
 ### Nature
 {{% gallery lightbox="g1" class="w25" ar="1.3333" %}}

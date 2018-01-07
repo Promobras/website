@@ -2,6 +2,8 @@
 date: 2017-11-19T22:10:42+08:00
 title: Centre-Ouest - Pantanal
 weight: 5
+aliases:
+  - /centre-ouest-fr2043.html
 ---
 
 La région « Centre-Ouest » du Brésil comprend les Etats suivants :

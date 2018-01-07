@@ -2,6 +2,8 @@
 date: 2017-11-19T22:14:06+08:00
 title: Montagnes Autour de Rio
 weight: 3
+aliases:
+  - /montagnes-autour-de-rio-fr6166.html
 ---
 
 ### Les Montagnes

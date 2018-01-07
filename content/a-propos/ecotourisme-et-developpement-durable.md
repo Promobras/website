@@ -6,6 +6,8 @@ summary: null
 tagline: null
 title: Écotourisme et Développement Durable
 weight: 1
+aliases:
+  - /ecotourisme-et-developpement-durable-fr2583.html
 ---
 
 ### L'écotourisme ou le tourisme vert

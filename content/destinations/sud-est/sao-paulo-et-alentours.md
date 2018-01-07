@@ -2,6 +2,8 @@
 date: 2017-11-19T22:14:19+08:00
 title: São Paulo et alentours
 weight: 4
+aliases:
+  - /sao-paulo-et-alentours-fr6168.html
 ---
 
 ### La mégapole

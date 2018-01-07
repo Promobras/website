@@ -3,6 +3,8 @@ date: 2018-01-02T22:56:40+08:00
 publishDate: 2018-01-02T22:56:40+08:00
 title: Solidaires et Participatifs
 weight: 4
+aliases:
+  - /solidaires-et-participatifs-fr2095.html
 ---
 
 L’écotourisme ne se résume pas à la découverte des paysages, de la faune et de la flore d’une région, mais aussi à celle de ses habitants et vise à sensibiliser aussi bien les voyageurs que les populations locales de la nécessité de préserver l’environnement.

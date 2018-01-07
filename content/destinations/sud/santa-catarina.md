@@ -3,6 +3,8 @@ date: 2017-11-26T05:05:47+08:00
 linktitle: SANTA CATARINA - montagne et mer
 title: 'Région: Santa Catarina - montagne et mer'
 weight: 3
+aliases:
+  - /region-santa-catarina-montagne-et-mer-fr6177.html
 ---
 
 ### La ville de Florianópolis, capitale de l’Etat de Santa Catarina,

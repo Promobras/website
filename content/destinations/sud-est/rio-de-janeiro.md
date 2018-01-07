@@ -2,6 +2,8 @@
 date: 2017-11-19T22:13:18+08:00
 title: Rio de Janeiro
 weight: 1
+aliases:
+  - /rio-de-janeiro-et-alentours-fr6162.html
 ---
 
 ### La « cidade maravilhosa »

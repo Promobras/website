@@ -3,6 +3,8 @@ date: 2017-11-19T19:24:40+08:00
 linktitle: RECIFE et PERNAMBUCO
 title: Recife et Pernambuco
 weight: 2
+aliases:
+  - /recife-et-pernambuco-fr6157.html
 ---
 
 ### Le Nord-Est

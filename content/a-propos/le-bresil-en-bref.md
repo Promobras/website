@@ -2,6 +2,8 @@
 date: 2017-11-19T21:59:58+08:00
 title: Le Bresil en Bref
 weight: 2
+aliases:
+  - /le-bresil-en-bref-fr2584.html
 ---
 
 ### Superficie – population

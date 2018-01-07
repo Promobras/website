@@ -3,6 +3,8 @@ date: 2017-11-26T05:05:47+08:00
 linktitle: CURITABA et littoral du Paraná
 title: 'Région: Curitiba et littoral du Paraná'
 weight: 2
+aliases:
+  - /region-curitiba-et-littoral-du-parana-fr6175.html
 ---
 
 ### Curitiba, la capitale de l’Etat du Paraná,

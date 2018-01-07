@@ -2,6 +2,8 @@
 date: 2017-11-19T22:14:33+08:00
 title: Minas Gerais
 weight: 5
+aliases:
+  - /minas-gerais-fr6170.html
 ---
 
 ### L’Etat de Minas Gerais

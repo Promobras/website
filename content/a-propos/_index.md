@@ -4,6 +4,8 @@ linktitle: A Propos
 tagline: Voyager - Prévoir - Conseils et Astuces
 title: Le Brésil autrement...
 weight: 5
+aliases:
+  - /historique-de-l-agence-de-voyage-pour-le-bresil-promobras-a-lausanne-fr28.html
 ---
 
 {{% cl_img class="w100" src="/uploads/a-propos.jpg" %}}

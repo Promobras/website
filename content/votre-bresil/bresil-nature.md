@@ -3,6 +3,8 @@ date: 2018-01-02T22:18:01+08:00
 publishDate: 2018-01-02T22:18:01+08:00
 title: Brésil Nature
 weight: 1
+aliases:
+  - /bresil-nature-fr1965.html
 ---
 
 Du Nord au Sud et de l’Est à l’Ouest, ce pays aux dimensions d’un continent présente des écosystèmes des plus variés, une faune et une flore méconnues et renferme des richesses insoupçonnées.

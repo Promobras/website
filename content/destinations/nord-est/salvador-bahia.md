@@ -3,6 +3,8 @@ date: 2017-11-19T19:24:52+08:00
 linktitle: SALVADOR et BAHIA
 title: Salvador et Bahia
 weight: 3
+aliases:
+  - /salvador-et-bahia-fr6159.html
 ---
 
 ### A Salvador, chef-lieu de l'Etat de Bahia,

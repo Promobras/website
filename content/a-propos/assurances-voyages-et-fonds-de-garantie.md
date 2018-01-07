@@ -5,6 +5,8 @@ hidden: false
 hidesummaries: false
 hideinlinemenu: false
 weight: '4'
+aliases:
+  - /assurances-voyages-et-fonds-de-garantie-fr2587.html
 ---
 ### Assurance
 

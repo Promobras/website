@@ -3,6 +3,8 @@ date: 2018-01-03T20:01:23+08:00
 publishDate: 2018-01-03T20:01:23+08:00
 title: Logement, Transferts, Guides
 weight: 3
+aliases:
+  - /logement-transferts-guides-fr2585.html
 ---
 
 ### Hébergement et transferts
